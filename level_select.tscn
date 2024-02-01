@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxvbcus4651uf"]
+
+[ext_resource type="Script" path="res://level_select.gd" id="1_n0ap1"]
+[ext_resource type="Texture2D" uid="uid://bpwx5r5w61jwr" path="res://art_assets/level_select_skisse.png" id="2_r1kgq"]
+
+[node name="LevelSelect" type="Node"]
+script = ExtResource("1_n0ap1")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_r1kgq")
+expand_mode = 2
+
+[node name="CutsceneButton" type="Button" parent="."]
+offset_left = 967.0
+offset_top = 437.0
+offset_right = 1045.0
+offset_bottom = 510.0
+action_mode = 0
+text = "cutscene?"
+
+[node name="ForestButton" type="Button" parent="."]
+offset_left = 708.0
+offset_top = 474.0
+offset_right = 794.0
+offset_bottom = 546.0
+text = "forest"
+
+[node name="MountainButton" type="Button" parent="."]
+offset_left = 392.0
+offset_top = 483.0
+offset_right = 466.0
+offset_bottom = 546.0
+text = "mountain"
+
+[node name="BackButton" type="Button" parent="."]
+offset_left = 994.0
+offset_top = 10.0
+offset_right = 1144.0
+offset_bottom = 75.0
+text = "Tilbake til menyen"
+
+[connection signal="pressed" from="CutsceneButton" to="." method="_on_cutscene_button_pressed"]
+[connection signal="pressed" from="ForestButton" to="." method="_on_forest_button_pressed"]
+[connection signal="pressed" from="MountainButton" to="." method="_on_mountain_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

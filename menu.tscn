@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://blc5mfiw70f2"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_50igi"]
+[ext_resource type="Texture2D" uid="uid://bx2bed8b533un" path="res://art_assets/many_skisse.png" id="2_qdi1i"]
+
+[node name="Menu" type="Node"]
+script = ExtResource("1_50igi")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_qdi1i")
+expand_mode = 1
+
+[node name="StartButton" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 144.0
+offset_top = 197.0
+offset_right = 626.0
+offset_bottom = 330.0
+rotation = -0.167094
+action_mode = 0
+
+[node name="SettingsButton" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 378.0
+offset_top = 303.0
+offset_right = 878.0
+offset_bottom = 414.0
+rotation = -0.031911
+action_mode = 0
+
+[node name="QuitButton" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 155.0
+offset_top = 506.0
+offset_right = 666.0
+offset_bottom = 619.0
+rotation = -0.183988
+action_mode = 0
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
