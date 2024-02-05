@@ -21,3 +21,7 @@ func _on_settings_button_pressed():
 func _on_quit_button_pressed():
 	print('quit button pressed')
 	get_tree().quit()
+
+func _on_pause_button_pressed():
+	var pause = preload("res://pause.tscn").instantiate()
+	add_child(pause)

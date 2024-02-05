@@ -39,6 +39,13 @@ offset_bottom = 704.0
 rotation = -0.183988
 action_mode = 0
 
+[node name="PauseButton" type="Button" parent="."]
+offset_right = 262.0
+offset_bottom = 98.0
+theme_override_font_sizes/font_size = 50
+text = "Pause-test"
+
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="PauseButton" to="." method="_on_pause_button_pressed"]
