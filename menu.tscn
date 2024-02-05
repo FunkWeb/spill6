@@ -7,35 +7,35 @@
 script = ExtResource("1_50igi")
 
 [node name="Background" type="TextureRect" parent="."]
-offset_right = 1152.0
-offset_bottom = 648.0
+offset_right = 1600.0
+offset_bottom = 720.0
 texture = ExtResource("2_qdi1i")
 expand_mode = 1
 
 [node name="StartButton" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 144.0
-offset_top = 197.0
-offset_right = 626.0
-offset_bottom = 330.0
+offset_left = 216.0
+offset_top = 221.0
+offset_right = 860.0
+offset_bottom = 369.0
 rotation = -0.167094
 action_mode = 0
 
 [node name="SettingsButton" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 378.0
-offset_top = 303.0
-offset_right = 878.0
-offset_bottom = 414.0
+offset_left = 543.0
+offset_top = 348.0
+offset_right = 1217.0
+offset_bottom = 459.0
 rotation = -0.031911
 action_mode = 0
 
 [node name="QuitButton" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 155.0
-offset_top = 506.0
-offset_right = 666.0
-offset_bottom = 619.0
+offset_left = 242.0
+offset_top = 591.0
+offset_right = 924.0
+offset_bottom = 704.0
 rotation = -0.183988
 action_mode = 0
 

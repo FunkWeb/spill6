@@ -19,6 +19,17 @@ config/icon="res://icon.svg"
 
 SoundManager="*res://sound_manager.tscn"
 
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=720
+window/size/mode=3
+window/stretch/mode="viewport"
+
+[filesystem]
+
+import/blender/enabled=false
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

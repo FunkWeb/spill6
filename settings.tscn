@@ -1,45 +1,50 @@
 [gd_scene load_steps=2 format=3 uid="uid://cpos7lg6meg4m"]
 
-[ext_resource type="Script" path="res://Settings.gd" id="1_nw1ve"]
+[ext_resource type="Script" path="res://settings.gd" id="1_m671a"]
 
 [node name="Settings" type="Node"]
-script = ExtResource("1_nw1ve")
+script = ExtResource("1_m671a")
 
-[node name="Title" type="TextEdit" parent="."]
-offset_left = 510.0
-offset_top = 50.0
-offset_right = 616.0
-offset_bottom = 86.0
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 1600.0
+offset_bottom = 720.0
+color = Color(0.266667, 0.266667, 0.266667, 1)
+
+[node name="Title" type="Label" parent="."]
+offset_left = 746.0
+offset_top = 148.0
+offset_right = 881.0
+offset_bottom = 184.0
 text = "Instillinger"
 
-[node name="TextEdit" type="TextEdit" parent="."]
-offset_left = 525.0
-offset_top = 226.0
-offset_right = 606.0
-offset_bottom = 261.0
+[node name="TextEdit" type="Label" parent="."]
+offset_left = 761.0
+offset_top = 267.0
+offset_right = 848.0
+offset_bottom = 303.0
 text = "Musikk"
 
 [node name="MusicSlider" type="HSlider" parent="."]
-offset_left = 237.0
-offset_top = 253.0
-offset_right = 913.0
-offset_bottom = 343.0
+offset_left = 463.0
+offset_top = 298.0
+offset_right = 1139.0
+offset_bottom = 388.0
 max_value = 1.0
 step = 0.001
 value = 1.0
 
-[node name="TextEdit2" type="TextEdit" parent="."]
-offset_left = 516.0
+[node name="TextEdit2" type="Label" parent="."]
+offset_left = 736.0
 offset_top = 385.0
-offset_right = 617.0
-offset_bottom = 420.0
+offset_right = 877.0
+offset_bottom = 421.0
 text = "Lydeffekter"
 
 [node name="SfxSlider" type="HSlider" parent="."]
-offset_left = 245.0
-offset_top = 422.0
-offset_right = 910.0
-offset_bottom = 492.0
+offset_left = 469.0
+offset_top = 445.0
+offset_right = 1134.0
+offset_bottom = 515.0
 max_value = 1.0
 step = 0.001
 value = 1.0
