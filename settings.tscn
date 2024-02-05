@@ -49,13 +49,13 @@ max_value = 1.0
 step = 0.001
 value = 1.0
 
-[node name="MenuButton" type="Button" parent="."]
-offset_left = 434.0
-offset_top = 520.0
-offset_right = 734.0
-offset_bottom = 620.0
-text = "Tilbake til hovedmenyen"
+[node name="CloseButton" type="Button" parent="."]
+offset_left = 652.0
+offset_top = 556.0
+offset_right = 952.0
+offset_bottom = 656.0
+text = "Lukk"
 
 [connection signal="value_changed" from="MusicSlider" to="." method="_on_music_slider_value_changed"]
 [connection signal="value_changed" from="SfxSlider" to="." method="_on_sound_effect_slider_value_changed"]
-[connection signal="pressed" from="MenuButton" to="." method="_on_menu_button_pressed"]
+[connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]
