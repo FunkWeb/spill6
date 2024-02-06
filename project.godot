@@ -11,13 +11,21 @@ config_version=5
 [application]
 
 config/name="Raskeladden og Dovreslubben"
-run/main_scene="res://menu.tscn"
+run/main_scene="res://scenes/menu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="res://assets/sounds/default_bus_layout.tres"
+
 [autoload]
 
-SoundManager="*res://sound_manager.tscn"
+SoundManager="*res://assets/sounds/sound_manager.tscn"
+
+[dotnet]
+
+project/assembly_name="Raskeladden og Dovreslubben"
 
 [rendering]
 

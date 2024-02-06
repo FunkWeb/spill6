@@ -5,7 +5,7 @@ func _ready():
 	print("level select loaded")
 
 func _on_back_button_pressed():
-	get_tree().change_scene_to_file("res://menu.tscn")
+	get_tree().change_scene_to_file("res://scenes/menu.tscn")
 
 func _on_cutscene_button_pressed():
 	# pass på at denne peker på riktig scene
