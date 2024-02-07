@@ -1,0 +1,3 @@
+Nødvendige assets finner du i Funksoft disken. Produksjon-->Utvikling-->Assets i nåværende kode. Last ned folderne og legg de inn her.
+
+Disse er de som er brukt i koden, vi unngår å legge det til i github men jeg håper det gjør det enkelt å laste ned og legge alt inn her.
