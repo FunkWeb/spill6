@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://gu6wwha84ye1"]
+
+[ext_resource type="Script" path="res://scripts/GameTimer.gd" id="1_0wbb0"]
+
+[node name="GameTimer" type="CanvasLayer"]
+script = ExtResource("1_0wbb0")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -194.0
+offset_bottom = 95.0
+grow_horizontal = 0
+
+[node name="Label" type="Label" parent="CenterContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.956863, 0.956863, 0.956863, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.815686, 0, 0.207843, 1)
+theme_override_font_sizes/font_size = 30
+text = "00:00:00"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="Timer" type="Timer" parent="CenterContainer/Label"]
+process_mode = 1
+process_callback = 0
+wait_time = 90.0
+one_shot = true
+autostart = true
+
+[node name="ColorRect" type="ColorRect" parent="CenterContainer"]
+layout_direction = 1
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+color = Color(0.329412, 0.631373, 0, 1)
+
+[connection signal="timeout" from="CenterContainer/Label/Timer" to="." method="_on_timer_timeout"]
