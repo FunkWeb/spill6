@@ -3,10 +3,11 @@ extends CanvasLayer
 # ToDo for GameTimer
 	# Set Timer-font
 	# Set Background frame for timer
-	# Make sure it pause proberly when game is paused
-	# Set good size for timer
+	# Make sure it pause properly when game is paused
+	# Set good font-size for timer
 	# Decide final placement on screen for timer
 	# Save time_left as part of score.
+	# decide color for timer
 
 @onready var timer = $CenterContainer/Label/Timer
 @onready var label = $CenterContainer/Label
@@ -17,6 +18,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	# Set the label text to the current time left on timer
 	label.text = get_time()	
 
 func get_time():
