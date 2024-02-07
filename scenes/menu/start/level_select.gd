@@ -13,6 +13,7 @@ func _on_cutscene_button_pressed():
 
 func _on_forest_button_pressed():
 	# pass på at denne peker på riktig scene
+	# Byttet denne til test levelen for nå
 	get_tree().change_scene_to_file("res://scenes/test_level.tscn")
 	#get_tree().change_scene_to_file("res://forest_level.tscn")
 

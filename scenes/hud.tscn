@@ -4,7 +4,7 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_62xai"]
 font_size = 50
-font_color = Color(0.545098, 0.568627, 1, 1)
+font_color = Color(0.509804, 0.635294, 0.721569, 1)
 outline_size = 8
 outline_color = Color(0, 0, 0, 1)
 shadow_size = 0

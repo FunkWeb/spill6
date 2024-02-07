@@ -1,11 +1,26 @@
-[gd_scene load_steps=10 format=3 uid="uid://bvb1triln2bkr"]
+[gd_scene load_steps=13 format=3 uid="uid://bvb1triln2bkr"]
 
 [ext_resource type="Script" path="res://scenes/test_level.gd" id="1_x5js2"]
 [ext_resource type="PackedScene" uid="uid://1ehcmr0xs6rd" path="res://scenes/test_level/death_pit.tscn" id="2_5pbnu"]
-[ext_resource type="PackedScene" uid="uid://clgosqujy66ek" path="res://scenes/hud.tscn" id="2_ua50b"]
+[ext_resource type="Script" path="res://scenes/HUD/health.gd" id="2_pktii"]
+[ext_resource type="PackedScene" uid="uid://jp5qnjxxce37" path="res://scenes/obstacles/boar.tscn" id="3_jdk35"]
 [ext_resource type="PackedScene" uid="uid://b003u3f21kj54" path="res://scenes/test_level/goal.tscn" id="3_t2q2r"]
 [ext_resource type="PackedScene" uid="uid://b13yk3bapi3mm" path="res://scenes/player.tscn" id="6_g6txm"]
 [ext_resource type="Texture2D" uid="uid://b8wmui0mcq6ti" path="res://assets/art_assets/Tiles.png" id="6_uhjpt"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_62xai"]
+font_size = 50
+font_color = Color(0.509804, 0.635294, 0.721569, 1)
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_mxi26"]
+line_spacing = 10.0
+font_size = 26
+outline_size = 15
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 0
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_sl7xc"]
 
@@ -1452,9 +1467,68 @@ position_smoothing_speed = 7.0
 drag_vertical_enabled = true
 drag_horizontal_offset = 1.0
 
-[node name="HUD" parent="." instance=ExtResource("2_ua50b")]
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="CenterContainer" type="CenterContainer" parent="HUD"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="game_over" type="Label" parent="HUD/CenterContainer"]
+visible = false
+layout_mode = 2
+text = "Game over"
+label_settings = SubResource("LabelSettings_62xai")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="you_win" type="Label" parent="HUD/CenterContainer"]
+visible = false
+layout_mode = 2
+text = "You win!"
+label_settings = SubResource("LabelSettings_62xai")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="you_died" type="Label" parent="HUD/CenterContainer"]
+visible = false
+layout_mode = 2
+text = "You died!"
+label_settings = SubResource("LabelSettings_62xai")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="LeftContainer" type="CenterContainer" parent="HUD"]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 132.0
+offset_bottom = 50.0
+
+[node name="health" type="Label" parent="HUD/LeftContainer"]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_mxi26")
+horizontal_alignment = 3
+vertical_alignment = 1
+script = ExtResource("2_pktii")
 
 [node name="Obstacles" type="Node" parent="."]
+
+[node name="boar" parent="Obstacles" instance=ExtResource("3_jdk35")]
+position = Vector2(287, 32)
+
+[node name="boar2" parent="Obstacles" instance=ExtResource("3_jdk35")]
+position = Vector2(591, 36)
+
+[node name="boar3" parent="Obstacles" instance=ExtResource("3_jdk35")]
+position = Vector2(360, 32)
+
+[node name="boar4" parent="Obstacles" instance=ExtResource("3_jdk35")]
+position = Vector2(961, 32)
 
 [node name="Platform" type="Node" parent="."]
 
@@ -1478,12 +1552,19 @@ layer_0/tile_data = PackedInt32Array(2424837, 65536, 2, 2490373, 65536, 2, 25559
 position = Vector2(-2, 3)
 speed = 700.0
 jump_velocity = -450.0
-double_jump_velocity = -200.0
-hearts = 5
+double_jump_velocity = -350.0
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player/Player"]
 remote_path = NodePath("../../../Camera2D")
 
+[connection signal="hit" from="Obstacles/boar" to="HUD/LeftContainer/health" method="_on_hit"]
+[connection signal="hit" from="Obstacles/boar" to="Player/Player" method="on_hit"]
+[connection signal="hit" from="Obstacles/boar2" to="HUD/LeftContainer/health" method="_on_hit"]
+[connection signal="hit" from="Obstacles/boar2" to="Player/Player" method="on_hit"]
+[connection signal="hit" from="Obstacles/boar3" to="HUD/LeftContainer/health" method="_on_hit"]
+[connection signal="hit" from="Obstacles/boar3" to="Player/Player" method="on_hit"]
+[connection signal="hit" from="Obstacles/boar4" to="HUD/LeftContainer/health" method="_on_hit"]
+[connection signal="hit" from="Obstacles/boar4" to="Player/Player" method="on_hit"]
 [connection signal="detected" from="Platform/death_pit" to="." method="_on_death_pit_detected"]
 [connection signal="detected" from="Platform/goal" to="." method="_on_goal_detected"]
 [connection signal="has_died" from="Player/Player" to="." method="_on_player_death"]

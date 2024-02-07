@@ -1,7 +1,13 @@
 extends Label
 
+# TODO
+# Change health icon into image
+# Figure out how many "hearts" we're using
+# Connect player and heart amount directly 
+
 var health_icon : String = '❤'
 var heart_amount : int = 3
+
 func _ready():
 	for heart in range(heart_amount):
 		text += health_icon 
