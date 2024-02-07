@@ -1,9 +1,10 @@
-[gd_scene load_steps=15 format=3 uid="uid://b13yk3bapi3mm"]
+[gd_scene load_steps=13 format=3 uid="uid://b13yk3bapi3mm"]
 
-[ext_resource type="Script" path="res://Characters/player.gd" id="1_ogvqo"]
-[ext_resource type="Texture2D" uid="uid://nijw5wybq60s" path="res://Art/Character/Dead/Dead-Sheet.png" id="3_00atx"]
-[ext_resource type="Texture2D" uid="uid://vnqj1c6pf8pq" path="res://Art/Character/Jumlp-All/Jump-All-Sheet.png" id="3_i2cjj"]
-[ext_resource type="Texture2D" uid="uid://6bjw3iqqd2l8" path="res://Art/Character/Run/Run-Sheet.png" id="4_ad7ha"]
+[ext_resource type="Script" path="res://scenes/player.gd" id="1_ogvqo"]
+[ext_resource type="Texture2D" uid="uid://dhb8ukmrsu0ju" path="res://assets/art_assets/Jump-All-Sheet.png" id="3_00e8q"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rayof"]
+load_path = "res://.godot/imported/Run-Sheet.png-d1d6638855f3aa281418c1c9d72258b4.ctex"
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_k7fip"]
 radius = 9.31595
@@ -13,7 +14,7 @@ height = 42.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprites/Raskeladden:frame")
+tracks/0/path = NodePath("Sprites/Run-sheet:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -25,7 +26,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Sprites/Dead-sheet:frame")
+tracks/1/path = NodePath("Sprites/Jump-all-sheet:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -37,46 +38,22 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Sprites/Jump-all-sheet:frame")
+tracks/2/path = NodePath("Sprites/Jump-all-sheet:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [0]
+"values": [true]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Sprites/Jump-all-sheet:visible")
+tracks/3/path = NodePath("Sprites/Run-sheet:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Sprites/Dead-sheet:visible")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("Sprites/Raskeladden:visible")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -89,19 +66,19 @@ length = 4.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprites/Dead-sheet:frame")
+tracks/0/path = NodePath("Sprites/Run-sheet:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [0, 1, 2, 3, 4, 5, 6, 7]
+"values": [false, false]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Sprites/Raskeladden:visible")
+tracks/1/path = NodePath("Sprites/Jump-all-sheet:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -109,30 +86,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [false, false]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Sprites/Jump-all-sheet:visible")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 4),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [false, false]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Sprites/Dead-sheet:visible")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 4),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, true]
 }
 
 [sub_resource type="Animation" id="Animation_lxjw6"]
@@ -154,7 +107,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Sprites/Dead-sheet:visible")
+tracks/1/path = NodePath("Sprites/Run-sheet:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -166,22 +119,10 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Sprites/Raskeladden:visible")
+tracks/2/path = NodePath("Sprites/Jump-all-sheet:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 1.6),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [false, false]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Sprites/Jump-all-sheet:visible")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
 "times": PackedFloat32Array(0, 1.6),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
@@ -206,7 +147,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Sprites/Raskeladden:visible")
+tracks/1/path = NodePath("Sprites/Run-sheet:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -218,22 +159,10 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Sprites/Dead-sheet:visible")
+tracks/2/path = NodePath("Sprites/Jump-all-sheet:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 2.8),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [false, false]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Sprites/Jump-all-sheet:visible")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
 "times": PackedFloat32Array(0, 2.8),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
@@ -258,7 +187,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Sprites/Raskeladden:visible")
+tracks/1/path = NodePath("Sprites/Run-sheet:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -270,22 +199,10 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Sprites/Dead-sheet:visible")
+tracks/2/path = NodePath("Sprites/Jump-all-sheet:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [false, false]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Sprites/Jump-all-sheet:visible")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
 "times": PackedFloat32Array(0, 2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
@@ -299,7 +216,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprites/Raskeladden:frame")
+tracks/0/path = NodePath("Sprites/Run-sheet:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -323,22 +240,10 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Sprites/Dead-sheet:visible")
+tracks/2/path = NodePath("Sprites/Run-sheet:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 3.2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [false, false]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Sprites/Raskeladden:visible")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
 "times": PackedFloat32Array(0, 3.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
@@ -358,33 +263,22 @@ _data = {
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_2xrqd"]
 nodes/output/position = Vector2(442, 156)
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eadtf"]
-radius = 8.0
-
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_ogvqo")
 
 [node name="Sprites" type="Node2D" parent="."]
 
-[node name="Raskeladden" type="Sprite2D" parent="Sprites"]
-texture = ExtResource("4_ad7ha")
-offset = Vector2(-5, 0)
-hframes = 8
-
-[node name="Dead-sheet" type="Sprite2D" parent="Sprites"]
-visible = false
-position = Vector2(11, 9)
-texture = ExtResource("3_00atx")
+[node name="Run-sheet" type="Sprite2D" parent="Sprites"]
+texture = SubResource("CompressedTexture2D_rayof")
 hframes = 8
 
 [node name="Jump-all-sheet" type="Sprite2D" parent="Sprites"]
 position = Vector2(-27, -42)
-texture = ExtResource("3_i2cjj")
+texture = ExtResource("3_00e8q")
 centered = false
 hframes = 15
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2(0, 3)
 scale = Vector2(0.852, 1)
 shape = SubResource("CapsuleShape2D_k7fip")
@@ -402,8 +296,3 @@ libraries = {
 }
 tree_root = SubResource("AnimationNodeBlendTree_2xrqd")
 anim_player = NodePath("../AnimationPlayer")
-
-[node name="CollisionShape2DDucking" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(0, 9)
-shape = SubResource("CapsuleShape2D_eadtf")

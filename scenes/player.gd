@@ -1,6 +1,9 @@
 extends CharacterBody2D
 
-signal died(body)
+signal has_died(body)
+# TODO
+# Add relevant movement 
+# Ask if doublejump is something we should add
 
 @export var speed : float = 300.0
 @export var jump_velocity: float = -400.0
@@ -16,7 +19,8 @@ var has_double_jumped : bool = false
 var has_landed : bool = false
 var animation_locked : bool = false
 var hits : int = 0
-
+func _ready():
+	print("player loaded")
 
 func _physics_process(delta):
 	position.x += scroll_speed * delta
@@ -63,7 +67,7 @@ func on_hit(_self, body):
 		die(body)
 
 func die(body):
-	emit_signal('died', body)
+	emit_signal('has_died', body)
 
 func _on_health_upgrade_detected(amount):
 	hearts += amount
