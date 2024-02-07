@@ -83,6 +83,6 @@ func play_background_cutscene():
 # INFO ambient lyder lagdt til som lydeffekter, ikke bakgrunnsmusikk
 func ambient_forest():
 	$SoundEffects/AmbientForest.play()
-#
+
 func ambient_mountain():
 	$SoundEffects/AmbientMountain.play()

@@ -23,9 +23,20 @@ buses/default_bus_layout="res://assets/sounds/default_bus_layout.tres"
 
 SoundManager="*res://assets/sounds/sound_manager.tscn"
 
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=720
+window/size/mode=3
+window/stretch/mode="viewport"
+
 [dotnet]
 
 project/assembly_name="Raskeladden og Dovreslubben"
+
+[filesystem]
+
+import/blender/enabled=false
 
 [rendering]
 
