@@ -34,6 +34,10 @@ window/stretch/mode="viewport"
 
 project/assembly_name="Raskeladden og Dovreslubben"
 
+[filesystem]
+
+import/blender/enabled=false
+
 [input]
 
 jump={
@@ -45,10 +49,6 @@ duck={
 "deadzone": 0.5,
 "events": []
 }
-
-[filesystem]
-
-import/blender/enabled=false
 
 [rendering]
 
