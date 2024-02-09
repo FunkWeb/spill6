@@ -263,8 +263,9 @@ _data = {
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_2xrqd"]
 nodes/output/position = Vector2(442, 156)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Persist"]]
 script = ExtResource("1_ogvqo")
+metadata/num_collected_parts = 6
 
 [node name="Sprites" type="Node2D" parent="."]
 

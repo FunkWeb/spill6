@@ -82,3 +82,11 @@ func die(body):
 func _on_health_upgrade_detected(amount):
 	print('player received health upgrade')
 	hearts += amount
+
+func save():
+	var save_dict = {
+		"name":"player_data",
+		"num_collected_parts":get_meta("num_collected_parts")
+	}
+	return save_dict
+
