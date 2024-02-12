@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dagpn5eu4pjbd"
-path="res://.godot/imported/parallax_middle.png-0a76e74d4f49d0ee1d8d570e94c05a12.ctex"
+path="res://.godot/imported/parallax_middle.png-135c53752e33eb58a95c39c0050f48b1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bakgrunner/bakgrunn_skog/parallax_middle.png"
-dest_files=["res://.godot/imported/parallax_middle.png-0a76e74d4f49d0ee1d8d570e94c05a12.ctex"]
+source_file="res://assets/art_assets/bakgrunner/bakgrunn_skog/parallax_middle.png"
+dest_files=["res://.godot/imported/parallax_middle.png-135c53752e33eb58a95c39c0050f48b1.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0d0haqdf28fg"
-path="res://.godot/imported/skog_bakgrunn_bakke.png-38f6e30346a5af4485c8788c9e201915.ctex"
+path="res://.godot/imported/skog_bakgrunn_bakke.png-229760559ae1c1382b8f1f5da376a861.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bakgrunner/bakgrunn_skog/skog_bakgrunn_bakke.png"
-dest_files=["res://.godot/imported/skog_bakgrunn_bakke.png-38f6e30346a5af4485c8788c9e201915.ctex"]
+source_file="res://assets/art_assets/bakgrunner/bakgrunn_skog/skog_bakgrunn_bakke.png"
+dest_files=["res://.godot/imported/skog_bakgrunn_bakke.png-229760559ae1c1382b8f1f5da376a861.ctex"]
 
 [params]
 
