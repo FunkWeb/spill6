@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://jp5qnjxxce37"]
+[gd_scene load_steps=8 format=3 uid="uid://jp5qnjxxce37"]
 
 [ext_resource type="Script" path="res://scenes/obstacles/boar.gd" id="1_h0mc5"]
 [ext_resource type="Texture2D" uid="uid://58s5dckqsmdr" path="res://assets/art_assets/Idle-Sheet.png" id="1_kgsw8"]
+[ext_resource type="AudioStream" uid="uid://bhomkaq0fa8vh" path="res://assets/sounds/skadePiano.wav" id="3_8u6rs"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p3bp1"]
 radius = 12.0
@@ -58,6 +59,9 @@ hframes = 4
 position = Vector2(-2, 4)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_p3bp1")
+
+[node name="skadePiano" type="AudioStreamPlayer2D" parent="Area2D/CollisionShape2D"]
+stream = ExtResource("3_8u6rs")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
