@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://blc5mfiw70f2"]
+[gd_scene load_steps=7 format=3 uid="uid://blc5mfiw70f2"]
 
 [ext_resource type="Script" path="res://scenes/menu.gd" id="1_50igi"]
 [ext_resource type="Texture2D" uid="uid://bx2bed8b533un" path="res://assets/art_assets/many_skisse.png" id="2_qdi1i"]
+[ext_resource type="Texture2D" uid="uid://bqdtint4wuon7" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur10.png" id="3_0xcwg"]
+[ext_resource type="FontFile" uid="uid://ddv1wxtia5j5c" path="res://assets/fonts/AR_One_Sans/static/AROneSans-Regular.ttf" id="4_nhaql"]
+[ext_resource type="Texture2D" uid="uid://di4qpmynho4qu" path="res://assets/art_assets/Skilt/Spiker/ui_detalj_spiker_tekstur01.png" id="5_53n3n"]
+[ext_resource type="Texture2D" uid="uid://2v2rro41xvdr" path="res://assets/art_assets/Skilt/Spiker/ui_detalj_spiker_tekstur02.png" id="6_c4swr"]
 
 [node name="Menu" type="Node"]
 script = ExtResource("1_50igi")
@@ -12,14 +16,58 @@ offset_bottom = 720.0
 texture = ExtResource("2_qdi1i")
 expand_mode = 1
 
-[node name="StartButton" type="Button" parent="."]
-self_modulate = Color(1, 1, 1, 0)
-offset_left = 216.0
-offset_top = 221.0
-offset_right = 860.0
-offset_bottom = 369.0
-rotation = -0.167094
+[node name="StartSkilt" type="TextureRect" parent="Background"]
+layout_mode = 0
+offset_left = 487.0
+offset_top = -202.0
+offset_right = 1511.0
+offset_bottom = 822.0
+rotation = -0.0698132
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("3_0xcwg")
+
+[node name="StartButton" type="Button" parent="Background/StartSkilt"]
+offset_top = 405.0
+offset_right = 922.0
+offset_bottom = 669.0
+rotation = -0.0349066
 action_mode = 0
+flat = true
+
+[node name="Label" type="Label" parent="Background/StartSkilt"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -174.0
+offset_top = -61.0
+offset_right = 123.0
+offset_bottom = 75.0001
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.0277328
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_nhaql")
+theme_override_font_sizes/font_size = 100
+text = "Start"
+
+[node name="Nail" type="TextureRect" parent="Background/StartSkilt"]
+layout_mode = 0
+offset_left = 184.13
+offset_top = 463.306
+offset_right = 248.13
+offset_bottom = 527.306
+texture = ExtResource("5_53n3n")
+
+[node name="Nail2" type="TextureRect" parent="Background/StartSkilt"]
+layout_mode = 0
+offset_left = 188.725
+offset_top = 550.506
+offset_right = 252.725
+offset_bottom = 614.506
+texture = ExtResource("6_c4swr")
 
 [node name="SettingsButton" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
@@ -45,7 +93,7 @@ offset_bottom = 98.0
 theme_override_font_sizes/font_size = 50
 text = "Pause-test"
 
-[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Background/StartSkilt/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="pressed" from="PauseButton" to="." method="_on_pause_button_pressed"]
