@@ -1,10 +1,11 @@
 [gd_scene load_steps=12 format=3 uid="uid://blc5mfiw70f2"]
+
 [ext_resource type="Script" path="res://scenes/menu.gd" id="1_50igi"]
-[ext_resource type="PackedScene" uid="uid://dkncnkmhfru77" path="res://scenes/game_state_manager.tscn" id="3_vs73n"]
-[ext_resource type="PackedScene" uid="uid://djnq1inpljinj" path="res://scenes/level_data.tscn" id="4_ujgb6"]
 [ext_resource type="Texture2D" uid="uid://bx2bed8b533un" path="res://assets/art_assets/many_skisse.png" id="2_qdi1i"]
 [ext_resource type="Texture2D" uid="uid://bqdtint4wuon7" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur10.png" id="3_0xcwg"]
+[ext_resource type="PackedScene" uid="uid://dkncnkmhfru77" path="res://scenes/game_state_manager.tscn" id="3_vs73n"]
 [ext_resource type="FontFile" uid="uid://ddv1wxtia5j5c" path="res://assets/fonts/AR_One_Sans/static/AROneSans-Regular.ttf" id="4_nhaql"]
+[ext_resource type="PackedScene" uid="uid://djnq1inpljinj" path="res://scenes/level_data.tscn" id="4_ujgb6"]
 [ext_resource type="Texture2D" uid="uid://di4qpmynho4qu" path="res://assets/art_assets/Skilt/Spiker/ui_detalj_spiker_tekstur01.png" id="5_53n3n"]
 [ext_resource type="Texture2D" uid="uid://2v2rro41xvdr" path="res://assets/art_assets/Skilt/Spiker/ui_detalj_spiker_tekstur02.png" id="6_c4swr"]
 [ext_resource type="Texture2D" uid="uid://dxtujsfa36ldb" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur02.png" id="7_8h06r"]
@@ -81,6 +82,7 @@ action_mode = 0
 flat = true
 
 [node name="SettingsSign" type="TextureRect" parent="Background"]
+layout_mode = 0
 offset_left = 356.0
 offset_top = -50.0
 offset_right = 1380.0
@@ -131,6 +133,7 @@ texture = ExtResource("6_c4swr")
 
 [node name="SettingsButton" type="Button" parent="Background/SettingsSign"]
 self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
 offset_left = 65.0
 offset_top = 414.0
 offset_right = 917.0
@@ -139,6 +142,7 @@ rotation = -0.00202638
 action_mode = 0
 
 [node name="CreditsSign" type="TextureRect" parent="Background"]
+layout_mode = 0
 offset_left = 336.0
 offset_top = 109.0
 offset_right = 1360.0
@@ -189,6 +193,7 @@ texture = ExtResource("6_c4swr")
 
 [node name="CreditsButton" type="Button" parent="Background"]
 self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
 offset_left = 405.663
 offset_top = 406.365
 offset_right = 1292.66
@@ -197,6 +202,7 @@ rotation = -0.00189659
 action_mode = 0
 
 [node name="QuitSign" type="TextureRect" parent="Background"]
+layout_mode = 0
 offset_left = 216.0
 offset_top = 321.0
 offset_right = 1240.0
@@ -238,6 +244,7 @@ texture = ExtResource("6_c4swr")
 
 [node name="QuitButton" type="Button" parent="Background/QuitSign"]
 self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
 offset_left = 54.0
 offset_top = 424.0
 offset_right = 976.0
