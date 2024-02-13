@@ -11,13 +11,7 @@ script = ExtResource("1_ehfbi")
 [node name="MenuTrack" type="AudioStreamPlayer" parent="BackgroundMusic"]
 bus = &"music"
 
-[node name="CutsceneTrack" type="AudioStreamPlayer" parent="BackgroundMusic"]
-bus = &"music"
-
 [node name="ForestTrack" type="AudioStreamPlayer" parent="BackgroundMusic"]
-bus = &"music"
-
-[node name="MountainTrack" type="AudioStreamPlayer" parent="BackgroundMusic"]
 bus = &"music"
 
 [node name="SoundEffects" type="Node" parent="."]
@@ -25,37 +19,5 @@ bus = &"music"
 [node name="ButtonClick" type="AudioStreamPlayer" parent="SoundEffects"]
 bus = &"sfx"
 
-[node name="SkikeTrail" type="AudioStreamPlayer" parent="SoundEffects"]
-bus = &"sfx"
-
-[node name="SkikeAsphalt" type="AudioStreamPlayer" parent="SoundEffects"]
-bus = &"sfx"
-
-[node name="SkikeGravel" type="AudioStreamPlayer" parent="SoundEffects"]
-bus = &"sfx"
-
-[node name="Collectible" type="AudioStreamPlayer" parent="SoundEffects"]
-bus = &"sfx"
-
-[node name="Jump" type="AudioStreamPlayer" parent="SoundEffects"]
-bus = &"sfx"
-
-[node name="Land" type="AudioStreamPlayer" parent="SoundEffects"]
-bus = &"sfx"
-
-[node name="Duck" type="AudioStreamPlayer" parent="SoundEffects"]
-bus = &"sfx"
-
-[node name="Win" type="AudioStreamPlayer" parent="SoundEffects"]
-bus = &"sfx"
-
-[node name="Lose" type="AudioStreamPlayer" parent="SoundEffects"]
-bus = &"sfx"
-
-[node name="AmbientForest" type="AudioStreamPlayer" parent="SoundEffects"]
-bus = &"sfx"
-
-[node name="AmbientMountain" type="AudioStreamPlayer" parent="SoundEffects"]
-bus = &"sfx"
 [node name="SkadePiano" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource("2_58mke")
