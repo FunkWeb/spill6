@@ -4,13 +4,17 @@ extends Node
 func _ready():
 	print("SAVING FILES")
 	save_game()
+#
+	print("LOADING FILES")
+	load_game()
+	
 
 # Note: This can be called from anywhere inside the tree. This function is
 # path independent.
 # Go through everything in the persist category and ask them to return a
 # dict of relevant variables.
 func save_game():
-	var save_game = FileAccess.open("user://savegame.save", FileAccess.WRITE)
+	var save_file = FileAccess.open("user://savegame.save", FileAccess.WRITE)
 	var save_nodes = get_tree().get_nodes_in_group("Persist")
 	for node in save_nodes:
 		print("saving: "+node.name)
@@ -32,7 +36,7 @@ func save_game():
 		var json_string = JSON.stringify(node_data)
 
 		# Store the save dictionary as a new line in the save file.
-		save_game.store_line(json_string)
+		save_file.store_line(json_string)
 
 
 
@@ -67,13 +71,20 @@ func load_game():
 
 		# Get the data from the JSON object
 		var node_data = json.get_data()
+		print(node_data)
 
 		# Firstly, we need to create the object and add it to the tree and set its position.
 		var new_object = load(node_data["filename"]).instantiate()
+		print(new_object)
+		print(get_node(node_data["parent"]))
 		get_node(node_data["parent"]).add_child(new_object)
-		new_object.position = Vector2(node_data["pos_x"], node_data["pos_y"])
+		if("pos_x" in node_data and "pos_y" in node_data):
+			new_object.position = Vector2(node_data["pos_x"], node_data["pos_y"])
 		# Now we set the remaining variables.
 		for i in node_data.keys():
 			if i == "filename" or i == "parent" or i == "pos_x" or i == "pos_y":
 				continue
-			new_object.set(i, node_data[i])
+			elif i.begins_with("meta"):
+				new_object.set_meta(i.erase(0,5),node_data[i])
+			else:
+				new_object.set(i, node_data[i])
