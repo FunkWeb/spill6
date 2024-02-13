@@ -1458,15 +1458,6 @@ sources/0 = SubResource("TileSetAtlasSource_pdjj0")
 [node name="TestLevel" type="Node2D"]
 script = ExtResource("1_x5js2")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-texture_repeat = 1
-position = Vector2(-2, 3)
-zoom = Vector2(2.5, 2.5)
-position_smoothing_enabled = true
-position_smoothing_speed = 7.0
-drag_vertical_enabled = true
-drag_horizontal_offset = 1.0
-
 [node name="HUD" type="CanvasLayer" parent="."]
 
 [node name="CenterContainer" type="CenterContainer" parent="HUD"]
@@ -1553,9 +1544,6 @@ position = Vector2(-2, 3)
 speed = 700.0
 jump_velocity = -450.0
 double_jump_velocity = -350.0
-
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player/Player"]
-remote_path = NodePath("../../../Camera2D")
 
 [connection signal="hit" from="Obstacles/boar" to="HUD/LeftContainer/health" method="_on_hit"]
 [connection signal="hit" from="Obstacles/boar" to="Player/Player" method="on_hit"]
