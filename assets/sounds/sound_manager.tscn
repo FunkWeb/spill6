@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b362dxgf8xwdb"]
+[gd_scene load_steps=3 format=3 uid="uid://b362dxgf8xwdb"]
 
 [ext_resource type="Script" path="res://assets/sounds/sound_manager.gd" id="1_ehfbi"]
+[ext_resource type="AudioStream" uid="uid://bhomkaq0fa8vh" path="res://assets/sounds/skadePiano.wav" id="2_58mke"]
 
 [node name="SoundManager" type="Node"]
 script = ExtResource("1_ehfbi")
@@ -56,3 +57,5 @@ bus = &"sfx"
 
 [node name="AmbientMountain" type="AudioStreamPlayer" parent="SoundEffects"]
 bus = &"sfx"
+[node name="SkadePiano" type="AudioStreamPlayer" parent="SoundEffects"]
+stream = ExtResource("2_58mke")

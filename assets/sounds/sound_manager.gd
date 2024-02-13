@@ -67,6 +67,8 @@ func win_sound():
 
 func lose_sound():
 	$SoundEffects/Lose.play()
+func skade_piano():
+	$SoundEffects/SkadePiano.play()
 
 func play_background_forest():
 	play_background_music($BackgroundMusic/ForestTrack)
