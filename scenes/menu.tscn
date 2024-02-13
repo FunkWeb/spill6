@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://blc5mfiw70f2"]
 
-[ext_resource type="Script" path="res://scenes/menu.gd" id="1_50igi"]
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_50igi"]
 [ext_resource type="Texture2D" uid="uid://bx2bed8b533un" path="res://assets/art_assets/many_skisse.png" id="2_qdi1i"]
 [ext_resource type="Texture2D" uid="uid://bqdtint4wuon7" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur10.png" id="3_0xcwg"]
 [ext_resource type="PackedScene" uid="uid://dkncnkmhfru77" path="res://scenes/game_state_manager.tscn" id="3_vs73n"]
@@ -71,12 +71,12 @@ scale = Vector2(0.5, 0.5)
 mouse_filter = 2
 texture = ExtResource("6_c4swr")
 
-[node name="StartButton" type="Button" parent="Background"]
+[node name="StartButton" type="Button" parent="Background/StartSign"]
 layout_mode = 0
-offset_left = 502.77
-offset_top = 57.0247
-offset_right = 1424.77
-offset_bottom = 308.025
+offset_left = 6.10352e-05
+offset_top = 397.0
+offset_right = 922.0
+offset_bottom = 648.0
 rotation = -0.00529746
 action_mode = 0
 flat = true
@@ -191,13 +191,13 @@ scale = Vector2(0.5, 0.5)
 mouse_filter = 2
 texture = ExtResource("6_c4swr")
 
-[node name="CreditsButton" type="Button" parent="Background"]
+[node name="CreditsButton" type="Button" parent="Background/CreditsSign"]
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = 405.663
-offset_top = 406.365
-offset_right = 1292.66
-offset_bottom = 609.365
+offset_left = 65.0002
+offset_top = 402.0
+offset_right = 951.997
+offset_bottom = 605.0
 rotation = -0.00189659
 action_mode = 0
 
@@ -262,8 +262,8 @@ text = "Pause-test"
 
 [node name="LevelData" parent="." instance=ExtResource("4_ujgb6")]
 
-[connection signal="pressed" from="Background/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Background/StartSign/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="Background/SettingsSign/SettingsButton" to="." method="_on_settings_button_pressed"]
-[connection signal="pressed" from="Background/CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="Background/CreditsSign/CreditsButton" to="." method="_on_credits_button_pressed"]
 [connection signal="pressed" from="Background/QuitSign/QuitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="pressed" from="PauseButton" to="." method="_on_pause_button_pressed"]

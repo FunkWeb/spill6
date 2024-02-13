@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://1ehcmr0xs6rd"]
 
-[ext_resource type="Script" path="res://scenes/test_level/death_pit.gd" id="1_fd6a2"]
+[ext_resource type="Script" path="res://scripts/death_pit.gd" id="1_fd6a2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_326eq"]
 size = Vector2(5339.5, 191.5)

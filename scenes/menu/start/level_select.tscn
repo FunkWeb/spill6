@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bxvbcus4651uf"]
 
-[ext_resource type="Script" path="res://scenes/menu/start/level_select.gd" id="1_n0ap1"]
+[ext_resource type="Script" path="res://scripts/level_select.gd" id="1_n0ap1"]
 [ext_resource type="Texture2D" uid="uid://bpwx5r5w61jwr" path="res://assets/art_assets/level_select_skisse.png" id="2_r1kgq"]
 [ext_resource type="PackedScene" uid="uid://dkncnkmhfru77" path="res://scenes/game_state_manager.tscn" id="3_0lr5j"]
 [ext_resource type="PackedScene" uid="uid://djnq1inpljinj" path="res://scenes/level_data.tscn" id="4_88242"]
@@ -23,10 +23,10 @@ action_mode = 0
 text = "cutscene?"
 
 [node name="ForestButton" type="Button" parent="."]
-offset_left = 996.0
-offset_top = 531.0
-offset_right = 1082.0
-offset_bottom = 603.0
+offset_left = 995.0
+offset_top = 528.0
+offset_right = 1081.0
+offset_bottom = 600.0
 text = "forest"
 
 [node name="MountainButton" type="Button" parent="."]

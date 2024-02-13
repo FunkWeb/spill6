@@ -27,7 +27,7 @@ func _physics_process(delta):
 	position.x += scroll_speed * delta
 	if not is_on_floor():
 		velocity.y += gravity * delta
-	
+
 	# Har satt jump til space for nå, vi må endre det til en knapp
 	if Input.is_action_just_pressed("jump"):
 		if is_on_floor():

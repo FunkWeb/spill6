@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://dpk1tha2tos6m"]
 
-[ext_resource type="Script" path="res://scenes/player.gd" id="1_ogvqo"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_ogvqo"]
 [ext_resource type="Texture2D" uid="uid://dhb8ukmrsu0ju" path="res://assets/art_assets/Jump-All-Sheet.png" id="3_00e8q"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rayof"]
