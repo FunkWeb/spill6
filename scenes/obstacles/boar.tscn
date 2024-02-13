@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://jp5qnjxxce37"]
 
-[ext_resource type="Script" path="res://scenes/obstacles/boar.gd" id="1_h0mc5"]
+[ext_resource type="Script" path="res://scripts/boar.gd" id="1_h0mc5"]
 [ext_resource type="Texture2D" uid="uid://58s5dckqsmdr" path="res://assets/art_assets/Idle-Sheet.png" id="1_kgsw8"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p3bp1"]

@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://0hse7hlms77s"]
+
+[ext_resource type="FontFile" uid="uid://i6a6arv6m8b3" path="res://assets/fonts/AR_One_Sans/AROneSans-VariableFont_ARRR,wght.ttf" id="1_ltnon"]
+
+[resource]
+/font_sizes/font_size = 100
+/fonts/font = ExtResource("1_ltnon")

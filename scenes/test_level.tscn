@@ -1,8 +1,8 @@
 [gd_scene load_steps=14 format=3 uid="uid://bvb1triln2bkr"]
 
-[ext_resource type="Script" path="res://scenes/test_level.gd" id="1_x5js2"]
+[ext_resource type="Script" path="res://scripts/test_level.gd" id="1_x5js2"]
 [ext_resource type="PackedScene" uid="uid://1ehcmr0xs6rd" path="res://scenes/test_level/death_pit.tscn" id="2_5pbnu"]
-[ext_resource type="Script" path="res://scenes/HUD/health.gd" id="2_pktii"]
+[ext_resource type="Script" path="res://scripts/health.gd" id="2_pktii"]
 [ext_resource type="PackedScene" uid="uid://jp5qnjxxce37" path="res://scenes/obstacles/boar.tscn" id="3_jdk35"]
 [ext_resource type="PackedScene" uid="uid://b003u3f21kj54" path="res://scenes/test_level/goal.tscn" id="3_t2q2r"]
 [ext_resource type="PackedScene" uid="uid://dpk1tha2tos6m" path="res://scenes/player.tscn" id="6_g6txm"]

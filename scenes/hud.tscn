@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://clgosqujy66ek"]
 
-[ext_resource type="Script" path="res://scenes/HUD/health.gd" id="1_qp5mj"]
+[ext_resource type="Script" path="res://scripts/health.gd" id="1_qp5mj"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_62xai"]
 font_size = 50
