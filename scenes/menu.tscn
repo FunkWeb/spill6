@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://blc5mfiw70f2"]
+[gd_scene load_steps=10 format=3 uid="uid://blc5mfiw70f2"]
 
 [ext_resource type="Script" path="res://scenes/menu.gd" id="1_50igi"]
 [ext_resource type="Texture2D" uid="uid://bx2bed8b533un" path="res://assets/art_assets/many_skisse.png" id="2_qdi1i"]
+[ext_resource type="Texture2D" uid="uid://bqdtint4wuon7" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur10.png" id="3_0xcwg"]
+[ext_resource type="FontFile" uid="uid://ddv1wxtia5j5c" path="res://assets/fonts/AR_One_Sans/static/AROneSans-Regular.ttf" id="4_nhaql"]
+[ext_resource type="Texture2D" uid="uid://di4qpmynho4qu" path="res://assets/art_assets/Skilt/Spiker/ui_detalj_spiker_tekstur01.png" id="5_53n3n"]
+[ext_resource type="Texture2D" uid="uid://2v2rro41xvdr" path="res://assets/art_assets/Skilt/Spiker/ui_detalj_spiker_tekstur02.png" id="6_c4swr"]
+[ext_resource type="Texture2D" uid="uid://dxtujsfa36ldb" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur02.png" id="7_8h06r"]
+[ext_resource type="Texture2D" uid="uid://dxckx2032et1r" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur06.png" id="8_4n42n"]
+[ext_resource type="Texture2D" uid="uid://mhwlnf6xpllk" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur07.png" id="9_vas1l"]
 
 [node name="Menu" type="Node"]
 script = ExtResource("1_50igi")
@@ -12,31 +19,229 @@ offset_bottom = 720.0
 texture = ExtResource("2_qdi1i")
 expand_mode = 1
 
-[node name="StartButton" type="Button" parent="."]
+[node name="StartSign" type="TextureRect" parent="Background"]
+layout_mode = 0
+offset_left = 482.0
+offset_top = -240.0
+offset_right = 1506.0
+offset_bottom = 784.0
+rotation = -0.0698132
+scale = Vector2(0.75, 0.75)
+mouse_filter = 2
+texture = ExtResource("3_0xcwg")
+
+[node name="Label" type="Label" parent="Background/StartSign"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -174.0
+offset_top = -61.0
+offset_right = 123.0
+offset_bottom = 75.0001
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.0277328
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_nhaql")
+theme_override_font_sizes/font_size = 100
+text = "Start"
+
+[node name="Nail" type="TextureRect" parent="Background/StartSign"]
+layout_mode = 0
+offset_left = 268.421
+offset_top = 462.082
+offset_right = 332.421
+offset_bottom = 526.082
+scale = Vector2(0.5, 0.5)
+mouse_filter = 2
+texture = ExtResource("5_53n3n")
+
+[node name="Nail2" type="TextureRect" parent="Background/StartSign"]
+layout_mode = 0
+offset_left = 278.55
+offset_top = 565.708
+offset_right = 342.55
+offset_bottom = 629.708
+scale = Vector2(0.5, 0.5)
+mouse_filter = 2
+texture = ExtResource("6_c4swr")
+
+[node name="StartButton" type="Button" parent="Background"]
+layout_mode = 0
+offset_left = 502.77
+offset_top = 57.0247
+offset_right = 1424.77
+offset_bottom = 308.025
+rotation = -0.00529746
+action_mode = 0
+flat = true
+
+[node name="SettingsSign" type="TextureRect" parent="Background"]
+offset_left = 356.0
+offset_top = -50.0
+offset_right = 1380.0
+offset_bottom = 974.0
+rotation = -0.0698132
+scale = Vector2(0.75, 0.75)
+mouse_filter = 2
+texture = ExtResource("7_8h06r")
+
+[node name="Label" type="Label" parent="Background/SettingsSign"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -282.396
+offset_top = -68.2361
+offset_right = 243.604
+offset_bottom = 67.764
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.0277328
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_nhaql")
+theme_override_font_sizes/font_size = 100
+text = "Instillinger"
+
+[node name="Nail" type="TextureRect" parent="Background/SettingsSign"]
+layout_mode = 0
+offset_left = 474.498
+offset_top = 439.503
+offset_right = 538.498
+offset_bottom = 503.503
+scale = Vector2(0.5, 0.5)
+mouse_filter = 2
+texture = ExtResource("5_53n3n")
+
+[node name="Nail2" type="TextureRect" parent="Background/SettingsSign"]
+layout_mode = 0
+offset_left = 468.201
+offset_top = 548.663
+offset_right = 532.201
+offset_bottom = 612.663
+scale = Vector2(0.5, 0.5)
+mouse_filter = 2
+texture = ExtResource("6_c4swr")
+
+[node name="SettingsButton" type="Button" parent="Background/SettingsSign"]
 self_modulate = Color(1, 1, 1, 0)
+offset_left = 65.0
+offset_top = 414.0
+offset_right = 917.0
+offset_bottom = 602.0
+rotation = -0.00202638
+action_mode = 0
+
+[node name="CreditsSign" type="TextureRect" parent="Background"]
+offset_left = 336.0
+offset_top = 109.0
+offset_right = 1360.0
+offset_bottom = 1133.0
+rotation = -0.0698132
+scale = Vector2(0.75, 0.75)
+mouse_filter = 2
+texture = ExtResource("8_4n42n")
+
+[node name="Label" type="Label" parent="Background/CreditsSign"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -174.0
+offset_top = -61.0
+offset_right = 123.0
+offset_bottom = 75.0001
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.0277328
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_nhaql")
+theme_override_font_sizes/font_size = 100
+text = "Kreditering"
+
+[node name="Nail" type="TextureRect" parent="Background/CreditsSign"]
+layout_mode = 0
+offset_left = 501.192
+offset_top = 440.033
+offset_right = 565.192
+offset_bottom = 504.033
+scale = Vector2(0.5, 0.5)
+mouse_filter = 2
+texture = ExtResource("5_53n3n")
+
+[node name="Nail2" type="TextureRect" parent="Background/CreditsSign"]
+layout_mode = 0
+offset_left = 500.216
+offset_top = 549.565
+offset_right = 564.216
+offset_bottom = 613.565
+scale = Vector2(0.5, 0.5)
+mouse_filter = 2
+texture = ExtResource("6_c4swr")
+
+[node name="CreditsButton" type="Button" parent="Background"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 405.663
+offset_top = 406.365
+offset_right = 1292.66
+offset_bottom = 609.365
+rotation = -0.00189659
+action_mode = 0
+
+[node name="QuitSign" type="TextureRect" parent="Background"]
 offset_left = 216.0
-offset_top = 221.0
-offset_right = 860.0
-offset_bottom = 369.0
-rotation = -0.167094
-action_mode = 0
+offset_top = 321.0
+offset_right = 1240.0
+offset_bottom = 1345.0
+rotation = -0.182469
+scale = Vector2(0.75, 0.75)
+mouse_filter = 2
+texture = ExtResource("9_vas1l")
+flip_h = true
 
-[node name="SettingsButton" type="Button" parent="."]
-self_modulate = Color(1, 1, 1, 0)
-offset_left = 543.0
-offset_top = 348.0
-offset_right = 1217.0
-offset_bottom = 459.0
-rotation = -0.031911
-action_mode = 0
+[node name="Label" type="Label" parent="Background/QuitSign"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -174.0
+offset_top = -61.0
+offset_right = 123.0
+offset_bottom = 75.0001
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.0277328
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_nhaql")
+theme_override_font_sizes/font_size = 100
+text = "Avslutt"
 
-[node name="QuitButton" type="Button" parent="."]
+[node name="Nail" type="TextureRect" parent="Background/QuitSign"]
+layout_mode = 0
+offset_left = 636.83
+offset_top = 457.825
+offset_right = 700.83
+offset_bottom = 521.825
+scale = Vector2(0.5, 0.5)
+mouse_filter = 2
+texture = ExtResource("6_c4swr")
+
+[node name="QuitButton" type="Button" parent="Background/QuitSign"]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 242.0
-offset_top = 591.0
-offset_right = 924.0
-offset_bottom = 704.0
-rotation = -0.183988
+offset_left = 54.0
+offset_top = 424.0
+offset_right = 976.0
+offset_bottom = 584.0
+rotation = 0.0248648
 action_mode = 0
 
 [node name="PauseButton" type="Button" parent="."]
@@ -45,7 +250,8 @@ offset_bottom = 98.0
 theme_override_font_sizes/font_size = 50
 text = "Pause-test"
 
-[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]
-[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="Background/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Background/SettingsSign/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="Background/CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="Background/QuitSign/QuitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="pressed" from="PauseButton" to="." method="_on_pause_button_pressed"]
