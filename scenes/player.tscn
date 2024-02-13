@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b13yk3bapi3mm"]
+[gd_scene load_steps=13 format=3 uid="uid://dpk1tha2tos6m"]
 
 [ext_resource type="Script" path="res://scenes/player.gd" id="1_ogvqo"]
 [ext_resource type="Texture2D" uid="uid://dhb8ukmrsu0ju" path="res://assets/art_assets/Jump-All-Sheet.png" id="3_00e8q"]
@@ -267,15 +267,6 @@ nodes/output/position = Vector2(442, 156)
 script = ExtResource("1_ogvqo")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-texture_repeat = 1
-position = Vector2(-2, 3)
-zoom = Vector2(2.5, 2.5)
-position_smoothing_enabled = true
-position_smoothing_speed = 7.0
-drag_vertical_enabled = true
-drag_horizontal_offset = 1.0
-
-[node name="Camera2D2" type="Camera2D" parent="."]
 texture_repeat = 1
 position = Vector2(-2, 3)
 zoom = Vector2(2.5, 2.5)

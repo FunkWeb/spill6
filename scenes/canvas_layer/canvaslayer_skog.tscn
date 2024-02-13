@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://ba6qlrvkvgwo2"]
+[gd_scene load_steps=5 format=3 uid="uid://bp0wo13r77st6"]
 
 [ext_resource type="Texture2D" uid="uid://3s1gjx7hhvsi" path="res://assets/art_assets/bakgrunner/bakgrunn_skog/skog_himmel.jpg" id="1_pax2m"]
 [ext_resource type="Texture2D" uid="uid://sdxttbvytln5" path="res://assets/art_assets/bakgrunner/bakgrunn_skog/parallax_far.png" id="2_w3ah7"]
