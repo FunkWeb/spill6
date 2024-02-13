@@ -13,3 +13,4 @@ func _physics_process(delta):
 
 func _on_area_2d_body_entered(body):
 	emit_signal('hit', self, body)
+	$Area2D/CollisionShape2D/skadePiano.play()
