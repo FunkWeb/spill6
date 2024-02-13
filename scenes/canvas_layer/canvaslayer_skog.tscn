@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://ba6qlrvkvgwo2"]
 
-[ext_resource type="Texture2D" uid="uid://3s1gjx7hhvsi" path="res://bakgrunner/bakgrunn_skog/skog_himmel.jpg" id="1_pax2m"]
-[ext_resource type="Texture2D" uid="uid://sdxttbvytln5" path="res://bakgrunner/bakgrunn_skog/parallax_far.png" id="2_w3ah7"]
-[ext_resource type="Texture2D" uid="uid://dagpn5eu4pjbd" path="res://bakgrunner/bakgrunn_skog/parallax_middle.png" id="3_bb0gd"]
-[ext_resource type="Texture2D" uid="uid://ffsf5eebbu4s" path="res://bakgrunner/bakgrunn_skog/parallax_front.png" id="4_fbu6n"]
+[ext_resource type="Texture2D" uid="uid://3s1gjx7hhvsi" path="res://assets/art_assets/bakgrunner/bakgrunn_skog/skog_himmel.jpg" id="1_pax2m"]
+[ext_resource type="Texture2D" uid="uid://sdxttbvytln5" path="res://assets/art_assets/bakgrunner/bakgrunn_skog/parallax_far.png" id="2_w3ah7"]
+[ext_resource type="Texture2D" uid="uid://dagpn5eu4pjbd" path="res://assets/art_assets/bakgrunner/bakgrunn_skog/parallax_middle.png" id="3_bb0gd"]
+[ext_resource type="Texture2D" uid="uid://ffsf5eebbu4s" path="res://assets/art_assets/bakgrunner/bakgrunn_skog/parallax_front.png" id="4_fbu6n"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 

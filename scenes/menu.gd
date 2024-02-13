@@ -6,9 +6,8 @@ func _ready():
 	SoundManager.play_background_menu()
 
 func _on_start_button_pressed():
-	print("start button")
 	get_tree().change_scene_to_file("res://scenes/menu/start/level_select.tscn")
-	SoundManager.test()
+	SoundManager.start_button()
 
 func _on_settings_button_pressed():
 	print("settings button")

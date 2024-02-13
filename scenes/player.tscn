@@ -275,7 +275,7 @@ position_smoothing_speed = 7.0
 drag_vertical_enabled = true
 drag_horizontal_offset = 1.0
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D2" type="Camera2D" parent="."]
 texture_repeat = 1
 position = Vector2(-2, 3)
 zoom = Vector2(2.5, 2.5)

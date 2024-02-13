@@ -34,8 +34,8 @@ func adjust_sound_effect_volume(value):
 	)
 	print('SFX volume set to ', value)
 
-func button():
-	$SoundEffects/ButtonClick.play()
+func start_button():
+	$SoundEffects/SkiltDemp.play()
 
 func skade_piano():
 	$SoundEffects/SkadePiano.play()
