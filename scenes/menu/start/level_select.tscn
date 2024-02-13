@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bxvbcus4651uf"]
+[gd_scene load_steps=5 format=3 uid="uid://bxvbcus4651uf"]
 
 [ext_resource type="Script" path="res://scenes/menu/start/level_select.gd" id="1_n0ap1"]
 [ext_resource type="Texture2D" uid="uid://bpwx5r5w61jwr" path="res://assets/art_assets/level_select_skisse.png" id="2_r1kgq"]
+[ext_resource type="PackedScene" uid="uid://dkncnkmhfru77" path="res://scenes/game_state_manager.tscn" id="3_0lr5j"]
+[ext_resource type="PackedScene" uid="uid://djnq1inpljinj" path="res://scenes/level_data.tscn" id="4_88242"]
 
 [node name="LevelSelect" type="Node"]
 script = ExtResource("1_n0ap1")
@@ -40,6 +42,10 @@ offset_top = 4.0
 offset_right = 236.0
 offset_bottom = 69.0
 text = "Tilbake til menyen"
+
+[node name="GameStateManager" parent="." instance=ExtResource("3_0lr5j")]
+
+[node name="LevelData" parent="." instance=ExtResource("4_88242")]
 
 [connection signal="pressed" from="CutsceneButton" to="." method="_on_cutscene_button_pressed"]
 [connection signal="pressed" from="ForestButton" to="." method="_on_forest_button_pressed"]

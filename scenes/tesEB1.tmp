@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bvb1triln2bkr"]
+[gd_scene load_steps=14 format=3 uid="uid://bvb1triln2bkr"]
 
 [ext_resource type="Script" path="res://scenes/test_level.gd" id="1_x5js2"]
 [ext_resource type="PackedScene" uid="uid://1ehcmr0xs6rd" path="res://scenes/test_level/death_pit.tscn" id="2_5pbnu"]
@@ -7,10 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://b003u3f21kj54" path="res://scenes/test_level/goal.tscn" id="3_t2q2r"]
 [ext_resource type="PackedScene" uid="uid://b13yk3bapi3mm" path="res://scenes/player.tscn" id="6_g6txm"]
 [ext_resource type="Texture2D" uid="uid://b8wmui0mcq6ti" path="res://assets/art_assets/Tiles.png" id="6_uhjpt"]
-<<<<<<< Updated upstream
-=======
 [ext_resource type="PackedScene" uid="uid://dkncnkmhfru77" path="res://scenes/game_state_manager.tscn" id="8_6fixw"]
->>>>>>> Stashed changes
 
 [sub_resource type="LabelSettings" id="LabelSettings_62xai"]
 font_size = 50
@@ -1543,26 +1540,21 @@ layer_0/tile_data = PackedInt32Array(2424837, 65536, 2, 2490373, 65536, 2, 25559
 
 [node name="GameStateManager" parent="." instance=ExtResource("8_6fixw")]
 
-[node name="Player" type="Node" parent="."]
-
-[node name="Player" parent="Player" instance=ExtResource("6_g6txm")]
+[node name="Player" parent="." instance=ExtResource("6_g6txm")]
 position = Vector2(-2, 3)
-<<<<<<< Updated upstream
-speed = 700.0
+speed = 0.0
 jump_velocity = -450.0
 double_jump_velocity = -350.0
-=======
 scroll_speed = 200.0
->>>>>>> Stashed changes
 
+[connection signal="hit" from="Obstacles/boar" to="Player" method="on_hit"]
 [connection signal="hit" from="Obstacles/boar" to="HUD/LeftContainer/health" method="_on_hit"]
-[connection signal="hit" from="Obstacles/boar" to="Player/Player" method="on_hit"]
+[connection signal="hit" from="Obstacles/boar2" to="Player" method="on_hit"]
 [connection signal="hit" from="Obstacles/boar2" to="HUD/LeftContainer/health" method="_on_hit"]
-[connection signal="hit" from="Obstacles/boar2" to="Player/Player" method="on_hit"]
+[connection signal="hit" from="Obstacles/boar3" to="Player" method="on_hit"]
 [connection signal="hit" from="Obstacles/boar3" to="HUD/LeftContainer/health" method="_on_hit"]
-[connection signal="hit" from="Obstacles/boar3" to="Player/Player" method="on_hit"]
+[connection signal="hit" from="Obstacles/boar4" to="Player" method="on_hit"]
 [connection signal="hit" from="Obstacles/boar4" to="HUD/LeftContainer/health" method="_on_hit"]
-[connection signal="hit" from="Obstacles/boar4" to="Player/Player" method="on_hit"]
 [connection signal="detected" from="Platform/death_pit" to="." method="_on_death_pit_detected"]
 [connection signal="detected" from="Platform/goal" to="." method="_on_goal_detected"]
-[connection signal="has_died" from="Player/Player" to="." method="_on_player_death"]
+[connection signal="has_died" from="Player" to="." method="_on_player_death"]

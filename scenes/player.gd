@@ -7,9 +7,9 @@ signal has_died(body)
 # Clean up code and add documentation
 
 @export var speed : float = 300.0
-@export var jump_velocity: float = -400.0
-@export var double_jump_velocity: float = - 100.0
-@export var scroll_speed : float = 100.0
+@export var jump_velocity: float = -450.0
+@export var double_jump_velocity: float = - 350.0
+@export var scroll_speed : float = 0
 
 @onready var anim_player : AnimationPlayer = $AnimationPlayer
 

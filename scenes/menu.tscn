@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://blc5mfiw70f2"]
-
+[gd_scene load_steps=12 format=3 uid="uid://blc5mfiw70f2"]
 [ext_resource type="Script" path="res://scenes/menu.gd" id="1_50igi"]
+[ext_resource type="PackedScene" uid="uid://dkncnkmhfru77" path="res://scenes/game_state_manager.tscn" id="3_vs73n"]
+[ext_resource type="PackedScene" uid="uid://djnq1inpljinj" path="res://scenes/level_data.tscn" id="4_ujgb6"]
 [ext_resource type="Texture2D" uid="uid://bx2bed8b533un" path="res://assets/art_assets/many_skisse.png" id="2_qdi1i"]
 [ext_resource type="Texture2D" uid="uid://bqdtint4wuon7" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur10.png" id="3_0xcwg"]
 [ext_resource type="FontFile" uid="uid://ddv1wxtia5j5c" path="res://assets/fonts/AR_One_Sans/static/AROneSans-Regular.ttf" id="4_nhaql"]
@@ -249,6 +250,10 @@ offset_right = 262.0
 offset_bottom = 98.0
 theme_override_font_sizes/font_size = 50
 text = "Pause-test"
+
+[node name="GameStateManager" parent="." instance=ExtResource("3_vs73n")]
+
+[node name="LevelData" parent="." instance=ExtResource("4_ujgb6")]
 
 [connection signal="pressed" from="Background/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="Background/SettingsSign/SettingsButton" to="." method="_on_settings_button_pressed"]
