@@ -1,6 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://cbv20mo585137"]
-
-[ext_resource type="FontFile" uid="uid://634btrr3thej" path="res://Fonter/AROneSans-VariableFont_ARRR,wght.ttf" id="2_jfra5"]
+[gd_scene load_steps=2 format=3 uid="uid://bgkfbxvfcxyg8"]
 
 [sub_resource type="Theme" id="Theme_5ysfw"]
 
@@ -56,7 +54,6 @@ offset_left = -2.0
 offset_right = 1521.2
 offset_bottom = 720.0
 theme = SubResource("Theme_5ysfw")
-theme_override_fonts/font = ExtResource("2_jfra5")
 text = "Author,  Animator,  Artist  and  programmer:
 
 LONGJUMPPRODUCTION
@@ -78,6 +75,5 @@ offset_top = -140.0
 offset_right = 320.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_fonts/font = ExtResource("2_jfra5")
 text = "PRESS ESCAPE TO RETURN TO THE PREVIOUS SCREEN"
 editable = false
