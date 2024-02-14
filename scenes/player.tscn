@@ -263,7 +263,7 @@ _data = {
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_2xrqd"]
 nodes/output/position = Vector2(442, 156)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="TestPlayer" type="CharacterBody2D"]
 script = ExtResource("1_ogvqo")
 
 [node name="Camera2D" type="Camera2D" parent="."]
