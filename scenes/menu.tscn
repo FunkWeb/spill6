@@ -1,7 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://blc5mfiw70f2"]
+[gd_scene load_steps=15 format=3 uid="uid://blc5mfiw70f2"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_50igi"]
-[ext_resource type="Texture2D" uid="uid://bx2bed8b533un" path="res://assets/art_assets/many_skisse.png" id="2_qdi1i"]
 [ext_resource type="Texture2D" uid="uid://bqdtint4wuon7" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur10.png" id="3_0xcwg"]
 [ext_resource type="PackedScene" uid="uid://dkncnkmhfru77" path="res://scenes/game_state_manager.tscn" id="3_vs73n"]
 [ext_resource type="FontFile" uid="uid://ddv1wxtia5j5c" path="res://assets/fonts/AR_One_Sans/static/AROneSans-Regular.ttf" id="4_nhaql"]
@@ -22,17 +21,15 @@ script = ExtResource("1_50igi")
 [node name="Background" type="TextureRect" parent="."]
 offset_right = 1600.0
 offset_bottom = 720.0
-texture = ExtResource("2_qdi1i")
-expand_mode = 1
 
 [node name="StartButton" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = 503.0
 offset_top = 57.0
 offset_right = 1194.0
 offset_bottom = 249.0
 rotation = -0.0875754
 action_mode = 0
-flat = true
 
 [node name="SettingsButton" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
