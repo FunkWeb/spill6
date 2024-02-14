@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://44enravhnxr1"]
+
+[ext_resource type="Script" path="res://scenes/scene_player.gd" id="1_gxrut"]
+[ext_resource type="Texture2D" uid="uid://gykyhtmknk5m" path="res://assets/materials/w1m0/Raskeladd1.png" id="2_cgbqu"]
+[ext_resource type="PackedScene" uid="uid://du3iv2nhilgyj" path="res://scenes/scene_wheel.tscn" id="2_i8qp1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e16h1"]
+
+[node name="scene_player" type="CharacterBody2D" groups=["player"]]
+safe_margin = 0.8
+script = ExtResource("1_gxrut")
+scroll_speed = 200.0
+
+[node name="Car" type="Sprite2D" parent="."]
+position = Vector2(29, 0)
+texture = ExtResource("2_cgbqu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(25, 161)
+scale = Vector2(8.02778, 8.02778)
+shape = SubResource("CircleShape2D_e16h1")
+
+[node name="Wheel_joint01" type="PinJoint2D" parent="."]
+position = Vector2(-53, 243)
+node_a = NodePath("..")
+node_b = NodePath("Wheel01")
+softness = 6.0
+
+[node name="Wheel01" parent="Wheel_joint01" instance=ExtResource("2_i8qp1")]
+scale = Vector2(0.59037, 0.59037)
+
+[node name="Wheel_joint02" type="PinJoint2D" parent="."]
+position = Vector2(104, 243)
+node_a = NodePath("..")
+node_b = NodePath("Wheel02")
+softness = 6.0
+
+[node name="Wheel02" parent="Wheel_joint02" instance=ExtResource("2_i8qp1")]
+scale = Vector2(0.586564, 0.586564)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+texture_repeat = 1
+position = Vector2(25, 118)
+zoom = Vector2(0.3, 0.3)
+position_smoothing_enabled = true
+position_smoothing_speed = 7.0
+drag_vertical_enabled = true
+drag_horizontal_offset = 1.0
