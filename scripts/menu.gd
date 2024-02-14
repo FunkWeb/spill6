@@ -6,23 +6,19 @@ func _ready():
 	SoundManager.play_background_menu()
 
 func _on_start_button_pressed():
-	get_tree().change_scene_to_file("res://scenes/menu/start/level_select.tscn")
+	var level_select = preload("res://scenes/menu/start/level_select.tscn").instantiate()
+	add_child(level_select)
 	SoundManager.start_button()
 
 func _on_settings_button_pressed():
-	print("settings button")
-	var settings = preload("res://scenes/menu/settings/settings.tscn").instantiate()
-	add_child(settings)
+	$Settings.show()
 
 func _on_credits_button_pressed():
-	print("credits button")
-	var credits = preload("res://scenes/credits_scene.tscn").instantiate()
-	add_sibling(credits)
+	$Control.show()
 
 func _on_quit_button_pressed():
 	print('quit button')
 	get_tree().quit()
 
 func _on_pause_button_pressed():
-	var pause = preload("res://scenes/menu/pause/pause.tscn").instantiate()
-	add_child(pause)
+	$Pause.show()

@@ -1,10 +1,10 @@
-extends Node
+extends Control
 
 func _ready():
 	pass
 
 func _on_resume_button_pressed():
-	$".".queue_free()
+	$".".hide()
 
 func _on_settings_button_pressed():
 	var settings = preload("res://scenes/menu/settings/settings.tscn").instantiate()

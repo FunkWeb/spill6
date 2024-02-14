@@ -5,7 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://dkncnkmhfru77" path="res://scenes/game_state_manager.tscn" id="3_0lr5j"]
 [ext_resource type="PackedScene" uid="uid://djnq1inpljinj" path="res://scenes/level_data.tscn" id="4_88242"]
 
-[node name="LevelSelect" type="Node"]
+[node name="LevelSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_n0ap1")
 
 [node name="Background" type="TextureRect" parent="."]

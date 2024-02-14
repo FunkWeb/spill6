@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" path="res://scripts/settings.gd" id="1_vue0y"]
 
-[node name="Settings" type="Node"]
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_vue0y")
 
 [node name="Background" type="ColorRect" parent="."]
