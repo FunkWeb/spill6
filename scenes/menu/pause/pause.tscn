@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bnnvjny77vqtq" path="res://assets/art_assets/PauseMenySkisse.png" id="2_ya13x"]
 
 [node name="Pause" type="Control"]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_4fx3c")

@@ -22,3 +22,4 @@ func _on_quit_button_pressed():
 
 func _on_pause_button_pressed():
 	$Pause.show()
+	get_tree().paused = true
