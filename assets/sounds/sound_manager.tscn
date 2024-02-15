@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b362dxgf8xwdb"]
+[gd_scene load_steps=5 format=3 uid="uid://b362dxgf8xwdb"]
 
 [ext_resource type="Script" path="res://scripts/sound_manager.gd" id="1_ehfbi"]
 [ext_resource type="AudioStream" uid="uid://bhomkaq0fa8vh" path="res://assets/sounds/skadePiano.wav" id="2_58mke"]
 [ext_resource type="AudioStream" uid="uid://skwwecx7n116" path="res://assets/sounds/SkiltDemp.wav" id="2_ogsf2"]
+[ext_resource type="AudioStream" uid="uid://bk2ct2lhqtu3d" path="res://assets/sounds/FallDød.wav" id="4_frn0m"]
 
 [node name="SoundManager" type="Node"]
 script = ExtResource("1_ehfbi")
@@ -23,3 +24,6 @@ bus = &"sfx"
 
 [node name="SkadePiano" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource("2_58mke")
+
+[node name="FallDød" type="AudioStreamPlayer2D" parent="SoundEffects"]
+stream = ExtResource("4_frn0m")

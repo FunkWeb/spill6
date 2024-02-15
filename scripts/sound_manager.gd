@@ -39,6 +39,9 @@ func start_button():
 
 func skade_piano():
 	$SoundEffects/SkadePiano.play()
+	
+func fall_død():
+	$SoundEffects/FallDød.play()
 
 func play_background_menu():
 	play_background_music($BackgroundMusic/MenuTrack)
