@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bg4hvao4g2kuv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h1f5y"]
+size = Vector2(100, 6)
+
+[node name="Gravity-puller" type="RigidBody2D"]
+gravity_scale = 5.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["player"]]
+shape = SubResource("RectangleShape2D_h1f5y")
