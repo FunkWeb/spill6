@@ -1,14 +1,27 @@
-[gd_scene load_steps=2 format=3 uid="uid://bgkfbxvfcxyg8"]
+[gd_scene load_steps=4 format=3 uid="uid://bgkfbxvfcxyg8"]
+
+[ext_resource type="Script" path="res://scripts/credits_scene.gd" id="1_3uh8h"]
+[ext_resource type="FontFile" uid="uid://i6a6arv6m8b3" path="res://assets/fonts/AR_One_Sans/AROneSans-VariableFont_ARRR,wght.ttf" id="2_bmvhq"]
 
 [sub_resource type="Theme" id="Theme_5ysfw"]
 
-[node name="Control" type="Control"]
+[node name="credits" type="Control"]
 layout_mode = 3
 anchor_left = 0.000844552
 anchor_right = 1.00084
 anchor_bottom = 1.0
 offset_left = 0.743206
 offset_right = 0.752075
+script = ExtResource("1_3uh8h")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
 
 [node name="Sound effect" type="TextEdit" parent="."]
 visible = false
@@ -54,6 +67,7 @@ offset_left = -2.0
 offset_right = 1521.2
 offset_bottom = 720.0
 theme = SubResource("Theme_5ysfw")
+theme_override_fonts/font = ExtResource("2_bmvhq")
 text = "Author,  Animator,  Artist  and  programmer:
 
 LONGJUMPPRODUCTION
@@ -63,17 +77,19 @@ Music:
 SYNTRUS (on newgrounds)"
 editable = false
 
-[node name="ReturnBox" type="TextEdit" parent="."]
+[node name="Button" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -320.0
-offset_top = -140.0
-offset_right = 320.0
+offset_left = -318.001
+offset_top = -148.0
+offset_right = 332.999
 grow_horizontal = 2
 grow_vertical = 0
-text = "PRESS ESCAPE TO RETURN TO THE PREVIOUS SCREEN"
-editable = false
+theme_override_fonts/font = ExtResource("2_bmvhq")
+text = "LUKK"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
