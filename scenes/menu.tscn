@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://blc5mfiw70f2"]
+[gd_scene load_steps=13 format=3 uid="uid://blc5mfiw70f2"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_50igi"]
 [ext_resource type="Texture2D" uid="uid://bx2bed8b533un" path="res://assets/art_assets/many_skisse.png" id="2_qdi1i"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dxtujsfa36ldb" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur02.png" id="7_8h06r"]
 [ext_resource type="Texture2D" uid="uid://dxckx2032et1r" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur06.png" id="8_4n42n"]
 [ext_resource type="Texture2D" uid="uid://mhwlnf6xpllk" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur07.png" id="9_vas1l"]
+[ext_resource type="PackedScene" uid="uid://bgkfbxvfcxyg8" path="res://scenes/credits_scene.tscn" id="12_73gh4"]
 
 [node name="Menu" type="Node"]
 script = ExtResource("1_50igi")
@@ -261,6 +262,9 @@ text = "Pause-test"
 [node name="GameStateManager" parent="." instance=ExtResource("3_vs73n")]
 
 [node name="LevelData" parent="." instance=ExtResource("4_ujgb6")]
+
+[node name="credits" parent="." instance=ExtResource("12_73gh4")]
+visible = false
 
 [connection signal="pressed" from="Background/StartSign/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="Background/SettingsSign/SettingsButton" to="." method="_on_settings_button_pressed"]

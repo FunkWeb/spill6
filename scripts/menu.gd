@@ -16,8 +16,7 @@ func _on_settings_button_pressed():
 
 func _on_credits_button_pressed():
 	print("credits button")
-	var credits = preload("res://scenes/credits_scene.tscn").instantiate()
-	add_sibling(credits)
+	$credits.visible = true
 
 func _on_quit_button_pressed():
 	print('quit button')
