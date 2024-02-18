@@ -1,16 +1,20 @@
-[gd_scene load_steps=15 format=3 uid="uid://bvb1triln2bkr"]
+[gd_scene load_steps=18 format=3 uid="uid://bvb1triln2bkr"]
 
 [ext_resource type="Script" path="res://scripts/test_level.gd" id="1_x5js2"]
 [ext_resource type="PackedScene" uid="uid://1ehcmr0xs6rd" path="res://scenes/test_level/death_pit.tscn" id="2_5pbnu"]
 [ext_resource type="PackedScene" uid="uid://bp0wo13r77st6" path="res://scenes/canvas_layer/canvaslayer_skog.tscn" id="2_bmjn4"]
 [ext_resource type="Script" path="res://scripts/health.gd" id="2_pktii"]
+[ext_resource type="Theme" uid="uid://0hse7hlms77s" path="res://assets/fonts/ar_one_sans_theme.tres" id="3_bplav"]
 [ext_resource type="PackedScene" uid="uid://jp5qnjxxce37" path="res://scenes/obstacles/boar.tscn" id="3_jdk35"]
 [ext_resource type="PackedScene" uid="uid://b003u3f21kj54" path="res://scenes/test_level/goal.tscn" id="3_t2q2r"]
+[ext_resource type="FontFile" uid="uid://i6a6arv6m8b3" path="res://assets/fonts/AR_One_Sans/AROneSans-VariableFont_ARRR,wght.ttf" id="4_x3woi"]
 [ext_resource type="PackedScene" uid="uid://dpk1tha2tos6m" path="res://scenes/player.tscn" id="6_g6txm"]
 [ext_resource type="Texture2D" uid="uid://b8wmui0mcq6ti" path="res://assets/art_assets/Tiles.png" id="6_uhjpt"]
+[ext_resource type="PackedScene" uid="uid://bus4kyo6jf6qk" path="res://scenes/obstacles/fotgjenger_1.tscn" id="7_4c40n"]
 [ext_resource type="PackedScene" uid="uid://dkncnkmhfru77" path="res://scenes/game_state_manager.tscn" id="8_6fixw"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_62xai"]
+font = ExtResource("4_x3woi")
 font_size = 50
 font_color = Color(0.509804, 0.635294, 0.721569, 1)
 outline_size = 8
@@ -1460,7 +1464,16 @@ sources/0 = SubResource("TileSetAtlasSource_pdjj0")
 [node name="TestLevel" type="Node2D"]
 script = ExtResource("1_x5js2")
 
-[node name="CanvasLayer" parent="." instance=ExtResource("2_bmjn4")]
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-2, 3)
+zoom = Vector2(2, 2)
+position_smoothing_enabled = true
+position_smoothing_speed = 7.0
+drag_vertical_enabled = true
+drag_horizontal_offset = 1.0
+drag_vertical_offset = -0.36
+
+[node name="Background" parent="." instance=ExtResource("2_bmjn4")]
 
 [node name="HUD" type="CanvasLayer" parent="."]
 
@@ -1470,6 +1483,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("3_bplav")
 
 [node name="game_over" type="Label" parent="HUD/CenterContainer"]
 visible = false
@@ -1525,6 +1539,9 @@ position = Vector2(360, 32)
 [node name="boar4" parent="Obstacles" instance=ExtResource("3_jdk35")]
 position = Vector2(961, 32)
 
+[node name="fotgjenger1" parent="Obstacles" instance=ExtResource("7_4c40n")]
+position = Vector2(821, -149)
+
 [node name="Platform" type="Node" parent="."]
 
 [node name="death_pit" parent="Platform" instance=ExtResource("2_5pbnu")]
@@ -1550,6 +1567,9 @@ position = Vector2(-2, 3)
 speed = 700.0
 scroll_speed = 200.0
 
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player/Player"]
+remote_path = NodePath("../../../Camera2D")
+
 [connection signal="hit" from="Obstacles/boar" to="HUD/LeftContainer/health" method="_on_hit"]
 [connection signal="hit" from="Obstacles/boar" to="Player/Player" method="on_hit"]
 [connection signal="hit" from="Obstacles/boar2" to="HUD/LeftContainer/health" method="_on_hit"]
@@ -1558,6 +1578,8 @@ scroll_speed = 200.0
 [connection signal="hit" from="Obstacles/boar3" to="Player/Player" method="on_hit"]
 [connection signal="hit" from="Obstacles/boar4" to="HUD/LeftContainer/health" method="_on_hit"]
 [connection signal="hit" from="Obstacles/boar4" to="Player/Player" method="on_hit"]
+[connection signal="hit" from="Obstacles/fotgjenger1" to="HUD/LeftContainer/health" method="_on_hit"]
+[connection signal="hit" from="Obstacles/fotgjenger1" to="Player/Player" method="on_hit"]
 [connection signal="detected" from="Platform/death_pit" to="." method="_on_death_pit_detected"]
 [connection signal="detected" from="Platform/goal" to="." method="_on_goal_detected"]
 [connection signal="has_died" from="Player/Player" to="." method="_on_player_death"]
