@@ -1,12 +1,12 @@
 [gd_scene load_steps=19 format=3 uid="uid://dvlwc16ybs5dh"]
 
 [ext_resource type="Script" path="res://scripts/test_level.gd" id="1_x5js2"]
-[ext_resource type="PackedScene" uid="uid://1ehcmr0xs6rd" path="res://scenes/test_level/death_pit.tscn" id="2_5pbnu"]
+[ext_resource type="PackedScene" uid="uid://1ehcmr0xs6rd" path="res://scenes/map_triggers/death_pit.tscn" id="2_5pbnu"]
 [ext_resource type="PackedScene" uid="uid://bp0wo13r77st6" path="res://scenes/canvas_layer/canvaslayer_skog.tscn" id="2_bmjn4"]
 [ext_resource type="Script" path="res://scripts/health.gd" id="2_pktii"]
 [ext_resource type="Theme" uid="uid://0hse7hlms77s" path="res://assets/fonts/ar_one_sans_theme.tres" id="3_bplav"]
 [ext_resource type="PackedScene" uid="uid://jp5qnjxxce37" path="res://scenes/obstacles/boar.tscn" id="3_jdk35"]
-[ext_resource type="PackedScene" uid="uid://b003u3f21kj54" path="res://scenes/test_level/goal.tscn" id="3_t2q2r"]
+[ext_resource type="PackedScene" uid="uid://b003u3f21kj54" path="res://scenes/map_triggers/goal.tscn" id="3_t2q2r"]
 [ext_resource type="FontFile" uid="uid://i6a6arv6m8b3" path="res://assets/fonts/AR_One_Sans/AROneSans-VariableFont_ARRR,wght.ttf" id="4_x3woi"]
 [ext_resource type="PackedScene" uid="uid://dpk1tha2tos6m" path="res://scenes/player.tscn" id="6_g6txm"]
 [ext_resource type="Texture2D" uid="uid://b8wmui0mcq6ti" path="res://assets/art_assets/Tiles.png" id="6_uhjpt"]
@@ -14,18 +14,18 @@
 [ext_resource type="PackedScene" uid="uid://dkncnkmhfru77" path="res://scenes/game_state_manager.tscn" id="8_6fixw"]
 [ext_resource type="PackedScene" uid="uid://84a0wyqd3bgc" path="res://scenes/menu/pause/pause.tscn" id="13_uudkd"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_62xai"]
-font = ExtResource("4_x3woi")
-font_size = 50
-font_color = Color(0.509804, 0.635294, 0.721569, 1)
-outline_size = 8
-outline_color = Color(0, 0, 0, 1)
-shadow_size = 0
-
 [sub_resource type="LabelSettings" id="LabelSettings_mxi26"]
 line_spacing = 10.0
 font_size = 26
 outline_size = 15
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_ulkmo"]
+font = ExtResource("4_x3woi")
+font_size = 150
+font_color = Color(0.509804, 0.635294, 0.721569, 1)
+outline_size = 8
 outline_color = Color(0, 0, 0, 1)
 shadow_size = 0
 
@@ -1478,42 +1478,6 @@ drag_vertical_offset = -0.36
 
 [node name="HUD" type="CanvasLayer" parent="."]
 
-[node name="CenterContainer" type="CenterContainer" parent="HUD"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-theme = ExtResource("3_bplav")
-
-[node name="game_over" type="Label" parent="HUD/CenterContainer"]
-visible = false
-layout_mode = 2
-text = "Game over"
-label_settings = SubResource("LabelSettings_62xai")
-horizontal_alignment = 1
-vertical_alignment = 1
-uppercase = true
-
-[node name="you_win" type="Label" parent="HUD/CenterContainer"]
-visible = false
-layout_mode = 2
-text = "You win!"
-label_settings = SubResource("LabelSettings_62xai")
-horizontal_alignment = 1
-vertical_alignment = 1
-uppercase = true
-
-[node name="you_died" type="Label" parent="HUD/CenterContainer"]
-visible = false
-layout_mode = 2
-text = "You died!"
-label_settings = SubResource("LabelSettings_62xai")
-horizontal_alignment = 1
-vertical_alignment = 1
-uppercase = true
-
 [node name="LeftContainer" type="CenterContainer" parent="HUD"]
 offset_left = 10.0
 offset_top = 10.0
@@ -1527,7 +1491,28 @@ horizontal_alignment = 3
 vertical_alignment = 1
 script = ExtResource("2_pktii")
 
-[node name="Obstacles" type="Node2D" parent="."]
+[node name="CenterContainer" type="CenterContainer" parent="HUD"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -408.0
+offset_top = -410.0
+offset_right = 296.0
+offset_bottom = -206.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_bplav")
+
+[node name="YouDiedLabel" type="Label" parent="HUD/CenterContainer"]
+visible = false
+layout_mode = 2
+text = "You died!"
+label_settings = SubResource("LabelSettings_ulkmo")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="Obstacles" type="Node" parent="."]
 
 [node name="boar" parent="Obstacles" instance=ExtResource("3_jdk35")]
 position = Vector2(287, 32)
@@ -1547,10 +1532,11 @@ position = Vector2(-365, -112)
 [node name="Platform" type="Node2D" parent="."]
 
 [node name="death_pit" parent="Platform" instance=ExtResource("2_5pbnu")]
-position = Vector2(161, 305)
+position = Vector2(182, 284)
 
 [node name="goal" parent="Platform" instance=ExtResource("3_t2q2r")]
-position = Vector2(1194, -38)
+position = Vector2(1067, 4)
+scale = Vector2(0.114574, 0.114574)
 
 [node name="TileMap" type="TileMap" parent="Platform"]
 position = Vector2(-45, -488)
@@ -1589,7 +1575,5 @@ offset_bottom = 40.0
 [connection signal="hit" from="Obstacles/boar4" to="HUD/LeftContainer/health" method="_on_hit"]
 [connection signal="hit" from="Obstacles/boar4" to="Player" method="on_hit"]
 [connection signal="hit" from="Obstacles/fotgjenger1" to="HUD/LeftContainer/health" method="_on_hit"]
-[connection signal="hit" from="Obstacles/fotgjenger1" to="Player" method="on_hit"]
-[connection signal="detected" from="Platform/death_pit" to="." method="_on_death_pit_detected"]
-[connection signal="detected" from="Platform/goal" to="." method="_on_goal_detected"]
-[connection signal="has_died" from="Player" to="." method="_on_player_death"]
+[connection signal="hit" from="Obstacles/fotgjenger1" to="Player/Player" method="on_hit"]
+[connection signal="has_died" from="Player/Player" to="." method="_on_player_death"]
