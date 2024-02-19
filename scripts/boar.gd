@@ -12,5 +12,6 @@ func _physics_process(delta):
 	pass
 
 func _on_area_2d_body_entered(body):
+	# Spilleren treffer hinderet
 	emit_signal('hit', self, body)
 	SoundManager.skade_piano()

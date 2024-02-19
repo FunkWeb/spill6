@@ -266,15 +266,6 @@ nodes/output/position = Vector2(442, 156)
 [node name="TestPlayer" type="CharacterBody2D"]
 script = ExtResource("1_ogvqo")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-texture_repeat = 1
-position = Vector2(-2, 3)
-zoom = Vector2(2.5, 2.5)
-position_smoothing_enabled = true
-position_smoothing_speed = 7.0
-drag_vertical_enabled = true
-drag_horizontal_offset = 1.0
-
 [node name="Sprites" type="Node2D" parent="."]
 
 [node name="Run-sheet" type="Sprite2D" parent="Sprites"]
