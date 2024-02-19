@@ -1,7 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://blc5mfiw70f2"]
+[gd_scene load_steps=14 format=3 uid="uid://c5g7vg7ejslym"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_50igi"]
-[ext_resource type="Texture2D" uid="uid://bx2bed8b533un" path="res://assets/art_assets/many_skisse.png" id="2_qdi1i"]
 [ext_resource type="Texture2D" uid="uid://bqdtint4wuon7" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur10.png" id="3_0xcwg"]
 [ext_resource type="PackedScene" uid="uid://dkncnkmhfru77" path="res://scenes/game_state_manager.tscn" id="3_vs73n"]
 [ext_resource type="FontFile" uid="uid://ddv1wxtia5j5c" path="res://assets/fonts/AR_One_Sans/static/AROneSans-Regular.ttf" id="4_nhaql"]
@@ -11,7 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://dxtujsfa36ldb" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur02.png" id="7_8h06r"]
 [ext_resource type="Texture2D" uid="uid://dxckx2032et1r" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur06.png" id="8_4n42n"]
 [ext_resource type="Texture2D" uid="uid://mhwlnf6xpllk" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur07.png" id="9_vas1l"]
-[ext_resource type="PackedScene" uid="uid://bgkfbxvfcxyg8" path="res://scenes/credits_scene.tscn" id="12_73gh4"]
+[ext_resource type="PackedScene" uid="uid://bxvbcus4651uf" path="res://scenes/menu/start/level_select.tscn" id="12_4sh3q"]
+[ext_resource type="PackedScene" uid="uid://cpos7lg6meg4m" path="res://scenes/menu/settings/settings.tscn" id="14_dfa6b"]
+[ext_resource type="PackedScene" uid="uid://bgkfbxvfcxyg8" path="res://scenes/credits_scene.tscn" id="15_41y8j"]
 
 [node name="Menu" type="Node"]
 script = ExtResource("1_50igi")
@@ -19,11 +20,44 @@ script = ExtResource("1_50igi")
 [node name="Background" type="TextureRect" parent="."]
 offset_right = 1600.0
 offset_bottom = 720.0
-texture = ExtResource("2_qdi1i")
-expand_mode = 1
 
-[node name="StartSign" type="TextureRect" parent="Background"]
-layout_mode = 0
+[node name="StartButton" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 503.0
+offset_top = 57.0
+offset_right = 1194.0
+offset_bottom = 249.0
+rotation = -0.0875754
+action_mode = 0
+
+[node name="SettingsButton" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 426.0
+offset_top = 256.0
+offset_right = 1060.0
+offset_bottom = 404.0
+rotation = -0.0841475
+action_mode = 0
+
+[node name="CreditsButton" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 406.0
+offset_top = 406.0
+offset_right = 1069.0
+offset_bottom = 564.0
+rotation = -0.0804404
+action_mode = 0
+
+[node name="QuitButton" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 315.0
+offset_top = 632.0
+offset_right = 1003.0
+offset_bottom = 750.0
+rotation = -0.169792
+action_mode = 0
+
+[node name="StartSign" type="TextureRect" parent="."]
 offset_left = 482.0
 offset_top = -240.0
 offset_right = 1506.0
@@ -33,7 +67,7 @@ scale = Vector2(0.75, 0.75)
 mouse_filter = 2
 texture = ExtResource("3_0xcwg")
 
-[node name="Label" type="Label" parent="Background/StartSign"]
+[node name="Label" type="Label" parent="StartSign"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -52,7 +86,7 @@ theme_override_fonts/font = ExtResource("4_nhaql")
 theme_override_font_sizes/font_size = 100
 text = "Start"
 
-[node name="Nail" type="TextureRect" parent="Background/StartSign"]
+[node name="Nail" type="TextureRect" parent="StartSign"]
 layout_mode = 0
 offset_left = 268.421
 offset_top = 462.082
@@ -62,7 +96,7 @@ scale = Vector2(0.5, 0.5)
 mouse_filter = 2
 texture = ExtResource("5_53n3n")
 
-[node name="Nail2" type="TextureRect" parent="Background/StartSign"]
+[node name="Nail2" type="TextureRect" parent="StartSign"]
 layout_mode = 0
 offset_left = 278.55
 offset_top = 565.708
@@ -72,18 +106,7 @@ scale = Vector2(0.5, 0.5)
 mouse_filter = 2
 texture = ExtResource("6_c4swr")
 
-[node name="StartButton" type="Button" parent="Background/StartSign"]
-layout_mode = 0
-offset_left = 6.10352e-05
-offset_top = 397.0
-offset_right = 922.0
-offset_bottom = 648.0
-rotation = -0.00529746
-action_mode = 0
-flat = true
-
-[node name="SettingsSign" type="TextureRect" parent="Background"]
-layout_mode = 0
+[node name="SettingsSign" type="TextureRect" parent="."]
 offset_left = 356.0
 offset_top = -50.0
 offset_right = 1380.0
@@ -93,7 +116,7 @@ scale = Vector2(0.75, 0.75)
 mouse_filter = 2
 texture = ExtResource("7_8h06r")
 
-[node name="Label" type="Label" parent="Background/SettingsSign"]
+[node name="Label" type="Label" parent="SettingsSign"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -112,7 +135,7 @@ theme_override_fonts/font = ExtResource("4_nhaql")
 theme_override_font_sizes/font_size = 100
 text = "Instillinger"
 
-[node name="Nail" type="TextureRect" parent="Background/SettingsSign"]
+[node name="Nail" type="TextureRect" parent="SettingsSign"]
 layout_mode = 0
 offset_left = 474.498
 offset_top = 439.503
@@ -122,7 +145,7 @@ scale = Vector2(0.5, 0.5)
 mouse_filter = 2
 texture = ExtResource("5_53n3n")
 
-[node name="Nail2" type="TextureRect" parent="Background/SettingsSign"]
+[node name="Nail2" type="TextureRect" parent="SettingsSign"]
 layout_mode = 0
 offset_left = 468.201
 offset_top = 548.663
@@ -132,18 +155,7 @@ scale = Vector2(0.5, 0.5)
 mouse_filter = 2
 texture = ExtResource("6_c4swr")
 
-[node name="SettingsButton" type="Button" parent="Background/SettingsSign"]
-self_modulate = Color(1, 1, 1, 0)
-layout_mode = 0
-offset_left = 65.0
-offset_top = 414.0
-offset_right = 917.0
-offset_bottom = 602.0
-rotation = -0.00202638
-action_mode = 0
-
-[node name="CreditsSign" type="TextureRect" parent="Background"]
-layout_mode = 0
+[node name="CreditsSign" type="TextureRect" parent="."]
 offset_left = 336.0
 offset_top = 109.0
 offset_right = 1360.0
@@ -153,7 +165,7 @@ scale = Vector2(0.75, 0.75)
 mouse_filter = 2
 texture = ExtResource("8_4n42n")
 
-[node name="Label" type="Label" parent="Background/CreditsSign"]
+[node name="Label" type="Label" parent="CreditsSign"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -172,7 +184,7 @@ theme_override_fonts/font = ExtResource("4_nhaql")
 theme_override_font_sizes/font_size = 100
 text = "Kreditering"
 
-[node name="Nail" type="TextureRect" parent="Background/CreditsSign"]
+[node name="Nail" type="TextureRect" parent="CreditsSign"]
 layout_mode = 0
 offset_left = 501.192
 offset_top = 440.033
@@ -182,7 +194,7 @@ scale = Vector2(0.5, 0.5)
 mouse_filter = 2
 texture = ExtResource("5_53n3n")
 
-[node name="Nail2" type="TextureRect" parent="Background/CreditsSign"]
+[node name="Nail2" type="TextureRect" parent="CreditsSign"]
 layout_mode = 0
 offset_left = 500.216
 offset_top = 549.565
@@ -192,18 +204,7 @@ scale = Vector2(0.5, 0.5)
 mouse_filter = 2
 texture = ExtResource("6_c4swr")
 
-[node name="CreditsButton" type="Button" parent="Background/CreditsSign"]
-self_modulate = Color(1, 1, 1, 0)
-layout_mode = 0
-offset_left = 65.0002
-offset_top = 402.0
-offset_right = 951.997
-offset_bottom = 605.0
-rotation = -0.00189659
-action_mode = 0
-
-[node name="QuitSign" type="TextureRect" parent="Background"]
-layout_mode = 0
+[node name="QuitSign" type="TextureRect" parent="."]
 offset_left = 216.0
 offset_top = 321.0
 offset_right = 1240.0
@@ -214,7 +215,7 @@ mouse_filter = 2
 texture = ExtResource("9_vas1l")
 flip_h = true
 
-[node name="Label" type="Label" parent="Background/QuitSign"]
+[node name="Label" type="Label" parent="QuitSign"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -233,7 +234,7 @@ theme_override_fonts/font = ExtResource("4_nhaql")
 theme_override_font_sizes/font_size = 100
 text = "Avslutt"
 
-[node name="Nail" type="TextureRect" parent="Background/QuitSign"]
+[node name="Nail" type="TextureRect" parent="QuitSign"]
 layout_mode = 0
 offset_left = 636.83
 offset_top = 457.825
@@ -243,31 +244,20 @@ scale = Vector2(0.5, 0.5)
 mouse_filter = 2
 texture = ExtResource("6_c4swr")
 
-[node name="QuitButton" type="Button" parent="Background/QuitSign"]
-self_modulate = Color(1, 1, 1, 0)
-layout_mode = 0
-offset_left = 54.0
-offset_top = 424.0
-offset_right = 976.0
-offset_bottom = 584.0
-rotation = 0.0248648
-action_mode = 0
-
-[node name="PauseButton" type="Button" parent="."]
-offset_right = 262.0
-offset_bottom = 98.0
-theme_override_font_sizes/font_size = 50
-text = "Pause-test"
-
 [node name="GameStateManager" parent="." instance=ExtResource("3_vs73n")]
 
 [node name="LevelData" parent="." instance=ExtResource("4_ujgb6")]
 
-[node name="credits" parent="." instance=ExtResource("12_73gh4")]
+[node name="LevelSelect" parent="." instance=ExtResource("12_4sh3q")]
 visible = false
 
-[connection signal="pressed" from="Background/StartSign/StartButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="Background/SettingsSign/SettingsButton" to="." method="_on_settings_button_pressed"]
-[connection signal="pressed" from="Background/CreditsSign/CreditsButton" to="." method="_on_credits_button_pressed"]
-[connection signal="pressed" from="Background/QuitSign/QuitButton" to="." method="_on_quit_button_pressed"]
-[connection signal="pressed" from="PauseButton" to="." method="_on_pause_button_pressed"]
+[node name="Settings" parent="." instance=ExtResource("14_dfa6b")]
+visible = false
+
+[node name="Credits" parent="." instance=ExtResource("15_41y8j")]
+visible = false
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
