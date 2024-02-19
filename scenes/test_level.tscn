@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dvlwc16ybs5dh"]
+[gd_scene load_steps=19 format=3 uid="uid://bvb1triln2bkr"]
 
 [ext_resource type="Script" path="res://scripts/test_level.gd" id="1_x5js2"]
 [ext_resource type="PackedScene" uid="uid://1ehcmr0xs6rd" path="res://scenes/map_triggers/death_pit.tscn" id="2_5pbnu"]
