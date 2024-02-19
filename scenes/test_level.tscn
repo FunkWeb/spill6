@@ -1526,9 +1526,7 @@ position = Vector2(360, 32)
 position = Vector2(961, 32)
 
 [node name="fotgjenger1" parent="Obstacles" instance=ExtResource("7_4c40n")]
-
 position = Vector2(-365, -112)
-
 
 [node name="Platform" type="Node" parent="."]
 
