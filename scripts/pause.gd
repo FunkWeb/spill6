@@ -5,6 +5,7 @@ func _ready():
 
 func _on_resume_button_pressed():
 	$".".hide()
+	get_parent().camera.enabled = true
 	# kansje en timer for å gi spilleren litt tid til å gjøre seg klar
 	get_tree().paused = false
 
