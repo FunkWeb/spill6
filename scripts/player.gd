@@ -65,7 +65,6 @@ func check_if_landing():
 	
 func on_hit(entity, body):	
 	print('player hit')
-	
 	hearts -= 1
 	# play hit animation
 	# push character back a bit?

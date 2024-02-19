@@ -271,4 +271,11 @@ visible = false
 [connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]
 [connection signal="pressed" from="CreditsButton" to="." method="_on_credits_button_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
+[node name="credits" parent="." instance=ExtResource("12_73gh4")]
+visible = false
+
+[connection signal="pressed" from="Background/StartSign/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Background/SettingsSign/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="Background/CreditsSign/CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="Background/QuitSign/QuitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="pressed" from="PauseButton" to="." method="_on_pause_button_pressed"]

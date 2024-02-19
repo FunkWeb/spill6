@@ -14,7 +14,8 @@ func _on_settings_button_pressed():
 	$Settings.show()
 
 func _on_credits_button_pressed():
-	$Control.show()
+	print("credits button")
+	$credits.visible = true
 
 func _on_quit_button_pressed():
 	print('quit button')
