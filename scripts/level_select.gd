@@ -19,4 +19,4 @@ func _on_forest_button_pressed():
 
 func _on_mountain_button_pressed():
 	# pass på at denne peker på riktig scene
-	get_tree().change_scene_to_file("res://mountain_level.tscn")
+	get_tree().change_scene_to_file("res://scenes/maps/w1m1.tscn")
