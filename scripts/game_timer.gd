@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-# ToDo for GameTimer
+#TODO for GameTimer
 	# Set Timer-font
 	# Set Background frame for timer
 	# Make sure it pause properly when game is paused
@@ -11,6 +11,8 @@ extends CanvasLayer
 
 @onready var timer = $CenterContainer/Label/Timer
 @onready var label = $CenterContainer/Label
+
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -47,3 +49,9 @@ func get_time():
 func _on_timer_timeout():
 	# Send signal and transition to GameOver/Retry menu
 	pass # Replace with function body.
+	
+func pause_timer():
+	pass
+
+func unpause_timer():
+	pass
