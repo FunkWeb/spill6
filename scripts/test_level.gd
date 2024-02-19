@@ -1,5 +1,6 @@
 extends Node2D
-@onready var pause = $Pause
+@onready var pause = %Pause
+@onready var camera = $Camera2D
 # Viser label og "dreper" player om noen av disse skjer.
 # body.queue_free() "sletter" spilleren 
 
@@ -23,14 +24,15 @@ func _on_player_death(body):
 
 func _notification(what):
 	# pause / unpause game
-	# BUG pause meny isn't centered on camera
 	# BUG pause meny is drawn below game assets
 	if what == NOTIFICATION_WM_GO_BACK_REQUEST \
 	or what == NOTIFICATION_APPLICATION_PAUSED \
 	or what == NOTIFICATION_WM_CLOSE_REQUEST:
 		# windows close button / android home button / android back button
 		if pause.visible == true:
+			camera.enabled = true
 			pause._on_resume_button_pressed()
 		else:
 			pause.show()
+			camera.enabled = false
 			get_tree().paused = true
