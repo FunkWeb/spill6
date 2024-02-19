@@ -1,6 +1,7 @@
 extends Node2D
 
 # Viser label og "dreper" player om noen av disse skjer.
+# body.queue_free() "sletter" spilleren 
 
 func _on_death_pit_detected(_self, body):
 	body.queue_free()

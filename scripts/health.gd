@@ -6,6 +6,7 @@ extends Label
 # Connect player and heart amount directly 
 
 var health_icon : String = '❤'
+var empty_health_icon : String = '🖤'
 var heart_amount : int = 3
 
 func _ready():
@@ -13,8 +14,9 @@ func _ready():
 		text += health_icon 
 
 func _on_hit(_from, _to):
-	# Removes a heart at index 0
+	# Removes a heart at index 0, replaces it with an empty heart
 	text = text.erase(0)
+	text += empty_health_icon
 
 func _on_health_upgrade_detected(amount):
 	# No string multiplication in godot
