@@ -9,6 +9,7 @@ func _on_area_2d_body_exited(body):
 	if body.get_class() == "CharacterBody2D":
 		body.scroll_speed = 0
 		# body.anim_player.play('idle')
+		SoundManager.vinn_bane()
 		$LevelCompleteLabel.show()
 		await get_tree().create_timer(2).timeout
 		get_tree().change_scene_to_file("res://scenes/menu.tscn")

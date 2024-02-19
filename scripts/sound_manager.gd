@@ -42,6 +42,9 @@ func start_button():
 
 func skade_piano():
 	$SoundEffects/SkadePiano.play()
+	
+func vinn_bane():
+	$SoundEffects/VinnBane.play()
 
 func play_background_menu():
 	play_background_music($BackgroundMusic/MenuTrack)
