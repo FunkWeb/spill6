@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://b362dxgf8xwdb"]
+[gd_scene load_steps=6 format=3 uid="uid://b362dxgf8xwdb"]
 
 [ext_resource type="Script" path="res://scripts/sound_manager.gd" id="1_ehfbi"]
 [ext_resource type="AudioStream" uid="uid://csqr5ndtqic8d" path="res://assets/sounds/skadePiano.ogg" id="2_8pwwn"]
 [ext_resource type="AudioStream" uid="uid://bw7yeednaredn" path="res://assets/sounds/SkiltDemp.ogg" id="3_o1vs7"]
 [ext_resource type="AudioStream" uid="uid://ds373xo8ajov0" path="res://assets/sounds/FallFail.ogg" id="4_oheip"]
+[ext_resource type="AudioStream" uid="uid://dx72ufh2r753n" path="res://assets/sounds/VinnBane.ogg" id="5_lmylb"]
 
 [node name="SoundManager" type="Node"]
 script = ExtResource("1_ehfbi")
@@ -26,3 +27,6 @@ stream = ExtResource("3_o1vs7")
 
 [node name="FallFail" type="AudioStreamPlayer2D" parent="SoundEffects"]
 stream = ExtResource("4_oheip")
+
+[node name="VinnBane" type="AudioStreamPlayer2D" parent="SoundEffects"]
+stream = ExtResource("5_lmylb")
