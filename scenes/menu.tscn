@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://blc5mfiw70f2"]
+[gd_scene load_steps=14 format=3 uid="uid://blc5mfiw70f2"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_50igi"]
 [ext_resource type="Texture2D" uid="uid://bqdtint4wuon7" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur10.png" id="3_0xcwg"]
@@ -11,7 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://dxckx2032et1r" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur06.png" id="8_4n42n"]
 [ext_resource type="Texture2D" uid="uid://mhwlnf6xpllk" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur07.png" id="9_vas1l"]
 [ext_resource type="PackedScene" uid="uid://bxvbcus4651uf" path="res://scenes/menu/start/level_select.tscn" id="12_4sh3q"]
-[ext_resource type="PackedScene" uid="uid://84a0wyqd3bgc" path="res://scenes/menu/pause/pause.tscn" id="13_noy3a"]
 [ext_resource type="PackedScene" uid="uid://cpos7lg6meg4m" path="res://scenes/menu/settings/settings.tscn" id="14_dfa6b"]
 [ext_resource type="PackedScene" uid="uid://bgkfbxvfcxyg8" path="res://scenes/credits_scene.tscn" id="15_41y8j"]
 
@@ -245,12 +244,6 @@ scale = Vector2(0.5, 0.5)
 mouse_filter = 2
 texture = ExtResource("6_c4swr")
 
-[node name="PauseButton" type="Button" parent="."]
-offset_right = 262.0
-offset_bottom = 98.0
-theme_override_font_sizes/font_size = 50
-text = "Pause-test"
-
 [node name="GameStateManager" parent="." instance=ExtResource("3_vs73n")]
 
 [node name="LevelData" parent="." instance=ExtResource("4_ujgb6")]
@@ -258,24 +251,13 @@ text = "Pause-test"
 [node name="LevelSelect" parent="." instance=ExtResource("12_4sh3q")]
 visible = false
 
-[node name="Pause" parent="." instance=ExtResource("13_noy3a")]
-visible = false
-
 [node name="Settings" parent="." instance=ExtResource("14_dfa6b")]
 visible = false
 
-[node name="Control" parent="." instance=ExtResource("15_41y8j")]
+[node name="Credits" parent="." instance=ExtResource("15_41y8j")]
 visible = false
 
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]
 [connection signal="pressed" from="CreditsButton" to="." method="_on_credits_button_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
-[node name="credits" parent="." instance=ExtResource("12_73gh4")]
-visible = false
-
-[connection signal="pressed" from="Background/StartSign/StartButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="Background/SettingsSign/SettingsButton" to="." method="_on_settings_button_pressed"]
-[connection signal="pressed" from="Background/CreditsSign/CreditsButton" to="." method="_on_credits_button_pressed"]
-[connection signal="pressed" from="Background/QuitSign/QuitButton" to="." method="_on_quit_button_pressed"]
-[connection signal="pressed" from="PauseButton" to="." method="_on_pause_button_pressed"]

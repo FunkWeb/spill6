@@ -11,12 +11,14 @@ anchors_preset = 0
 script = ExtResource("1_n0ap1")
 
 [node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
 offset_right = 1600.0
 offset_bottom = 720.0
 texture = ExtResource("2_r1kgq")
 expand_mode = 2
 
 [node name="CutsceneButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 1329.0
 offset_top = 485.0
 offset_right = 1455.0
@@ -25,6 +27,7 @@ action_mode = 0
 text = "cutscene?"
 
 [node name="ForestButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 995.0
 offset_top = 528.0
 offset_right = 1081.0
@@ -32,6 +35,7 @@ offset_bottom = 600.0
 text = "forest"
 
 [node name="MountainButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 530.0
 offset_top = 542.0
 offset_right = 653.0
@@ -39,6 +43,7 @@ offset_bottom = 605.0
 text = "mountain"
 
 [node name="BackButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 4.0
 offset_top = 4.0
 offset_right = 236.0

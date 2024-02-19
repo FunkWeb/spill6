@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bus4kyo6jf6qk"]
 
-[ext_resource type="Script" path="res://scenes/obstacles/fotgjenger_1.gd" id="1_qfcqd"]
+[ext_resource type="Script" path="res://scripts/fotgjenger_1.gd" id="1_qfcqd"]
 [ext_resource type="Texture2D" uid="uid://ug5v8jbst377" path="res://assets/art_assets/NPCs/Fotgjenger01.PNG" id="2_sax7k"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mnh8p"]

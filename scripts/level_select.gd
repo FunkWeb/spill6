@@ -2,7 +2,7 @@ extends Control
 # kart hvor spiller velger bane
 
 func _ready():
-	print("level select loaded")
+	pass
 
 func _on_back_button_pressed():
 	$".".hide()
