@@ -10,7 +10,6 @@ anchors_preset = 0
 script = ExtResource("1_4fx3c")
 
 [node name="Background" type="TextureRect" parent="."]
-layout_mode = 0
 offset_right = 1600.0
 offset_bottom = 720.0
 texture = ExtResource("2_ya13x")
@@ -18,7 +17,6 @@ expand_mode = 2
 
 [node name="ResumeButton" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
-layout_mode = 0
 offset_left = 142.0
 offset_top = 88.0
 offset_right = 611.0
@@ -27,7 +25,6 @@ rotation = -0.0207265
 
 [node name="SettingsButton" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
-layout_mode = 0
 offset_left = 165.0
 offset_top = 271.0
 offset_right = 612.0
@@ -36,7 +33,6 @@ rotation = 0.0587404
 
 [node name="QuitButton" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
-layout_mode = 0
 offset_left = 168.0
 offset_top = 496.0
 offset_right = 605.0

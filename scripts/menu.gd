@@ -24,6 +24,7 @@ func _on_quit_button_pressed():
 func _notification(what):
 	if what == NOTIFICATION_WM_GO_BACK_REQUEST \
 	or what == NOTIFICATION_WM_CLOSE_REQUEST:
+		# windows close button \ android back button
 		if level_select.visible == true:
 			level_select.visible = false
 		elif settings.visible == true:

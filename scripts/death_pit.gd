@@ -10,7 +10,7 @@ func _on_area_2d_body_entered(body):
 		body.queue_free()
 		# body.anim_player.play("death")
 		# Vi må finne camera i levelen og presentere label i midten, usikker på hvordan
-    SoundManager.fall_fail()
-		$YouDiedLabel.show()
-		await get_tree().create_timer(2).timeout
-		get_tree().change_scene_to_file("res://scenes/menu.tscn")
+	SoundManager.fall_fail()
+	$YouDiedLabel.show()
+	await get_tree().create_timer(2).timeout
+	get_tree().change_scene_to_file("res://scenes/menu.tscn")

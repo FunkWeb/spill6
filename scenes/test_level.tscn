@@ -1483,6 +1483,7 @@ offset_left = 10.0
 offset_top = 10.0
 offset_right = 132.0
 offset_bottom = 50.0
+mouse_filter = 2
 
 [node name="health" type="Label" parent="HUD/LeftContainer"]
 layout_mode = 2
@@ -1501,6 +1502,7 @@ offset_right = 296.0
 offset_bottom = -206.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 theme = ExtResource("3_bplav")
 
 [node name="YouDiedLabel" type="Label" parent="HUD/CenterContainer"]
@@ -1512,7 +1514,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
 
-[node name="Obstacles" type="Node" parent="."]
+[node name="Obstacles" type="Node2D" parent="."]
 
 [node name="boar" parent="Obstacles" instance=ExtResource("3_jdk35")]
 position = Vector2(287, 32)
@@ -1560,12 +1562,6 @@ remote_path = NodePath("../../Camera2D")
 unique_name_in_owner = true
 visible = false
 
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
 [connection signal="hit" from="Obstacles/boar" to="HUD/LeftContainer/health" method="_on_hit"]
 [connection signal="hit" from="Obstacles/boar" to="Player" method="on_hit"]
 [connection signal="hit" from="Obstacles/boar2" to="HUD/LeftContainer/health" method="_on_hit"]
@@ -1575,5 +1571,3 @@ offset_bottom = 40.0
 [connection signal="hit" from="Obstacles/boar4" to="HUD/LeftContainer/health" method="_on_hit"]
 [connection signal="hit" from="Obstacles/boar4" to="Player" method="on_hit"]
 [connection signal="hit" from="Obstacles/fotgjenger1" to="HUD/LeftContainer/health" method="_on_hit"]
-[connection signal="hit" from="Obstacles/fotgjenger1" to="Player/Player" method="on_hit"]
-[connection signal="has_died" from="Player/Player" to="." method="_on_player_death"]

@@ -12,7 +12,7 @@ func _on_player_death(body):
 
 func _notification(what):
 	# pause / unpause game
-	# BUG pause meny is drawn below game assets
+	# BUG pause meny is drawn below hud elements
 	if what == NOTIFICATION_WM_GO_BACK_REQUEST \
 	or what == NOTIFICATION_APPLICATION_PAUSED \
 	or what == NOTIFICATION_WM_CLOSE_REQUEST:
