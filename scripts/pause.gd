@@ -10,8 +10,7 @@ func _on_resume_button_pressed():
 	get_tree().paused = false
 
 func _on_settings_button_pressed():
-	var settings = preload("res://scenes/menu/settings/settings.tscn").instantiate()
-	add_child(settings)
+	$Settings.show()
 
 func _on_quit_button_pressed():
 	get_tree().paused = false
