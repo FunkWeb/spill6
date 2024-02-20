@@ -1,7 +1,7 @@
 extends Control
 
 func _ready():
-	pass
+	hide()
 
 func _on_resume_button_pressed():
 	$".".hide()
