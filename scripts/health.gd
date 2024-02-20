@@ -21,10 +21,9 @@ func _on_hit(_from, _to):
 func _on_player_has_died(body):
 	# When the player has died, we get the parents all the way to HUD and display
 	# You died, the reason for this tedious code is because else it will appear on the top left instead
-
 	SoundManager.fall_fail()
 	body.queue_free()
-	get_parent().get_parent().get_node("CenterContainer/YouDiedLabel").show()
+	get_parent().get_node("CenterContainer/YouDiedLabel").show()
 	await get_tree().create_timer(2).timeout
 	get_tree().change_scene_to_file("res://scenes/menu.tscn")
 
