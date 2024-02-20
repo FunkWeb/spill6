@@ -1,7 +1,6 @@
-[gd_scene load_steps=15 format=3 uid="uid://c5g7vg7ejslym"]
+[gd_scene load_steps=14 format=3 uid="uid://c5g7vg7ejslym"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_50igi"]
-[ext_resource type="Texture2D" uid="uid://bwmqf17eymmwg" path="res://assets/art_assets/bakgrunner/bakgrunn_meny/bakgrunn_startskjerm_placeholder.png" id="2_4me8b"]
 [ext_resource type="Texture2D" uid="uid://bqdtint4wuon7" path="res://assets/art_assets/Skilt/ui_knapp_skilt_tekstur10.png" id="3_0xcwg"]
 [ext_resource type="PackedScene" uid="uid://dkncnkmhfru77" path="res://scenes/game_state_manager.tscn" id="3_vs73n"]
 [ext_resource type="FontFile" uid="uid://ddv1wxtia5j5c" path="res://assets/fonts/AR_One_Sans/static/AROneSans-Regular.ttf" id="4_nhaql"]
@@ -21,7 +20,6 @@ script = ExtResource("1_50igi")
 [node name="Background" type="TextureRect" parent="."]
 offset_right = 1600.0
 offset_bottom = 720.0
-texture = ExtResource("2_4me8b")
 
 [node name="StartButton" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
