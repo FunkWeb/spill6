@@ -2,10 +2,11 @@
 
 [ext_resource type="Script" path="res://scripts/pause.gd" id="1_4fx3c"]
 [ext_resource type="Texture2D" uid="uid://bnnvjny77vqtq" path="res://assets/art_assets/PauseMenySkisse.png" id="2_ya13x"]
-[ext_resource type="PackedScene" uid="uid://cpos7lg6meg4m" path="res://scenes/menu/settings/settings.tscn" id="3_hhx0i"]
+
+[ext_resource type="PackedScene" uid="uid://cpos7lg6meg4m" path="res://scenes/menu/settings/settings.tscn" id="3_mjfie"]
 
 [node name="Pause" type="Control"]
-process_mode = 3
+process_mode = 2
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_4fx3c")
@@ -44,7 +45,8 @@ offset_right = 605.0
 offset_bottom = 606.0
 rotation = -0.0584783
 
-[node name="Settings" parent="." instance=ExtResource("3_hhx0i")]
+
+[node name="Settings" parent="." instance=ExtResource("3_mjfie")]
 visible = false
 
 [connection signal="pressed" from="ResumeButton" to="." method="_on_resume_button_pressed"]
