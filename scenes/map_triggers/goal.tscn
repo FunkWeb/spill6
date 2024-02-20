@@ -6,7 +6,7 @@
 [ext_resource type="FontFile" uid="uid://i6a6arv6m8b3" path="res://assets/fonts/AR_One_Sans/AROneSans-VariableFont_ARRR,wght.ttf" id="5_c527o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uwrv5"]
-size = Vector2(187.5, 2090)
+size = Vector2(187.5, 688.25)
 
 [sub_resource type="LabelSettings" id="LabelSettings_o34wf"]
 font = ExtResource("3_t6q0r")
@@ -26,7 +26,7 @@ script = ExtResource("1_aed86")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-88, -60)
+position = Vector2(-108.75, 163)
 shape = SubResource("RectangleShape2D_uwrv5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

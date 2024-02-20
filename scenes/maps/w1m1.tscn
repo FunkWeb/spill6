@@ -1513,21 +1513,6 @@ fill_texture_angle_offset = 0.0
 fill_mesh_offset = 0.0
 render_offset = 0.0
 
-[sub_resource type="LabelSettings" id="LabelSettings_40lwu"]
-line_spacing = 10.0
-font_size = 26
-outline_size = 15
-outline_color = Color(0, 0, 0, 1)
-shadow_size = 0
-
-[sub_resource type="LabelSettings" id="LabelSettings_ocb0j"]
-font = ExtResource("17_m8ai3")
-font_size = 150
-font_color = Color(0.509804, 0.635294, 0.721569, 1)
-outline_size = 8
-outline_color = Color(0, 0, 0, 1)
-shadow_size = 0
-
 [node name="THE-MAP" type="Node2D"]
 
 [node name="PLAYER" type="Node2D" parent="."]
@@ -1597,9 +1582,7 @@ texture = ExtResource("2_gt1o6")
 [node name="MAP-TRIGGERS" type="Node2D" parent="."]
 
 [node name="death_pit" parent="MAP-TRIGGERS" instance=ExtResource("2_6jqgv")]
-position = Vector2(6125, 526)
-scale = Vector2(2.64, 1)
-
+position = Vector2(2623, 478)
 
 [node name="goal" parent="MAP-TRIGGERS" instance=ExtResource("3_kn6wk")]
 position = Vector2(10501, -847)
@@ -1696,34 +1679,3 @@ position_smoothing_speed = 7.0
 drag_vertical_enabled = true
 drag_horizontal_offset = 1.0
 drag_vertical_offset = -0.36
-
-[node name="HUD" type="CanvasLayer" parent="."]
-
-[node name="health" type="Label" parent="HUD"]
-offset_right = 1.0
-offset_bottom = 36.0
-label_settings = SubResource("LabelSettings_40lwu")
-horizontal_alignment = 3
-vertical_alignment = 1
-script = ExtResource("16_oftkx")
-
-[node name="CenterContainer" type="CenterContainer" parent="HUD"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="YouDiedLabel" type="Label" parent="HUD/CenterContainer"]
-visible = false
-layout_mode = 2
-text = "You died!"
-label_settings = SubResource("LabelSettings_ocb0j")
-horizontal_alignment = 1
-vertical_alignment = 1
-uppercase = true
-
-[connection signal="has_died" from="PLAYER/TestPlayer" to="HUD/health" method="_on_player_has_died"]
-[connection signal="hit" from="Enemy's/boar01" to="PLAYER/TestPlayer" method="on_hit"]
-[connection signal="hit" from="Enemy's/boar01" to="HUD/health" method="_on_hit"]
-
