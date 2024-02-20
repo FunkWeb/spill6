@@ -33,12 +33,18 @@ func adjust_sound_effect_volume(value):
 		linear_to_db(value)
 	)
 	print('SFX volume set to ', value)
+	
+func fall_fail():
+	$SoundEffects/FallFail.play()
 
 func start_button():
 	$SoundEffects/SkiltDemp.play()
 
 func skade_piano():
 	$SoundEffects/SkadePiano.play()
+	
+func vinn_bane():
+	$SoundEffects/VinnBane.play()
 
 func play_background_menu():
 	play_background_music($BackgroundMusic/MenuTrack)

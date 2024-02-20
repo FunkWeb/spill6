@@ -1,4 +1,4 @@
-extends Node
+extends Control
 # instillinger til spillet
 
 # slidere for musikk of lydeffekter
@@ -19,7 +19,7 @@ func _ready():
 	)
 
 func _on_close_button_pressed():
-	$".".queue_free()
+	$".".hide()
 
 func _on_music_slider_value_changed(value):
 	SoundManager.adjust_music_volume(value)

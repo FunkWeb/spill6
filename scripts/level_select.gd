@@ -1,11 +1,11 @@
-extends Node
+extends Control
 # kart hvor spiller velger bane
 
 func _ready():
-	print("level select loaded")
+	pass
 
 func _on_back_button_pressed():
-	get_tree().change_scene_to_file("res://scenes/menu.tscn")
+	$".".hide()
 
 func _on_cutscene_button_pressed():
 	# pass på at denne peker på riktig scene
