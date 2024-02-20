@@ -1,9 +1,9 @@
 extends Label
 
 # TODO
-# Change health icon into image
+# Change health icons into images
 # Figure out how many "hearts" we're using
-# Connect player and heart amount directly 
+# Bytt ut lyden
 
 var health_icon : String = '❤'
 var empty_health_icon : String = '🖤'
@@ -21,7 +21,7 @@ func _on_hit(_from, _to):
 func _on_player_has_died(body):
 	# When the player has died, we get the parents all the way to HUD and display
 	# You died, the reason for this tedious code is because else it will appear on the top left instead
-	# Bytt ut lyden 
+
 	SoundManager.fall_fail()
 	body.queue_free()
 	get_parent().get_parent().get_node("CenterContainer/YouDiedLabel").show()
