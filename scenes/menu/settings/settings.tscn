@@ -65,6 +65,7 @@ offset_right = 952.0
 offset_bottom = 656.0
 text = "Lukk"
 
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
 [connection signal="value_changed" from="MusicSlider" to="." method="_on_music_slider_value_changed"]
 [connection signal="value_changed" from="SfxSlider" to="." method="_on_sound_effect_slider_value_changed"]
 [connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]

@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://bgkfbxvfcxyg8" path="res://scenes/credits_scene.tscn" id="15_41y8j"]
 
 [node name="Menu" type="Node"]
+process_mode = 3
 script = ExtResource("1_50igi")
 
 [node name="Background" type="TextureRect" parent="."]
