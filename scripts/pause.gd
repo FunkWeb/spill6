@@ -1,5 +1,7 @@
 extends Control
 
+signal unpause
+
 func _ready():
 	hide()
 

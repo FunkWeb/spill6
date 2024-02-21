@@ -1,23 +1,27 @@
-[gd_scene load_steps=2 format=3 uid="uid://gu6wwha84ye1"]
+[gd_scene load_steps=3 format=3 uid="uid://gu6wwha84ye1"]
 
 [ext_resource type="Script" path="res://scripts/game_timer.gd" id="1_0wbb0"]
+[ext_resource type="FontFile" uid="uid://i6a6arv6m8b3" path="res://assets/fonts/AR_One_Sans/AROneSans-VariableFont_ARRR,wght.ttf" id="2_2ae3v"]
 
 [node name="GameTimer" type="CanvasLayer"]
 script = ExtResource("1_0wbb0")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -194.0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -97.0
+offset_right = 97.0
 offset_bottom = 95.0
-grow_horizontal = 0
+grow_horizontal = 2
+size_flags_vertical = 0
 
 [node name="Label" type="Label" parent="CenterContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.956863, 0.956863, 0.956863, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0.815686, 0, 0.207843, 1)
+theme_override_fonts/font = ExtResource("2_2ae3v")
 theme_override_font_sizes/font_size = 30
 text = "00:00:00"
 horizontal_alignment = 1
