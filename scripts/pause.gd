@@ -1,20 +1,25 @@
-extends Control
+extends CanvasLayer
 
-signal unpause
+signal resume
 
 func _ready():
 	hide()
 
 func _on_resume_button_pressed():
+	resume.emit()
 	$".".hide()
-	get_parent().hud.show()
-	get_parent().camera.enabled = true
-	# kansje en timer for å gi spilleren litt tid til å gjøre seg klar
-	get_tree().paused = false
+	#$Camera2D.enabled = false
 
 func _on_settings_button_pressed():
 	$Settings.show()
 
 func _on_quit_button_pressed():
-	get_tree().paused = false
+	resume.emit()
+	#$Camera2D.enabled = false
 	get_tree().change_scene_to_file("res://scenes/menu.tscn")
+
+func _on_game_manager_toggle_game_paused(is_paused):
+	$".".visible = is_paused
+	#$Camera2D.enabled = true
+	#$Camera2D.make_current()
+	pass

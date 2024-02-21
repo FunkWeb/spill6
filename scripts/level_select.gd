@@ -1,9 +1,6 @@
 extends Control
 # kart hvor spiller velger bane
 
-func _ready():
-	pass
-
 func _on_back_button_pressed():
 	$".".hide()
 
