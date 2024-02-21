@@ -35,6 +35,10 @@ window/stretch/mode="viewport"
 
 project/assembly_name="Raskeladden og Dovreslubben"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/rmsmartshape/plugin.cfg")
+
 [filesystem]
 
 import/blender/enabled=false

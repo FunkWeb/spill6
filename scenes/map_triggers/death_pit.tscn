@@ -4,7 +4,7 @@
 [ext_resource type="FontFile" uid="uid://i6a6arv6m8b3" path="res://assets/fonts/AR_One_Sans/AROneSans-VariableFont_ARRR,wght.ttf" id="3_jr5kk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_326eq"]
-size = Vector2(5339.5, 191.5)
+size = Vector2(10823.8, 95.75)
 
 [sub_resource type="LabelSettings" id="LabelSettings_xu5is"]
 font = ExtResource("3_jr5kk")
@@ -20,6 +20,7 @@ script = ExtResource("1_fd6a2")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2742.13, 47.875)
 shape = SubResource("RectangleShape2D_326eq")
 
 [node name="YouDiedLabel" type="Label" parent="."]

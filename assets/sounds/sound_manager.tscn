@@ -19,14 +19,14 @@ bus = &"music"
 
 [node name="SoundEffects" type="Node" parent="."]
 
-[node name="SkadePiano" type="AudioStreamPlayer2D" parent="SoundEffects"]
+[node name="SkadePiano" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource("2_8pwwn")
 
-[node name="SkiltDemp" type="AudioStreamPlayer2D" parent="SoundEffects"]
+[node name="SkiltDemp" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource("3_o1vs7")
 
-[node name="FallFail" type="AudioStreamPlayer2D" parent="SoundEffects"]
+[node name="FallFail" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource("4_oheip")
 
-[node name="VinnBane" type="AudioStreamPlayer2D" parent="SoundEffects"]
+[node name="VinnBane" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource("5_lmylb")
