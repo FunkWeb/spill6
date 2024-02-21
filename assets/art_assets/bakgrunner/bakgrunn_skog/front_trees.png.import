@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0d0haqdf28fg"
-path="res://.godot/imported/skog_bakgrunn_bakke.png-0945903f520cf114a1e73bacfea2cbe7.ctex"
+uid="uid://ffsf5eebbu4s"
+path="res://.godot/imported/front_trees.png-a64a6704c96bcff6b49797649e03f194.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/world-1 background export/skog_bakgrunn_bakke.png"
-dest_files=["res://.godot/imported/skog_bakgrunn_bakke.png-0945903f520cf114a1e73bacfea2cbe7.ctex"]
+source_file="res://Textures/world-1 background export/front_trees.png"
+dest_files=["res://.godot/imported/front_trees.png-a64a6704c96bcff6b49797649e03f194.ctex"]
 
 [params]
 
