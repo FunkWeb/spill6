@@ -6,6 +6,7 @@
 
 [node name="PauseMenu" type="CanvasLayer"]
 process_mode = 2
+layer = 2
 script = ExtResource("1_4fx3c")
 
 [node name="Background" type="TextureRect" parent="."]
