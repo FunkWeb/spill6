@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://r17tlf5r7aed"
-path="res://.godot/imported/parallax_front.png-a1c7256b0dff94cedbee235dec54ff45.ctex"
+uid="uid://dom04f3at7hlt"
+path="res://.godot/imported/skog_texture.png-a77be2b1b0f90b0d2b779337d734c6cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art_assets/bakgrunner/bakgrunn_skog/parallax_front.png"
-dest_files=["res://.godot/imported/parallax_front.png-a1c7256b0dff94cedbee235dec54ff45.ctex"]
+source_file="res://assets/art_assets/texture/skog_texture.png"
+dest_files=["res://.godot/imported/skog_texture.png-a77be2b1b0f90b0d2b779337d734c6cc.ctex"]
 
 [params]
 
