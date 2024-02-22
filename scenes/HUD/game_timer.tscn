@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://gu6wwha84ye1"]
 
-[ext_resource type="Script" path="res://scripts/game_timer.gd" id="1_0wbb0"]
+[ext_resource type="Script" path="res://scripts/ui/game_timer.gd" id="1_0wbb0"]
 [ext_resource type="FontFile" uid="uid://i6a6arv6m8b3" path="res://assets/fonts/AR_One_Sans/AROneSans-VariableFont_ARRR,wght.ttf" id="2_2ae3v"]
 
 [node name="GameTimer" type="CanvasLayer"]

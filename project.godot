@@ -11,19 +11,19 @@ config_version=5
 [application]
 
 config/name="Raskeladden og Dovreslubben"
-run/main_scene="res://scenes/menu.tscn"
+run/main_scene="res://scenes/menus/main_menu.tscn"
 config/quit_on_go_back=false
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
 [audio]
 
-buses/default_bus_layout="res://assets/sounds/default_bus_layout.tres"
+buses/default_bus_layout="res://materials/default_bus_layout.tres"
 
 [autoload]
 
-SoundManager="*res://assets/sounds/sound_manager.tscn"
-GameManager="*res://game_manager.tscn"
+SoundManager="*res://scenes/sound_manager.tscn"
+GameManager="*res://scenes/game_manager.tscn"
 
 [display]
 

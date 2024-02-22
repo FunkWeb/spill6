@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://djnq1inpljinj"]
+
+[ext_resource type="Script" path="res://scripts/controllers/level_data.gd" id="1_n0xup"]
+
+[node name="LevelData" type="Node" groups=["Persist"]]
+script = ExtResource("1_n0xup")

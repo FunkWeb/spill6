@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://y3wbw06ky8ck"]
 
-[ext_resource type="Script" path="res://scripts/pause_button.gd" id="1_0jpeq"]
+[ext_resource type="Script" path="res://scripts/ui/pause_button.gd" id="1_0jpeq"]
 
 [node name="PauseButton" type="MenuButton"]
 anchors_preset = 1
