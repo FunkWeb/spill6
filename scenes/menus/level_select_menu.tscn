@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/ui/level_select.gd" id="1_n0ap1"]
 [ext_resource type="Texture2D" uid="uid://bpwx5r5w61jwr" path="res://assets/art/ui/level_select_skisse.png" id="2_r1kgq"]
-[ext_resource type="PackedScene" uid="uid://dkncnkmhfru77" path="res://scenes/save_manager.tscn" id="3_0lr5j"]
+[ext_resource type="PackedScene" path="res://scenes/save_manager.tscn" id="3_0lr5j"]
 [ext_resource type="PackedScene" uid="uid://djnq1inpljinj" path="res://scenes/levels/level_data.tscn" id="4_88242"]
 
 [node name="LevelSelect" type="Control"]
@@ -32,7 +32,7 @@ offset_left = 995.0
 offset_top = 528.0
 offset_right = 1081.0
 offset_bottom = 600.0
-text = "forest"
+text = "Skog"
 
 [node name="MountainButton" type="Button" parent="."]
 layout_mode = 0
@@ -40,7 +40,7 @@ offset_left = 530.0
 offset_top = 542.0
 offset_right = 653.0
 offset_bottom = 605.0
-text = "mountain"
+text = "Fjell"
 
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 0
