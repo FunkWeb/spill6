@@ -1,0 +1,266 @@
+[gd_scene load_steps=15 format=3 uid="uid://c5g7vg7ejslym"]
+
+[ext_resource type="Script" path="res://scripts/ui/menu.gd" id="1_lm4ab"]
+[ext_resource type="Texture2D" uid="uid://bwmqf17eymmwg" path="res://assets/art/environments/bakgrunner/bakgrunn_meny/bakgrunn_startskjerm_placeholder.png" id="2_rrtjx"]
+[ext_resource type="Texture2D" uid="uid://bqdtint4wuon7" path="res://assets/art/environments/Skilt/ui_knapp_skilt_tekstur10.png" id="3_8vrv5"]
+[ext_resource type="FontFile" uid="uid://ddv1wxtia5j5c" path="res://assets/fonts/AR_One_Sans/static/AROneSans-Regular.ttf" id="4_85gay"]
+[ext_resource type="Texture2D" uid="uid://di4qpmynho4qu" path="res://assets/art/environments/Skilt/Spiker/ui_detalj_spiker_tekstur01.png" id="5_okak4"]
+[ext_resource type="Texture2D" uid="uid://2v2rro41xvdr" path="res://assets/art/environments/Skilt/Spiker/ui_detalj_spiker_tekstur02.png" id="6_ic5tj"]
+[ext_resource type="Texture2D" uid="uid://dxtujsfa36ldb" path="res://assets/art/environments/Skilt/ui_knapp_skilt_tekstur02.png" id="7_emdjc"]
+[ext_resource type="Texture2D" uid="uid://dxckx2032et1r" path="res://assets/art/environments/Skilt/ui_knapp_skilt_tekstur06.png" id="8_6hjtl"]
+[ext_resource type="Texture2D" uid="uid://mhwlnf6xpllk" path="res://assets/art/environments/Skilt/ui_knapp_skilt_tekstur07.png" id="9_i2bfp"]
+[ext_resource type="PackedScene" uid="uid://dkncnkmhfru77" path="res://scenes/save_manager.tscn" id="10_eb4md"]
+[ext_resource type="PackedScene" uid="uid://djnq1inpljinj" path="res://scenes/levels/level_data.tscn" id="11_1coro"]
+[ext_resource type="PackedScene" uid="uid://bxvbcus4651uf" path="res://scenes/menus/level_select_menu.tscn" id="12_nuqcy"]
+[ext_resource type="PackedScene" uid="uid://cpos7lg6meg4m" path="res://scenes/menus/settings_menu.tscn" id="13_0n7do"]
+[ext_resource type="PackedScene" uid="uid://bgkfbxvfcxyg8" path="res://scenes/menus/credits_menu.tscn" id="14_yauok"]
+
+[node name="Menu" type="Node"]
+process_mode = 3
+script = ExtResource("1_lm4ab")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1600.0
+offset_bottom = 720.0
+texture = ExtResource("2_rrtjx")
+
+[node name="StartButton" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 503.0
+offset_top = 57.0
+offset_right = 1194.0
+offset_bottom = 249.0
+rotation = -0.0875754
+action_mode = 0
+
+[node name="SettingsButton" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 426.0
+offset_top = 256.0
+offset_right = 1060.0
+offset_bottom = 404.0
+rotation = -0.0841475
+action_mode = 0
+
+[node name="CreditsButton" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 406.0
+offset_top = 406.0
+offset_right = 1069.0
+offset_bottom = 564.0
+rotation = -0.0804404
+action_mode = 0
+
+[node name="QuitButton" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 315.0
+offset_top = 632.0
+offset_right = 1003.0
+offset_bottom = 750.0
+rotation = -0.169792
+action_mode = 0
+
+[node name="StartSign" type="TextureRect" parent="."]
+offset_left = 482.0
+offset_top = -240.0
+offset_right = 1506.0
+offset_bottom = 784.0
+rotation = -0.0698132
+scale = Vector2(0.75, 0.75)
+mouse_filter = 2
+texture = ExtResource("3_8vrv5")
+
+[node name="Label" type="Label" parent="StartSign"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -174.0
+offset_top = -61.0
+offset_right = 123.0
+offset_bottom = 75.0001
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.0277328
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_85gay")
+theme_override_font_sizes/font_size = 100
+text = "Start"
+
+[node name="Nail" type="TextureRect" parent="StartSign"]
+layout_mode = 0
+offset_left = 268.421
+offset_top = 462.082
+offset_right = 332.421
+offset_bottom = 526.082
+scale = Vector2(0.5, 0.5)
+mouse_filter = 2
+texture = ExtResource("5_okak4")
+
+[node name="Nail2" type="TextureRect" parent="StartSign"]
+layout_mode = 0
+offset_left = 278.55
+offset_top = 565.708
+offset_right = 342.55
+offset_bottom = 629.708
+scale = Vector2(0.5, 0.5)
+mouse_filter = 2
+texture = ExtResource("6_ic5tj")
+
+[node name="SettingsSign" type="TextureRect" parent="."]
+offset_left = 356.0
+offset_top = -50.0
+offset_right = 1380.0
+offset_bottom = 974.0
+rotation = -0.0698132
+scale = Vector2(0.75, 0.75)
+mouse_filter = 2
+texture = ExtResource("7_emdjc")
+
+[node name="Label" type="Label" parent="SettingsSign"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -282.396
+offset_top = -68.2361
+offset_right = 243.604
+offset_bottom = 67.764
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.0277328
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_85gay")
+theme_override_font_sizes/font_size = 100
+text = "Instillinger"
+
+[node name="Nail" type="TextureRect" parent="SettingsSign"]
+layout_mode = 0
+offset_left = 474.498
+offset_top = 439.503
+offset_right = 538.498
+offset_bottom = 503.503
+scale = Vector2(0.5, 0.5)
+mouse_filter = 2
+texture = ExtResource("5_okak4")
+
+[node name="Nail2" type="TextureRect" parent="SettingsSign"]
+layout_mode = 0
+offset_left = 468.201
+offset_top = 548.663
+offset_right = 532.201
+offset_bottom = 612.663
+scale = Vector2(0.5, 0.5)
+mouse_filter = 2
+texture = ExtResource("6_ic5tj")
+
+[node name="CreditsSign" type="TextureRect" parent="."]
+offset_left = 336.0
+offset_top = 109.0
+offset_right = 1360.0
+offset_bottom = 1133.0
+rotation = -0.0698132
+scale = Vector2(0.75, 0.75)
+mouse_filter = 2
+texture = ExtResource("8_6hjtl")
+
+[node name="Label" type="Label" parent="CreditsSign"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -174.0
+offset_top = -61.0
+offset_right = 123.0
+offset_bottom = 75.0001
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.0277328
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_85gay")
+theme_override_font_sizes/font_size = 100
+text = "Kreditering"
+
+[node name="Nail" type="TextureRect" parent="CreditsSign"]
+layout_mode = 0
+offset_left = 501.192
+offset_top = 440.033
+offset_right = 565.192
+offset_bottom = 504.033
+scale = Vector2(0.5, 0.5)
+mouse_filter = 2
+texture = ExtResource("5_okak4")
+
+[node name="Nail2" type="TextureRect" parent="CreditsSign"]
+layout_mode = 0
+offset_left = 500.216
+offset_top = 549.565
+offset_right = 564.216
+offset_bottom = 613.565
+scale = Vector2(0.5, 0.5)
+mouse_filter = 2
+texture = ExtResource("6_ic5tj")
+
+[node name="QuitSign" type="TextureRect" parent="."]
+offset_left = 216.0
+offset_top = 321.0
+offset_right = 1240.0
+offset_bottom = 1345.0
+rotation = -0.182469
+scale = Vector2(0.75, 0.75)
+mouse_filter = 2
+texture = ExtResource("9_i2bfp")
+flip_h = true
+
+[node name="Label" type="Label" parent="QuitSign"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -174.0
+offset_top = -61.0
+offset_right = 123.0
+offset_bottom = 75.0001
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.0277328
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_85gay")
+theme_override_font_sizes/font_size = 100
+text = "Avslutt"
+
+[node name="Nail" type="TextureRect" parent="QuitSign"]
+layout_mode = 0
+offset_left = 636.83
+offset_top = 457.825
+offset_right = 700.83
+offset_bottom = 521.825
+scale = Vector2(0.5, 0.5)
+mouse_filter = 2
+texture = ExtResource("6_ic5tj")
+
+[node name="GameStateManager" parent="." instance=ExtResource("10_eb4md")]
+
+[node name="LevelData" parent="." instance=ExtResource("11_1coro")]
+
+[node name="LevelSelect" parent="." instance=ExtResource("12_nuqcy")]
+visible = false
+
+[node name="Settings" parent="." instance=ExtResource("13_0n7do")]
+visible = false
+
+[node name="Credits" parent="." instance=ExtResource("14_yauok")]
+visible = false
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
