@@ -136,7 +136,7 @@ rotation = -0.0277328
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_85gay")
 theme_override_font_sizes/font_size = 100
-text = "Instillinger"
+text = "Innstillinger"
 
 [node name="Nail" type="TextureRect" parent="SettingsSign"]
 layout_mode = 0
