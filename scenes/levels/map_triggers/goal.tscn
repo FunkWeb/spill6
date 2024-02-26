@@ -38,7 +38,7 @@ offset_top = -52.0
 offset_right = 168.0
 offset_bottom = 84.0
 rotation = -0.0342983
-text = "Level end"
+text = "Nivå Slutt"
 label_settings = SubResource("LabelSettings_o34wf")
 
 [node name="LevelCompleteLabel" type="Label" parent="."]
