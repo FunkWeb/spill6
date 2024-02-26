@@ -21,12 +21,16 @@ bus = &"music"
 
 [node name="SkadePiano" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource("2_8pwwn")
+bus = &"sfx"
 
 [node name="SkiltDemp" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource("3_o1vs7")
+bus = &"sfx"
 
 [node name="FallFail" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource("4_oheip")
+bus = &"sfx"
 
 [node name="VinnBane" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource("5_lmylb")
+bus = &"sfx"

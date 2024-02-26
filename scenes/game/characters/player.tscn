@@ -1,10 +1,8 @@
 [gd_scene load_steps=13 format=3 uid="uid://dpk1tha2tos6m"]
 
 [ext_resource type="Script" path="res://scripts/entities/player.gd" id="1_ogvqo"]
+[ext_resource type="Texture2D" uid="uid://csgq63l6ah2eo" path="res://tests/test_art/Run-Sheet.png" id="2_pvloc"]
 [ext_resource type="Texture2D" uid="uid://dhb8ukmrsu0ju" path="res://tests/test_art/Jump-All-Sheet.png" id="3_00e8q"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rayof"]
-load_path = "res://.godot/imported/Run-Sheet.png-d1d6638855f3aa281418c1c9d72258b4.ctex"
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_k7fip"]
 radius = 9.31595
@@ -278,7 +276,7 @@ drag_horizontal_offset = 1.0
 [node name="Sprites" type="Node2D" parent="."]
 
 [node name="Run-sheet" type="Sprite2D" parent="Sprites"]
-texture = SubResource("CompressedTexture2D_rayof")
+texture = ExtResource("2_pvloc")
 hframes = 8
 
 [node name="Jump-all-sheet" type="Sprite2D" parent="Sprites"]
