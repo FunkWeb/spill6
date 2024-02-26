@@ -2,15 +2,14 @@
 
 [ext_resource type="Script" path="res://scripts/ui/pause_button.gd" id="1_0jpeq"]
 
-[node name="PauseButton" type="MenuButton"]
+[node name="PauseButton" type="Button"]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -156.0
-offset_bottom = 101.0
+offset_left = -220.0
+offset_bottom = 177.0
 grow_horizontal = 0
 text = "Pause"
-flat = false
 script = ExtResource("1_0jpeq")
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]

@@ -81,3 +81,16 @@ func die(body):
 func _on_health_upgrade_detected(amount):
 	print('player received health upgrade')
 	hearts += amount
+
+
+func _on_jump_button_jump():
+	# kopiert kode fra Input.is_action_just_pressed("jump")
+	if is_on_floor():
+		has_double_jumped = false
+		anim_player.play('jump_start')
+		velocity.y = jump_velocity
+		
+	elif not has_double_jumped:
+		has_double_jumped = true
+		anim_player.play('jump_start')
+		velocity.y = double_jump_velocity
