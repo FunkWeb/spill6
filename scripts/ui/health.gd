@@ -32,3 +32,11 @@ func _on_health_upgrade_detected(amount):
 	for i in range(amount):
 		text += health_icon
 	print('increasing health')
+
+
+func on_hit(from, to):
+	pass # Replace with function body.
+
+
+func _on_boar_03_hit(from, to):
+	pass # Replace with function body.
