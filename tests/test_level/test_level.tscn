@@ -1478,7 +1478,7 @@ drag_vertical_offset = -0.36
 [node name="Obstacles" type="Node" parent="."]
 
 [node name="boar" parent="Obstacles" instance=ExtResource("3_hkgq4")]
-position = Vector2(287, 32)
+position = Vector2(288, 32)
 
 [node name="boar2" parent="Obstacles" instance=ExtResource("3_hkgq4")]
 position = Vector2(591, 36)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://dpk1tha2tos6m"]
 
-[ext_resource type="Script" path="res://scripts/entities/player.gd" id="1_ogvqo"]
+[ext_resource type="Script" path="res://scripts/entities/player_noanim.gd" id="1_mpdeg"]
 [ext_resource type="Texture2D" uid="uid://csgq63l6ah2eo" path="res://tests/test_art/Run-Sheet.png" id="2_pvloc"]
 [ext_resource type="Texture2D" uid="uid://dhb8ukmrsu0ju" path="res://tests/test_art/Jump-All-Sheet.png" id="3_00e8q"]
 
@@ -12,50 +12,50 @@ height = 42.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprites/Run-sheet:frame")
+tracks/0/path = NodePath("Sprites/Run-sheet:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
+"update": 0,
+"values": [true]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Sprites/Jump-all-sheet:frame")
+tracks/1/path = NodePath("Sprites/Jump-all-sheet:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
+"update": 0,
+"values": [true]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Sprites/Jump-all-sheet:visible")
+tracks/2/path = NodePath("Sprites/Jump-all-sheet:frame")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
+"update": 0,
+"values": [0]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Sprites/Run-sheet:visible")
+tracks/3/path = NodePath("Sprites/Run-sheet:frame")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
+"update": 0,
+"values": [0]
 }
 
 [sub_resource type="Animation" id="Animation_5kquw"]
@@ -70,7 +70,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 4),
 "transitions": PackedFloat32Array(1, 1),
-"update": 1,
+"update": 0,
 "values": [false, false]
 }
 tracks/1/type = "value"
@@ -82,7 +82,7 @@ tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 4),
 "transitions": PackedFloat32Array(1, 1),
-"update": 1,
+"update": 0,
 "values": [false, false]
 }
 
@@ -99,32 +99,32 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8, 1.2),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
+"update": 0,
 "values": [4, 5, 6, 7]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Sprites/Run-sheet:visible")
+tracks/1/path = NodePath("Sprites/Jump-all-sheet:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 1.6),
 "transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [false, false]
+"update": 0,
+"values": [true, true]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Sprites/Jump-all-sheet:visible")
+tracks/2/path = NodePath("Sprites/Run-sheet:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 1.6),
 "transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, true]
+"update": 0,
+"values": [false, false]
 }
 
 [sub_resource type="Animation" id="Animation_r81f1"]
@@ -139,32 +139,32 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8, 1.2, 1.6, 2, 2.4),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
-"update": 1,
+"update": 0,
 "values": [8, 9, 10, 11, 12, 13, 14]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Sprites/Run-sheet:visible")
+tracks/1/path = NodePath("Sprites/Jump-all-sheet:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 2.8),
 "transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [false, false]
+"update": 0,
+"values": [true, true]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Sprites/Jump-all-sheet:visible")
+tracks/2/path = NodePath("Sprites/Run-sheet:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 2.8),
 "transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, true]
+"update": 0,
+"values": [false, false]
 }
 
 [sub_resource type="Animation" id="Animation_vat8n"]
@@ -179,32 +179,32 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8, 1.2, 1.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 1,
+"update": 0,
 "values": [0, 1, 2, 3, 4]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Sprites/Run-sheet:visible")
+tracks/1/path = NodePath("Sprites/Jump-all-sheet:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 2),
 "transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [false, false]
+"update": 0,
+"values": [true, true]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Sprites/Jump-all-sheet:visible")
+tracks/2/path = NodePath("Sprites/Run-sheet:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 2),
 "transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, true]
+"update": 0,
+"values": [false, false]
 }
 
 [sub_resource type="Animation" id="Animation_uge52"]
@@ -214,14 +214,14 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprites/Run-sheet:frame")
+tracks/0/path = NodePath("Sprites/Run-sheet:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.4, 0.8, 1.2, 1.6, 2, 2.4, 2.8),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4, 5, 6, 7]
+"times": PackedFloat32Array(0, 3.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [true, true]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -232,20 +232,20 @@ tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 3.2),
 "transitions": PackedFloat32Array(1, 1),
-"update": 1,
+"update": 0,
 "values": [false, false]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Sprites/Run-sheet:visible")
+tracks/2/path = NodePath("Sprites/Run-sheet:frame")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 3.2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, true]
+"times": PackedFloat32Array(0, 0.4, 0.8, 1.2, 1.6, 2, 2.4, 2.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_yd8v2"]
@@ -262,7 +262,7 @@ _data = {
 nodes/output/position = Vector2(442, 156)
 
 [node name="TestPlayer" type="CharacterBody2D"]
-script = ExtResource("1_ogvqo")
+script = ExtResource("1_mpdeg")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 texture_repeat = 1
