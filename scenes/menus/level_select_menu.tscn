@@ -1,26 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://bxvbcus4651uf"]
+[gd_scene load_steps=6 format=3 uid="uid://bxvbcus4651uf"]
 
 [ext_resource type="Script" path="res://scripts/ui/level_select.gd" id="1_n0ap1"]
 [ext_resource type="Texture2D" uid="uid://bpwx5r5w61jwr" path="res://assets/art/ui/level_select_skisse.png" id="2_r1kgq"]
 [ext_resource type="PackedScene" uid="uid://dkncnkmhfru77" path="res://scenes/save_manager.tscn" id="3_0lr5j"]
-[ext_resource type="FontFile" uid="uid://i6a6arv6m8b3" path="res://assets/fonts/AR_One_Sans/AROneSans-VariableFont_ARRR,wght.ttf" id="3_nllyx"]
+[ext_resource type="Theme" uid="uid://dhcc0oot5rr60" path="res://materials/menu_theme.tres" id="3_fybug"]
 [ext_resource type="PackedScene" uid="uid://djnq1inpljinj" path="res://scenes/levels/level_data.tscn" id="4_88242"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mr2kj"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ifncd"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w5bdp"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q1jif"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-border_color = Color(0.8, 0.8, 0.8, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i7feh"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="LevelSelect" type="Control"]
 layout_mode = 3
@@ -40,19 +24,7 @@ offset_left = 1330.0
 offset_top = 458.0
 offset_right = 1462.0
 offset_bottom = 598.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_disabled_color = Color(0, 0, 0, 0)
-theme_override_fonts/font = ExtResource("3_nllyx")
-theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_mr2kj")
-theme_override_styles/hover = SubResource("StyleBoxFlat_ifncd")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_w5bdp")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_q1jif")
-theme_override_styles/focus = SubResource("StyleBoxFlat_i7feh")
+theme = ExtResource("3_fybug")
 action_mode = 0
 text = "🎬"
 
@@ -60,19 +32,7 @@ text = "🎬"
 layout_mode = 0
 offset_right = 162.0
 offset_bottom = 128.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_disabled_color = Color(0, 0, 0, 0)
-theme_override_fonts/font = ExtResource("3_nllyx")
-theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_mr2kj")
-theme_override_styles/hover = SubResource("StyleBoxFlat_ifncd")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_w5bdp")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_q1jif")
-theme_override_styles/focus = SubResource("StyleBoxFlat_i7feh")
+theme = ExtResource("3_fybug")
 action_mode = 0
 text = "🔙"
 
@@ -85,19 +45,7 @@ offset_left = 953.0
 offset_top = 537.0
 offset_right = 1139.0
 offset_bottom = 690.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_disabled_color = Color(0, 0, 0, 0)
-theme_override_fonts/font = ExtResource("3_nllyx")
-theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_mr2kj")
-theme_override_styles/hover = SubResource("StyleBoxFlat_ifncd")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_w5bdp")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_q1jif")
-theme_override_styles/focus = SubResource("StyleBoxFlat_i7feh")
+theme = ExtResource("3_fybug")
 action_mode = 0
 text = "🟢
 w1m1
@@ -109,19 +57,7 @@ offset_left = 521.0
 offset_top = 532.0
 offset_right = 664.0
 offset_bottom = 710.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_disabled_color = Color(0, 0, 0, 0)
-theme_override_fonts/font = ExtResource("3_nllyx")
-theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_mr2kj")
-theme_override_styles/hover = SubResource("StyleBoxFlat_ifncd")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_w5bdp")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_q1jif")
-theme_override_styles/focus = SubResource("StyleBoxFlat_i7feh")
+theme = ExtResource("3_fybug")
 action_mode = 0
 text = "🟢
 Test"
@@ -132,19 +68,7 @@ offset_left = 105.0
 offset_top = 493.0
 offset_right = 237.0
 offset_bottom = 618.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_disabled_color = Color(0, 0, 0, 0)
-theme_override_fonts/font = ExtResource("3_nllyx")
-theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_mr2kj")
-theme_override_styles/hover = SubResource("StyleBoxFlat_ifncd")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_w5bdp")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_q1jif")
-theme_override_styles/focus = SubResource("StyleBoxFlat_i7feh")
+theme = ExtResource("3_fybug")
 action_mode = 0
 text = "🔴"
 
