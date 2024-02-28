@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmtavcoe2qlxt"]
+
+[ext_resource type="Script" path="res://scripts/ui/jump_button.gd" id="1_n6o62"]
+
+[node name="JumpButton" type="Button"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+script = ExtResource("1_n6o62")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
