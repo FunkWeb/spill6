@@ -1,7 +1,4 @@
-extends MenuButton
-
-signal pause_game
+extends Button
 
 func _on_pressed():
-	pause_game.emit()
-	get_tree().change_scene_to_file("res://scenes/menu/pause/pause.tscn")
+	GameManager.game_paused = !GameManager.game_paused
