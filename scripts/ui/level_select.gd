@@ -1,19 +1,26 @@
 extends Control
 # kart hvor spiller velger bane
 
+func _ready():
+	var i = 0
+	for level in $Levels.get_children():
+		i+=1
+		print("level ",i,": ", level)
+		if i not in $LevelData.levels_cleared:
+			level.disabled = true
+
 func _on_back_button_pressed():
 	$".".hide()
 
 func _on_cutscene_button_pressed():
-	# pass på at denne peker på riktig scene
-	get_tree().change_scene_to_file("res://cutscene.tscn")
+	pass # Replace with function body.
 
-func _on_forest_button_pressed():
-	# pass på at denne peker på riktig scene
+func _on_level_1_button_pressed():
+	get_tree().change_scene_to_file("res://scenes/levels/w1m1.tscn")
+
+func _on_level_2_button_pressed():
 	# Byttet denne til test levelen for nå
 	get_tree().change_scene_to_file("res://tests/test_level/test_level.tscn")
-	#get_tree().change_scene_to_file("res://forest_level.tscn")
 
-func _on_mountain_button_pressed():
-	# pass på at denne peker på riktig scene
-	get_tree().change_scene_to_file("res://scenes/levels/w1m1.tscn")
+func _on_level_3_button_pressed():
+	pass # Replace with function body.
