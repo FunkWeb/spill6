@@ -2,12 +2,14 @@ extends Control
 # kart hvor spiller velger bane
 
 func _ready():
-	var i = 0
-	for level in $Levels.get_children():
-		i+=1
-		print("level ",i,": ", level)
-		if i not in $LevelData.levels_cleared:
-			level.disabled = true
+	pass
+	# Henter levels_cleared fra save for å vise hvilke baner er låst opp
+	#var i = 0
+	#for level in $Levels.get_children():
+		#i+=1
+		#print("level ",i,": ", level)
+		#if i not in $LevelData.levels_cleared:
+			#level.disabled = true
 
 func _on_back_button_pressed():
 	$".".hide()
