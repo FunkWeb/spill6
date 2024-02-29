@@ -27,17 +27,6 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
 
-	# Har satt jump til space for nå, vi må endre det til en knapp
-	if Input.is_action_just_pressed("jump"):
-		if is_on_floor():
-			has_double_jumped = false
-			anim_player.play('jump_start')
-			velocity.y = jump_velocity
-	
-	# Ingen input for duck, legg til i input manager i settings
-	if Input.is_action_just_pressed("duck"):
-		anim_player.play('duck')
-
 	has_landed = check_if_landing()
 	move_and_slide()
 
@@ -65,3 +54,8 @@ func _on_health_upgrade_detected(amount):
 	print('player received health upgrade')
 	hearts += amount
 
+func _on_jump_button_pressed():
+	if is_on_floor():
+		has_double_jumped = false
+		anim_player.play('jump_start')
+		velocity.y = jump_velocity
