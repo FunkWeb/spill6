@@ -8,6 +8,11 @@ func _ready():
 	get_tree().paused = false
 	SoundManager.play_background_menu()
 
+	# henter versjon nummer fra version.txt og oppdaterer VersionLabel
+	var file = FileAccess.open("res://version.txt", FileAccess.READ)
+	var content = file.get_as_text(true).replace("\n","")
+	$VersionLabel.text = content
+	
 func _on_start_button_pressed():
 	level_select.show()
 	SoundManager.start_button()
