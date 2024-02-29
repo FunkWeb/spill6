@@ -256,6 +256,22 @@ scale = Vector2(0.5, 0.5)
 mouse_filter = 2
 texture = ExtResource("6_ic5tj")
 
+[node name="VersionLabel" type="Label" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -670.0
+offset_top = -76.0
+offset_right = -14.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 55
+text = "Error: fant ikke versjon"
+horizontal_alignment = 2
+vertical_alignment = 2
+
 [node name="GameStateManager" parent="." instance=ExtResource("10_eb4md")]
 
 [node name="LevelData" parent="." instance=ExtResource("11_1coro")]
