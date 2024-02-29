@@ -39,7 +39,7 @@ uppercase = true
 [node name="you_win" type="Label" parent="CenterContainer"]
 visible = false
 layout_mode = 2
-text = "You win!"
+text = "Du vant!"
 label_settings = SubResource("LabelSettings_62xai")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -48,7 +48,7 @@ uppercase = true
 [node name="you_died" type="Label" parent="CenterContainer"]
 visible = false
 layout_mode = 2
-text = "You died!"
+text = "Du døde!"
 label_settings = SubResource("LabelSettings_62xai")
 horizontal_alignment = 1
 vertical_alignment = 1
