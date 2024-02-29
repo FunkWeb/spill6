@@ -16,12 +16,12 @@ func _on_sound_effect_slider_value_changed(value):
 
 func _on_visibility_changed():
 	# henter lydnivå fra audio bus så sliderene viser riktig verdi
-	$MusicSlider.value = db_to_linear(
+	$VBoxContainer/MusicSlider.value = db_to_linear(
 		AudioServer.get_bus_volume_db(
 			AudioServer.get_bus_index("music")
 		)
 	)
-	$SfxSlider.value = db_to_linear(
+	$VBoxContainer/SfxSlider.value = db_to_linear(
 		AudioServer.get_bus_volume_db(
 			AudioServer.get_bus_index("sfx")
 		)

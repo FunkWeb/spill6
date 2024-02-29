@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://84a0wyqd3bgc"]
+[gd_scene load_steps=5 format=3 uid="uid://84a0wyqd3bgc"]
 
 [ext_resource type="Script" path="res://scripts/ui/pause.gd" id="1_umopw"]
 [ext_resource type="Texture2D" uid="uid://bnnvjny77vqtq" path="res://assets/art/ui/PauseMenySkisse.png" id="2_bm3gr"]
 [ext_resource type="PackedScene" uid="uid://cpos7lg6meg4m" path="res://scenes/menus/settings_menu.tscn" id="3_0tmxy"]
+[ext_resource type="Theme" uid="uid://dhcc0oot5rr60" path="res://materials/menu_theme.tres" id="3_igk0i"]
 
 [node name="PauseMenu" type="CanvasLayer"]
 process_mode = 2
@@ -22,6 +23,7 @@ offset_top = 88.0
 offset_right = 611.0
 offset_bottom = 201.0
 rotation = -0.0207265
+theme = ExtResource("3_igk0i")
 
 [node name="SettingsButton" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
@@ -30,6 +32,7 @@ offset_top = 271.0
 offset_right = 612.0
 offset_bottom = 379.0
 rotation = 0.0587404
+theme = ExtResource("3_igk0i")
 
 [node name="QuitButton" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
@@ -38,6 +41,7 @@ offset_top = 496.0
 offset_right = 605.0
 offset_bottom = 606.0
 rotation = -0.0584783
+theme = ExtResource("3_igk0i")
 
 [node name="Settings" parent="." instance=ExtResource("3_0tmxy")]
 visible = false
