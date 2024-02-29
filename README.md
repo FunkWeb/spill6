@@ -21,3 +21,15 @@ Det er et mobilspill laget for Android-telefoner.
 6. Fullfør installasjonen:
     - Gå tilbake til installasjonssiden og trykk på "Installer" igjen.
     - Appen skal nå vises på hjemskjermen din og være klar til bruk for å teste spillet.
+
+# Slik spiller du
+
+### Bevegelse
+
+-   Når du starter et nivå vil spilleren automatisk bevege seg framover.
+-   Trykk på skjermen for å hoppe.
+
+### Mål
+
+-   Unngå hinder i banen ved å hoppe over dem.
+-   Målet med spillet er å nå slutten av banen uten å miste alle liv eller bruke opp all tiden.
