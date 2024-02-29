@@ -1,6 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://cpos7lg6meg4m"]
+[gd_scene load_steps=6 format=3 uid="uid://cpos7lg6meg4m"]
 
 [ext_resource type="Script" path="res://scripts/ui/settings.gd" id="1_vue0y"]
+[ext_resource type="Theme" uid="uid://dhcc0oot5rr60" path="res://materials/menu_theme.tres" id="2_xllw7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qu6vs"]
+bg_color = Color(0.160784, 0.141176, 0.160784, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_08l2b"]
+bg_color = Color(0.160784, 0.141176, 0.160784, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_707a6"]
+bg_color = Color(0.160784, 0.141176, 0.160784, 1)
 
 [node name="Settings" type="Control"]
 layout_mode = 3
@@ -13,59 +23,71 @@ offset_right = 1600.0
 offset_bottom = 720.0
 color = Color(0.266667, 0.266667, 0.266667, 1)
 
-[node name="Title" type="Label" parent="."]
-layout_mode = 0
-offset_left = 746.0
-offset_top = 148.0
-offset_right = 881.0
-offset_bottom = 184.0
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+offset_left = 400.0
+offset_right = 1200.0
+offset_bottom = 720.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Title" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_xllw7")
 text = "Instillinger"
+horizontal_alignment = 1
 
-[node name="TextEdit" type="Label" parent="."]
-layout_mode = 0
-offset_left = 761.0
-offset_top = 267.0
-offset_right = 848.0
-offset_bottom = 303.0
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+
+[node name="MusicLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_xllw7")
 text = "Musikk"
+horizontal_alignment = 1
 
-[node name="MusicSlider" type="HSlider" parent="."]
-layout_mode = 0
-offset_left = 463.0
-offset_top = 298.0
-offset_right = 1139.0
-offset_bottom = 388.0
+[node name="MusicSlider" type="HSlider" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+theme = ExtResource("2_xllw7")
 max_value = 1.0
 step = 0.001
 value = 1.0
 
-[node name="TextEdit2" type="Label" parent="."]
-layout_mode = 0
-offset_left = 736.0
-offset_top = 385.0
-offset_right = 877.0
-offset_bottom = 421.0
+[node name="SfxLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_xllw7")
 text = "Lydeffekter"
+horizontal_alignment = 1
 
-[node name="SfxSlider" type="HSlider" parent="."]
-layout_mode = 0
-offset_left = 469.0
-offset_top = 445.0
-offset_right = 1134.0
-offset_bottom = 515.0
+[node name="SfxSlider" type="HSlider" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+theme = ExtResource("2_xllw7")
 max_value = 1.0
 step = 0.001
 value = 1.0
 
-[node name="CloseButton" type="Button" parent="."]
-layout_mode = 0
-offset_left = 652.0
-offset_top = 556.0
-offset_right = 952.0
-offset_bottom = 656.0
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="CloseButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+theme = ExtResource("2_xllw7")
+theme_override_colors/font_color = Color(0.929412, 0.898039, 0.831373, 1)
+theme_override_colors/font_pressed_color = Color(0.929412, 0.898039, 0.831373, 1)
+theme_override_colors/font_hover_color = Color(0.929412, 0.898039, 0.831373, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_qu6vs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_08l2b")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_707a6")
 text = "Lukk"
 
 [connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
-[connection signal="value_changed" from="MusicSlider" to="." method="_on_music_slider_value_changed"]
-[connection signal="value_changed" from="SfxSlider" to="." method="_on_sound_effect_slider_value_changed"]
-[connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="value_changed" from="VBoxContainer/MusicSlider" to="." method="_on_music_slider_value_changed"]
+[connection signal="value_changed" from="VBoxContainer/SfxSlider" to="." method="_on_sound_effect_slider_value_changed"]
+[connection signal="pressed" from="VBoxContainer/CloseButton" to="." method="_on_close_button_pressed"]

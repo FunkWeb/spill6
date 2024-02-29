@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bxvbcus4651uf"]
+[gd_scene load_steps=6 format=3 uid="uid://bxvbcus4651uf"]
 
 [ext_resource type="Script" path="res://scripts/ui/level_select.gd" id="1_n0ap1"]
 [ext_resource type="Texture2D" uid="uid://bpwx5r5w61jwr" path="res://assets/art/ui/level_select_skisse.png" id="2_r1kgq"]
 [ext_resource type="PackedScene" uid="uid://dkncnkmhfru77" path="res://scenes/save_manager.tscn" id="3_0lr5j"]
+[ext_resource type="Theme" uid="uid://dhcc0oot5rr60" path="res://materials/menu_theme.tres" id="3_fybug"]
 [ext_resource type="PackedScene" uid="uid://djnq1inpljinj" path="res://scenes/levels/level_data.tscn" id="4_88242"]
 
 [node name="LevelSelect" type="Control"]
@@ -19,42 +20,64 @@ expand_mode = 2
 
 [node name="CutsceneButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1329.0
-offset_top = 485.0
-offset_right = 1455.0
-offset_bottom = 558.0
+offset_left = 1330.0
+offset_top = 458.0
+offset_right = 1462.0
+offset_bottom = 598.0
+theme = ExtResource("3_fybug")
 action_mode = 0
-text = "cutscene?"
-
-[node name="ForestButton" type="Button" parent="."]
-layout_mode = 0
-offset_left = 995.0
-offset_top = 528.0
-offset_right = 1081.0
-offset_bottom = 600.0
-text = "Skog"
-
-[node name="MountainButton" type="Button" parent="."]
-layout_mode = 0
-offset_left = 530.0
-offset_top = 542.0
-offset_right = 653.0
-offset_bottom = 605.0
-text = "Fjell"
+text = "🎬"
 
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 4.0
-offset_top = 4.0
-offset_right = 236.0
-offset_bottom = 69.0
-text = "Tilbake til menyen"
+offset_right = 162.0
+offset_bottom = 128.0
+theme = ExtResource("3_fybug")
+action_mode = 0
+text = "🔙"
+
+[node name="Levels" type="Control" parent="."]
+anchors_preset = 0
+
+[node name="Level1Button" type="Button" parent="Levels"]
+layout_mode = 0
+offset_left = 953.0
+offset_top = 537.0
+offset_right = 1139.0
+offset_bottom = 690.0
+theme = ExtResource("3_fybug")
+action_mode = 0
+text = "🟢
+w1m1
+"
+
+[node name="Level2Button" type="Button" parent="Levels"]
+layout_mode = 0
+offset_left = 521.0
+offset_top = 532.0
+offset_right = 664.0
+offset_bottom = 710.0
+theme = ExtResource("3_fybug")
+action_mode = 0
+text = "🟢
+Test"
+
+[node name="Level3Button" type="Button" parent="Levels"]
+layout_mode = 0
+offset_left = 105.0
+offset_top = 493.0
+offset_right = 237.0
+offset_bottom = 618.0
+theme = ExtResource("3_fybug")
+action_mode = 0
+text = "🔴"
 
 [node name="GameStateManager" parent="." instance=ExtResource("3_0lr5j")]
 
 [node name="LevelData" parent="." instance=ExtResource("4_88242")]
 
 [connection signal="pressed" from="CutsceneButton" to="." method="_on_cutscene_button_pressed"]
-[connection signal="pressed" from="ForestButton" to="." method="_on_forest_button_pressed"]
-[connection signal="pressed" from="MountainButton" to="." method="_on_mountain_button_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Levels/Level1Button" to="." method="_on_level_1_button_pressed"]
+[connection signal="pressed" from="Levels/Level2Button" to="." method="_on_level_2_button_pressed"]
+[connection signal="pressed" from="Levels/Level3Button" to="." method="_on_level_3_button_pressed"]
