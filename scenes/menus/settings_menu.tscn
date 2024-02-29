@@ -1,7 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://cpos7lg6meg4m"]
+[gd_scene load_steps=6 format=3 uid="uid://cpos7lg6meg4m"]
 
 [ext_resource type="Script" path="res://scripts/ui/settings.gd" id="1_vue0y"]
 [ext_resource type="Theme" uid="uid://dhcc0oot5rr60" path="res://materials/menu_theme.tres" id="2_xllw7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qu6vs"]
+bg_color = Color(0.160784, 0.141176, 0.160784, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_08l2b"]
+bg_color = Color(0.160784, 0.141176, 0.160784, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_707a6"]
+bg_color = Color(0.160784, 0.141176, 0.160784, 1)
 
 [node name="Settings" type="Control"]
 layout_mode = 3
@@ -70,6 +79,12 @@ layout_mode = 2
 custom_minimum_size = Vector2(0, 75)
 layout_mode = 2
 theme = ExtResource("2_xllw7")
+theme_override_colors/font_color = Color(0.929412, 0.898039, 0.831373, 1)
+theme_override_colors/font_pressed_color = Color(0.929412, 0.898039, 0.831373, 1)
+theme_override_colors/font_hover_color = Color(0.929412, 0.898039, 0.831373, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_qu6vs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_08l2b")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_707a6")
 text = "Lukk"
 
 [connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
