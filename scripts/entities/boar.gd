@@ -12,6 +12,7 @@ func _physics_process(_delta):
 	pass
 
 func _on_area_2d_body_entered(body):
+	if body.name == "Raskeladden":
 	# Spilleren treffer hinderet
-	emit_signal('hit', self, body)
-	SoundManager.skade_piano()
+		emit_signal('hit', self, body)
+		SoundManager.skade_piano()
