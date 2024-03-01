@@ -12,7 +12,9 @@ extends CanvasLayer
 @onready var timer = $CenterContainer/Label/Timer
 @onready var label = $CenterContainer/Label
 
+signal time_out
 
+@export var time_left = 0 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -48,10 +50,9 @@ func get_time():
 
 func _on_timer_timeout():
 	# Send signal and transition to GameOver/Retry menu
-	pass # Replace with function body.
-	
-func pause_timer():
-	pass
+	emit_signal('time_out')
 
-func unpause_timer():
+func time_on_win():
+	time_left = get_time()
+	print(time_left)
 	pass
