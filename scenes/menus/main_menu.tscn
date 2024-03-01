@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://c5g7vg7ejslym"]
+[gd_scene load_steps=16 format=3 uid="uid://ummqddlik17r"]
 
 [ext_resource type="Script" path="res://scripts/ui/menu.gd" id="1_lm4ab"]
 [ext_resource type="Texture2D" uid="uid://bwmqf17eymmwg" path="res://assets/art/environments/bakgrunner/bakgrunn_meny/bakgrunn_startskjerm_placeholder.png" id="2_rrtjx"]
@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dxtujsfa36ldb" path="res://assets/art/environments/Skilt/ui_knapp_skilt_tekstur02.png" id="7_emdjc"]
 [ext_resource type="Texture2D" uid="uid://dxckx2032et1r" path="res://assets/art/environments/Skilt/ui_knapp_skilt_tekstur06.png" id="8_6hjtl"]
 [ext_resource type="Texture2D" uid="uid://mhwlnf6xpllk" path="res://assets/art/environments/Skilt/ui_knapp_skilt_tekstur07.png" id="9_i2bfp"]
-[ext_resource type="PackedScene" uid="uid://dkncnkmhfru77" path="res://scenes/save_manager.tscn" id="10_eb4md"]
+[ext_resource type="PackedScene" uid="uid://ccw8nj7luquqr" path="res://scenes/save_manager.tscn" id="10_eb4md"]
 [ext_resource type="PackedScene" uid="uid://djnq1inpljinj" path="res://scenes/levels/level_data.tscn" id="11_1coro"]
 [ext_resource type="PackedScene" uid="uid://bxvbcus4651uf" path="res://scenes/menus/level_select_menu.tscn" id="12_nuqcy"]
 [ext_resource type="PackedScene" uid="uid://cpos7lg6meg4m" path="res://scenes/menus/settings_menu.tscn" id="13_0n7do"]
