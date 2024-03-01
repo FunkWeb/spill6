@@ -1,9 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://b003u3f21kj54"]
+[gd_scene load_steps=6 format=3 uid="uid://b003u3f21kj54"]
 
 [ext_resource type="Script" path="res://scripts/controllers/goal.gd" id="1_aed86"]
 [ext_resource type="Texture2D" uid="uid://bqdtint4wuon7" path="res://assets/art/environments/Skilt/ui_knapp_skilt_tekstur10.png" id="2_p7qxb"]
 [ext_resource type="FontFile" uid="uid://b2k2qqu8sk8oe" path="res://assets/fonts/AR_One_Sans/static/AROneSans-Bold.ttf" id="3_t6q0r"]
-[ext_resource type="FontFile" uid="uid://i6a6arv6m8b3" path="res://assets/fonts/AR_One_Sans/AROneSans-VariableFont_ARRR,wght.ttf" id="5_c527o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uwrv5"]
 size = Vector2(187.5, 2559)
@@ -11,14 +10,6 @@ size = Vector2(187.5, 2559)
 [sub_resource type="LabelSettings" id="LabelSettings_o34wf"]
 font = ExtResource("3_t6q0r")
 font_size = 100
-
-[sub_resource type="LabelSettings" id="LabelSettings_73qvx"]
-font = ExtResource("5_c527o")
-font_size = 150
-font_color = Color(0.509804, 0.635294, 0.721569, 1)
-outline_size = 8
-outline_color = Color(0, 0, 0, 1)
-shadow_size = 0
 
 [node name="goal" type="Node2D"]
 script = ExtResource("1_aed86")
@@ -40,18 +31,6 @@ offset_bottom = 84.0
 rotation = -0.0342983
 text = "Nivå Slutt"
 label_settings = SubResource("LabelSettings_o34wf")
-
-[node name="LevelCompleteLabel" type="Label" parent="."]
-visible = false
-offset_left = -662.0
-offset_top = -410.0
-offset_right = 550.0
-offset_bottom = -206.0
-text = "Bane fullført!"
-label_settings = SubResource("LabelSettings_73qvx")
-horizontal_alignment = 1
-vertical_alignment = 1
-uppercase = true
 
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
 [connection signal="body_shape_exited" from="Area2D" to="." method="_on_area_2d_body_shape_exited"]
