@@ -10,7 +10,7 @@ func _on_area_2d_body_exited(body):
 		body.scroll_speed = 0
 		# body.anim_player.play('idle')
 		SoundManager.vinn_bane()
-		$LevelCompleteLabel.show()
+		$"../../HUD/CenterContainer/you_win".show()
 		await get_tree().create_timer(2).timeout
 		get_tree().change_scene_to_file("res://scenes/menus/main_menu.tscn")
 
