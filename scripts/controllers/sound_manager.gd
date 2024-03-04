@@ -43,6 +43,9 @@ func start_button():
 func skade_piano():
 	$SoundEffects/SkadePiano.play()
 	
+func skade_lyd_tromme():
+	$SoundEffects/SkadeLydTromme.play()
+	
 func vinn_bane():
 	$SoundEffects/VinnBane.play()
 
