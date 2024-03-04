@@ -1,9 +1,10 @@
-[gd_scene load_steps=16 format=3 uid="uid://ummqddlik17r"]
+[gd_scene load_steps=17 format=3 uid="uid://ummqddlik17r"]
 
 [ext_resource type="Script" path="res://scripts/ui/menu.gd" id="1_lm4ab"]
 [ext_resource type="Texture2D" uid="uid://bwmqf17eymmwg" path="res://assets/art/environments/bakgrunner/bakgrunn_meny/bakgrunn_startskjerm_placeholder.png" id="2_rrtjx"]
 [ext_resource type="Texture2D" uid="uid://bqdtint4wuon7" path="res://assets/art/environments/Skilt/ui_knapp_skilt_tekstur10.png" id="3_8vrv5"]
 [ext_resource type="Theme" uid="uid://dhcc0oot5rr60" path="res://materials/menu_theme.tres" id="3_ey2nd"]
+[ext_resource type="Texture2D" uid="uid://ew7fv7jjxmpe" path="res://assets/art/environments/Skilt/ui-hovedmeny-stolpe-tekstur.png" id="4_12puc"]
 [ext_resource type="FontFile" uid="uid://ddv1wxtia5j5c" path="res://assets/fonts/AR_One_Sans/static/AROneSans-Regular.ttf" id="4_85gay"]
 [ext_resource type="Texture2D" uid="uid://di4qpmynho4qu" path="res://assets/art/environments/Skilt/Spiker/ui_detalj_spiker_tekstur01.png" id="5_okak4"]
 [ext_resource type="Texture2D" uid="uid://2v2rro41xvdr" path="res://assets/art/environments/Skilt/Spiker/ui_detalj_spiker_tekstur02.png" id="6_ic5tj"]
@@ -65,6 +66,18 @@ rotation = -0.169792
 theme = ExtResource("3_ey2nd")
 action_mode = 0
 
+[node name="stolpe" type="TextureRect" parent="."]
+process_mode = 4
+z_as_relative = false
+offset_left = 414.0
+offset_top = -84.0
+offset_right = 1438.0
+offset_bottom = 940.0
+scale = Vector2(0.662578, 0.862366)
+mouse_filter = 2
+texture = ExtResource("4_12puc")
+stretch_mode = 3
+
 [node name="StartSign" type="TextureRect" parent="."]
 offset_left = 482.0
 offset_top = -240.0
@@ -97,20 +110,20 @@ text = "Start"
 
 [node name="Nail" type="TextureRect" parent="StartSign"]
 layout_mode = 0
-offset_left = 268.421
-offset_top = 462.082
-offset_right = 332.421
-offset_bottom = 526.082
+offset_left = 305.14
+offset_top = 453.056
+offset_right = 369.14
+offset_bottom = 517.056
 scale = Vector2(0.5, 0.5)
 mouse_filter = 2
 texture = ExtResource("5_okak4")
 
 [node name="Nail2" type="TextureRect" parent="StartSign"]
 layout_mode = 0
-offset_left = 278.55
-offset_top = 565.708
-offset_right = 342.55
-offset_bottom = 629.708
+offset_left = 304.563
+offset_top = 575.982
+offset_right = 368.563
+offset_bottom = 639.982
 scale = Vector2(0.5, 0.5)
 mouse_filter = 2
 texture = ExtResource("6_ic5tj")
