@@ -3,9 +3,8 @@
 [ext_resource type="Script" path="res://scripts/entities/player_noanim.gd" id="1_yh366"]
 [ext_resource type="Texture2D" uid="uid://dld5hjp51nbyk" path="res://assets/art/character/raskeladden-static.png" id="2_csvre"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_k7fip"]
-radius = 9.31595
-height = 42.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m7ast"]
+size = Vector2(12.9108, 41)
 
 [sub_resource type="Animation" id="Animation_usnvh"]
 
@@ -45,6 +44,7 @@ _data = {
 nodes/output/position = Vector2(442, 156)
 
 [node name="TestPlayer" type="CharacterBody2D"]
+floor_snap_length = 20.0
 script = ExtResource("1_yh366")
 
 [node name="Sprites" type="Node2D" parent="."]
@@ -55,9 +55,9 @@ scale = Vector2(0.0398534, 0.0398534)
 texture = ExtResource("2_csvre")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 3)
+position = Vector2(-1.5, 3)
 scale = Vector2(0.852, 1)
-shape = SubResource("CapsuleShape2D_k7fip")
+shape = SubResource("RectangleShape2D_m7ast")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
