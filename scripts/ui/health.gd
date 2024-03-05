@@ -10,6 +10,7 @@ var empty_health_icon : String = '🖤'
 var heart_amount : int = 3
 
 func _ready():
+	connect("lost_health", _on_hit)
 	for heart in range(heart_amount):
 		text += health_icon 
 

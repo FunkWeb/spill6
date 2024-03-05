@@ -8,3 +8,7 @@ func _on_player_death(body):
 	$HUD/CenterContainer/you_died.show()
 	await get_tree().create_timer(2).timeout
 	get_tree().change_scene_to_file("res://scenes/menus/main_menu.tscn")
+
+
+func _on_hit(from, to):
+	pass # Replace with function body.
