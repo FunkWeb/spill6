@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://btsfbq02rjs4l"]
+
+[ext_resource type="Script" path="res://scripts/entities/boar.gd" id="1_ym6n8"]
+[ext_resource type="Texture2D" uid="uid://canmd3hiw5634" path="res://assets/art/environments/skogbane_hinder/Stein_hinder01.PNG" id="2_aarqv"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p3bp1"]
+radius = 12.0
+height = 32.0
+
+[node name="stein_1" type="Node2D"]
+script = ExtResource("1_ym6n8")
+
+[node name="Idle-sheet" type="Sprite2D" parent="."]
+rotation = -0.0147066
+scale = Vector2(0.123474, 0.123474)
+texture = ExtResource("2_aarqv")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1.19209e-07, 1)
+rotation = 1.5708
+scale = Vector2(0.688115, 0.728469)
+shape = SubResource("CapsuleShape2D_p3bp1")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

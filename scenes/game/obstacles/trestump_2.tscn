@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwndrgcj3y84g"]
+
+[ext_resource type="Script" path="res://scripts/entities/boar.gd" id="1_7o3yk"]
+[ext_resource type="Texture2D" uid="uid://csn835as52ctc" path="res://assets/art/environments/skogbane_hinder/Trestump_hinder02.PNG" id="2_mudnc"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p3bp1"]
+radius = 13.4443
+height = 32.0
+
+[node name="trestump_2" type="Node2D"]
+script = ExtResource("1_7o3yk")
+
+[node name="Idle-sheet" type="Sprite2D" parent="."]
+rotation = -0.0147066
+scale = Vector2(0.123474, 0.123474)
+texture = ExtResource("2_mudnc")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(4.1922e-13, -1.19209e-07)
+rotation = 1.5708
+scale = Vector2(0.85302, 0.618805)
+shape = SubResource("CapsuleShape2D_p3bp1")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
