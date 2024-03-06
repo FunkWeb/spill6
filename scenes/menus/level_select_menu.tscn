@@ -51,17 +51,6 @@ text = "🟢
 w1m1
 "
 
-[node name="Level2Button" type="Button" parent="Levels"]
-layout_mode = 0
-offset_left = 521.0
-offset_top = 532.0
-offset_right = 664.0
-offset_bottom = 710.0
-theme = ExtResource("3_fybug")
-action_mode = 0
-text = "🟢
-Test"
-
 [node name="Level3Button" type="Button" parent="Levels"]
 layout_mode = 0
 offset_left = 105.0
@@ -79,5 +68,4 @@ text = "🔴"
 [connection signal="pressed" from="CutsceneButton" to="." method="_on_cutscene_button_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="Levels/Level1Button" to="." method="_on_level_1_button_pressed"]
-[connection signal="pressed" from="Levels/Level2Button" to="." method="_on_level_2_button_pressed"]
 [connection signal="pressed" from="Levels/Level3Button" to="." method="_on_level_3_button_pressed"]

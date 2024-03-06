@@ -22,7 +22,7 @@ func _on_level_1_button_pressed():
 
 func _on_level_2_button_pressed():
 	# Byttet denne til test levelen for nå
-	get_tree().change_scene_to_file("res://tests/test_level/test_level.tscn")
+	get_tree().change_scene_to_file("")
 
 func _on_level_3_button_pressed():
 	pass # Replace with function body.
