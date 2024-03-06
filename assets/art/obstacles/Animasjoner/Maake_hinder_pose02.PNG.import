@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dafxxiqdu4uh3"
-path="res://.godot/imported/grass_texture.png-3f7a82994c05c5411ef3ddc6d5fe5900.ctex"
+uid="uid://dar0ef052wi3"
+path="res://.godot/imported/Maake_hinder_pose02.PNG-fc195092f4f251d5a9eef1f7e6e319a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/environments/texture/grass_texture.png"
-dest_files=["res://.godot/imported/grass_texture.png-3f7a82994c05c5411ef3ddc6d5fe5900.ctex"]
+source_file="res://assets/art/obstacles/Animasjoner/Maake_hinder_pose02.PNG"
+dest_files=["res://.godot/imported/Maake_hinder_pose02.PNG-fc195092f4f251d5a9eef1f7e6e319a9.ctex"]
 
 [params]
 

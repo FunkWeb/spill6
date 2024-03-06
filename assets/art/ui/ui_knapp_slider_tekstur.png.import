@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dafxxiqdu4uh3"
-path="res://.godot/imported/grass_texture.png-3f7a82994c05c5411ef3ddc6d5fe5900.ctex"
+uid="uid://lvvrnb86pmqx"
+path="res://.godot/imported/ui_knapp_slider_tekstur.png-60bf142f389a80eeb88b255db68b4ae5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/environments/texture/grass_texture.png"
-dest_files=["res://.godot/imported/grass_texture.png-3f7a82994c05c5411ef3ddc6d5fe5900.ctex"]
+source_file="res://assets/art/ui/ui_knapp_slider_tekstur.png"
+dest_files=["res://.godot/imported/ui_knapp_slider_tekstur.png-60bf142f389a80eeb88b255db68b4ae5.ctex"]
 
 [params]
 

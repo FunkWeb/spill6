@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dafxxiqdu4uh3"
-path="res://.godot/imported/grass_texture.png-3f7a82994c05c5411ef3ddc6d5fe5900.ctex"
+uid="uid://dp1q74n4c22xy"
+path="res://.godot/imported/ui_knapp_level_blaa.png-8331899d71714723ea013f416aedeb45.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/environments/texture/grass_texture.png"
-dest_files=["res://.godot/imported/grass_texture.png-3f7a82994c05c5411ef3ddc6d5fe5900.ctex"]
+source_file="res://assets/art/ui/ui_knapp_level_blaa.png"
+dest_files=["res://.godot/imported/ui_knapp_level_blaa.png-8331899d71714723ea013f416aedeb45.ctex"]
 
 [params]
 

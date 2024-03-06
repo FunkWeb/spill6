@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dafxxiqdu4uh3"
-path="res://.godot/imported/grass_texture.png-3f7a82994c05c5411ef3ddc6d5fe5900.ctex"
+uid="uid://drsndynstaenm"
+path="res://.godot/imported/Stein_hinder02.PNG-36cc4eed90222858ca4a6ef4b3eff634.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/environments/texture/grass_texture.png"
-dest_files=["res://.godot/imported/grass_texture.png-3f7a82994c05c5411ef3ddc6d5fe5900.ctex"]
+source_file="res://assets/art/obstacles/Stein_hinder02.PNG"
+dest_files=["res://.godot/imported/Stein_hinder02.PNG-36cc4eed90222858ca4a6ef4b3eff634.ctex"]
 
 [params]
 
