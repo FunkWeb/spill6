@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://b362dxgf8xwdb"]
+[gd_scene load_steps=8 format=3 uid="uid://b362dxgf8xwdb"]
 
 [ext_resource type="Script" path="res://scripts/controllers/sound_manager.gd" id="1_ehfbi"]
 [ext_resource type="AudioStream" uid="uid://csqr5ndtqic8d" path="res://assets/sounds/sfx/skadePiano.ogg" id="2_8pwwn"]
@@ -6,6 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://ds373xo8ajov0" path="res://assets/sounds/sfx/FallFail.ogg" id="4_oheip"]
 [ext_resource type="AudioStream" uid="uid://c2muqsj37tjgh" path="res://assets/sounds/sfx/VinnBane.ogg" id="5_lmylb"]
 [ext_resource type="AudioStream" uid="uid://cl1ys306tqgvj" path="res://assets/sounds/sfx/SkadeLydTromme.ogg" id="6_tw4nt"]
+[ext_resource type="AudioStream" uid="uid://d2ynm311pa6nk" path="res://assets/sounds/sfx/TaperLyd.ogg" id="7_u3osk"]
 
 [node name="SoundManager" type="Node"]
 script = ExtResource("1_ehfbi")
@@ -39,3 +40,6 @@ bus = &"sfx"
 [node name="SkadeLydTromme" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource("6_tw4nt")
 bus = &"sfx"
+
+[node name="TaperLyd" type="AudioStreamPlayer" parent="SoundEffects"]
+stream = ExtResource("7_u3osk")
