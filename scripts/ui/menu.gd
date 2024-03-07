@@ -6,7 +6,7 @@ extends Node
 func _ready():
 	print("menu loaded")
 	get_tree().paused = false
-	SoundManager.play_background_menu()
+	SoundManager.play_bird_chirp()
 
 	# henter versjon nummer fra version.txt og oppdaterer VersionLabel
 	var file = FileAccess.open("res://version.txt", FileAccess.READ)
