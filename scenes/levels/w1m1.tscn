@@ -1230,7 +1230,7 @@ properties = SubResource("Resource_6gaxi")
 
 [sub_resource type="Resource" id="Resource_ow4lx"]
 script = ExtResource("6_v7yii")
-texture_idx = 0
+texture_idx = -26
 flip = false
 width = 1.0
 
@@ -1317,7 +1317,7 @@ edge_material = SubResource("Resource_lnt4o")
 normal_range = SubResource("Resource_lo0qe")
 weld = true
 render = true
-z_index = 10
+z_index = 0
 z_as_relative = true
 offset = 0.5
 
@@ -1325,7 +1325,7 @@ offset = 0.5
 script = ExtResource("14_gwlga")
 _edge_meta_materials = Array[ExtResource("12_gwgcs")]([SubResource("Resource_r8p1q")])
 fill_textures = Array[Texture2D]([ExtResource("13_ls554")])
-fill_texture_z_index = 10
+fill_texture_z_index = -10
 fill_texture_show_behind_parent = false
 fill_texture_scale = 1.0
 fill_texture_absolute_position = false
