@@ -46,6 +46,9 @@ func skade_piano():
 func skade_lyd_tromme():
 	$SoundEffects/SkadeLydTromme.play()
 	
+func taper_lyd():
+	$SoundEffects/TaperLyd.play()
+	
 func vinn_bane():
 	$SoundEffects/VinnBane.play()
 
