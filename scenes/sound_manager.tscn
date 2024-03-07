@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/controllers/sound_manager.gd" id="1_ehfbi"]
 [ext_resource type="AudioStream" uid="uid://csqr5ndtqic8d" path="res://assets/sounds/sfx/skadePiano.ogg" id="2_8pwwn"]
-[ext_resource type="AudioStream" uid="uid://bw7yeednaredn" path="res://assets/sounds/sfx/SkiltDemp.ogg" id="3_o1vs7"]
+[ext_resource type="AudioStream" uid="uid://bvp3d3xmmgdss" path="res://assets/sounds/sfx/SkiltDempV2.ogg" id="3_omwvp"]
 [ext_resource type="AudioStream" uid="uid://ds373xo8ajov0" path="res://assets/sounds/sfx/FallFail.ogg" id="4_oheip"]
 [ext_resource type="AudioStream" uid="uid://c2muqsj37tjgh" path="res://assets/sounds/sfx/VinnBane.ogg" id="5_lmylb"]
 [ext_resource type="AudioStream" uid="uid://cl1ys306tqgvj" path="res://assets/sounds/sfx/SkadeLydTromme.ogg" id="6_tw4nt"]
@@ -25,7 +25,7 @@ stream = ExtResource("2_8pwwn")
 bus = &"sfx"
 
 [node name="SkiltDemp" type="AudioStreamPlayer" parent="SoundEffects"]
-stream = ExtResource("3_o1vs7")
+stream = ExtResource("3_omwvp")
 bus = &"sfx"
 
 [node name="FallFail" type="AudioStreamPlayer" parent="SoundEffects"]
