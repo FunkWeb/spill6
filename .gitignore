@@ -4,3 +4,4 @@ android/
 export_presets.cfg
 **.tmp
 *.apk
+**.import
