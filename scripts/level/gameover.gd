@@ -3,6 +3,9 @@ extends Node2D
 # Viser label og "dreper" om player har sendt ut death signalet
 # body.queue_free() "sletter" spilleren 
 
+func _ready():
+	SoundManager.play_bird_chirp()
+
 func _on_player_death(body):
 	SoundManager.taper_lyd()
 	body.queue_free()

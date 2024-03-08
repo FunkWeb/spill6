@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/controllers/sound_manager.gd" id="1_ehfbi"]
 [ext_resource type="AudioStream" uid="uid://csqr5ndtqic8d" path="res://assets/sounds/sfx/skadePiano.ogg" id="2_8pwwn"]
+[ext_resource type="AudioStream" uid="uid://dvol0x04k4mt4" path="res://assets/sounds/music/Vind + fuglekvitter 2.ogg" id="2_n6e1t"]
 [ext_resource type="AudioStream" uid="uid://bvp3d3xmmgdss" path="res://assets/sounds/sfx/SkiltDempV2.ogg" id="3_omwvp"]
 [ext_resource type="AudioStream" uid="uid://ds373xo8ajov0" path="res://assets/sounds/sfx/FallFail.ogg" id="4_oheip"]
 [ext_resource type="AudioStream" uid="uid://c2muqsj37tjgh" path="res://assets/sounds/sfx/VinnBane.ogg" id="5_lmylb"]
@@ -9,6 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://d2ynm311pa6nk" path="res://assets/sounds/sfx/TaperLyd.ogg" id="7_u3osk"]
 
 [node name="SoundManager" type="Node"]
+process_mode = 3
 script = ExtResource("1_ehfbi")
 
 [node name="BackgroundMusic" type="Node" parent="."]
@@ -16,7 +18,8 @@ script = ExtResource("1_ehfbi")
 [node name="MenuTrack" type="AudioStreamPlayer" parent="BackgroundMusic"]
 bus = &"music"
 
-[node name="ForestTrack" type="AudioStreamPlayer" parent="BackgroundMusic"]
+[node name="BirdChirp" type="AudioStreamPlayer" parent="BackgroundMusic"]
+stream = ExtResource("2_n6e1t")
 bus = &"music"
 
 [node name="SoundEffects" type="Node" parent="."]

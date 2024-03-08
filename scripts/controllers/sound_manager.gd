@@ -55,5 +55,5 @@ func vinn_bane():
 func play_background_menu():
 	play_background_music($BackgroundMusic/MenuTrack)
 
-func play_background_forest():
-	play_background_music($BackgroundMusic/ForestTrack)
+func play_bird_chirp():
+	play_background_music($BackgroundMusic/BirdChirp)
