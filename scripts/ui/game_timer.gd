@@ -30,23 +30,16 @@ func get_time():
 	var current_time = timer.time_left
 	var minutes:int = current_time/60
 	var secounds:int = fmod(current_time, 60.0)
-	var msec:int = fmod(current_time, 1) * 100
 	# Convert the integers into string format
 	var mins = str(minutes)
 	var secs = str(secounds)
-	var ms = str(msec)
 	# Format the string to a better visiual reprensentation
 	if minutes < 10:
 		mins = "0" + str(minutes)
 	if secounds < 10:
 		secs = "0" + str(secounds)
-	if msec < 10:
-		if msec == 0:
-			ms = "00"
-		else:
-			ms = "0" + str(msec)
 	# Return the converted and formated time in a 00:00:00 format
-	return str(mins) + ":" + str(secs) + ":" + str(ms)
+	return str(mins) + ":" + str(secs)
 
 func _on_timer_timeout():
 	# Send signal and transition to GameOver/Retry menu
