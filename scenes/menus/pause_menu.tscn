@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://84a0wyqd3bgc"]
+[gd_scene load_steps=8 format=3 uid="uid://84a0wyqd3bgc"]
 
 [ext_resource type="Script" path="res://scripts/ui/pause.gd" id="1_umopw"]
 [ext_resource type="Texture2D" uid="uid://clvhia7kva06d" path="res://assets/art/ui/Ekstra/ui_pause_tau_tekstur01.png" id="2_33mg7"]
@@ -7,7 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://dpeaov7l5ikgy" path="res://assets/art/ui/ui_knapp_skilt_tekstur02.png" id="4_5sfmx"]
 [ext_resource type="Texture2D" uid="uid://dnd23mxa0mfld" path="res://assets/art/ui/ui_knapp_skilt_tekstur03.png" id="5_rjmm1"]
 [ext_resource type="Texture2D" uid="uid://6oou72223ani" path="res://assets/art/ui/ui_knapp_skilt_tekstur01.png" id="6_m8hf8"]
-[ext_resource type="Script" path="res://scripts/ui/completion_percent.gd" id="7_6bn6s"]
 
 [node name="PauseMenu" type="CanvasLayer"]
 process_mode = 2
@@ -64,6 +63,7 @@ skew = 0.00935245
 texture = ExtResource("4_5sfmx")
 
 [node name="Label" type="Label" parent="ResumeButton"]
+layout_mode = 0
 offset_left = 106.894
 offset_top = 6.21672
 offset_right = 459.894
@@ -114,6 +114,7 @@ skew = 0.00935245
 texture = ExtResource("6_m8hf8")
 
 [node name="Label" type="Label" parent="QuitButton"]
+layout_mode = 0
 offset_left = 51.0929
 offset_top = 17.0152
 offset_right = 404.093
@@ -136,6 +137,7 @@ skew = 0.00935245
 texture = ExtResource("6_m8hf8")
 
 [node name="Label" type="Label" parent="Level"]
+layout_mode = 0
 offset_left = 951.0
 offset_top = 89.0
 offset_right = 1304.0
@@ -144,29 +146,6 @@ rotation = 0.0147595
 theme = ExtResource("3_igk0i")
 theme_override_font_sizes/font_size = 60
 text = "Nivå 1-1"
-
-[node name="CompletionPercent" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Sprite2D" type="Sprite2D" parent="CompletionPercent"]
-position = Vector2(1099, 343)
-rotation = -0.0192797
-scale = Vector2(0.501994, 0.597106)
-skew = 0.00935245
-texture = ExtResource("4_5sfmx")
-
-[node name="Label" type="Label" parent="CompletionPercent"]
-offset_left = 937.0
-offset_top = 301.0
-offset_right = 1290.0
-offset_bottom = 384.0
-rotation = -0.0216268
-theme = ExtResource("3_igk0i")
-theme_override_font_sizes/font_size = 60
-script = ExtResource("7_6bn6s")
 
 [node name="Settings" parent="." instance=ExtResource("3_0tmxy")]
 visible = false
