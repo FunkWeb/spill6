@@ -33,4 +33,3 @@ text = "Nivå Slutt"
 label_settings = SubResource("LabelSettings_o34wf")
 
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
-[connection signal="body_shape_exited" from="Area2D" to="." method="_on_area_2d_body_shape_exited"]

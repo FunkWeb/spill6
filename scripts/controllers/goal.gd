@@ -7,6 +7,7 @@ func _on_area_2d_body_exited(body):
 	# Viser Level Complete label men ikke i riktig posisjon. Må fikses etterhvert
 	# 2 sekunder går og scenen endres til menyen igjen.
 	if body.get_class() == "CharacterBody2D":
+		body.velocity.x = 0
 		body.scroll_speed = 0
 		# body.anim_player.play('idle')
 		SoundManager.vinn_bane()
