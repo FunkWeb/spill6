@@ -3,10 +3,11 @@
 [ext_resource type="Script" path="res://scripts/controllers/sound_manager.gd" id="1_ehfbi"]
 [ext_resource type="AudioStream" uid="uid://csqr5ndtqic8d" path="res://assets/sounds/sfx/skadePiano.ogg" id="2_8pwwn"]
 [ext_resource type="AudioStream" uid="uid://dvol0x04k4mt4" path="res://assets/sounds/music/Vind + fuglekvitter 2.ogg" id="2_n6e1t"]
-[ext_resource type="AudioStream" uid="uid://bw7yeednaredn" path="res://assets/sounds/sfx/SkiltDemp.ogg" id="3_o1vs7"]
+[ext_resource type="AudioStream" uid="uid://bvp3d3xmmgdss" path="res://assets/sounds/sfx/SkiltDempV2.ogg" id="3_omwvp"]
 [ext_resource type="AudioStream" uid="uid://ds373xo8ajov0" path="res://assets/sounds/sfx/FallFail.ogg" id="4_oheip"]
 [ext_resource type="AudioStream" uid="uid://c2muqsj37tjgh" path="res://assets/sounds/sfx/VinnBane.ogg" id="5_lmylb"]
 [ext_resource type="AudioStream" uid="uid://cl1ys306tqgvj" path="res://assets/sounds/sfx/SkadeLydTromme.ogg" id="6_tw4nt"]
+[ext_resource type="AudioStream" uid="uid://d2ynm311pa6nk" path="res://assets/sounds/sfx/TaperLyd.ogg" id="7_u3osk"]
 
 [node name="SoundManager" type="Node"]
 process_mode = 3
@@ -28,7 +29,7 @@ stream = ExtResource("2_8pwwn")
 bus = &"sfx"
 
 [node name="SkiltDemp" type="AudioStreamPlayer" parent="SoundEffects"]
-stream = ExtResource("3_o1vs7")
+stream = ExtResource("3_omwvp")
 bus = &"sfx"
 
 [node name="FallFail" type="AudioStreamPlayer" parent="SoundEffects"]
@@ -42,3 +43,6 @@ bus = &"sfx"
 [node name="SkadeLydTromme" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource("6_tw4nt")
 bus = &"sfx"
+
+[node name="TaperLyd" type="AudioStreamPlayer" parent="SoundEffects"]
+stream = ExtResource("7_u3osk")

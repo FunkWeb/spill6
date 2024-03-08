@@ -7,6 +7,7 @@ func _ready():
 	SoundManager.play_bird_chirp()
 
 func _on_player_death(body):
+	SoundManager.taper_lyd()
 	body.queue_free()
 	$HUD/CenterContainer/you_died.show()
 	await get_tree().create_timer(2).timeout
