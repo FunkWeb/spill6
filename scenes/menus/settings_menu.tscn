@@ -36,7 +36,7 @@ alignment = 1
 [node name="Title" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_xllw7")
-text = "Instillinger"
+text = "Innstillinger"
 horizontal_alignment = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
