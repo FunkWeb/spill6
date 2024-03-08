@@ -147,6 +147,32 @@ theme = ExtResource("3_igk0i")
 theme_override_font_sizes/font_size = 60
 text = "Nivå 1-1"
 
+[node name="Percent" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Percent"]
+position = Vector2(1082, 341)
+rotation = 0.0273914
+scale = Vector2(0.501994, 0.597106)
+skew = 0.00935245
+texture = ExtResource("4_5sfmx")
+flip_h = true
+flip_v = true
+
+[node name="Label" type="Label" parent="Percent"]
+layout_mode = 0
+offset_left = 959.0
+offset_top = 300.0
+offset_right = 1312.0
+offset_bottom = 383.0
+rotation = 0.0147595
+theme = ExtResource("3_igk0i")
+theme_override_font_sizes/font_size = 60
+text = "0% Ferdig"
+
 [node name="Settings" parent="." instance=ExtResource("3_0tmxy")]
 visible = false
 
