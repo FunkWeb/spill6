@@ -1,6 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://1ehcmr0xs6rd"]
+[gd_scene load_steps=4 format=3 uid="uid://1ehcmr0xs6rd"]
 
 [ext_resource type="Script" path="res://scripts/controllers/death_pit.gd" id="1_fd6a2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hpnii"]
+size = Vector2(47.1125, 188.471)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_326eq"]
 size = Vector2(10823.8, 95.75)
@@ -9,6 +12,11 @@ size = Vector2(10823.8, 95.75)
 script = ExtResource("1_fd6a2")
 
 [node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(3955.75, -64.7469)
+rotation = 0.15708
+shape = SubResource("RectangleShape2D_hpnii")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(2742.13, 47.875)
