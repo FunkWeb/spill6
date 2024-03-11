@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bxvbcus4651uf"]
+[gd_scene load_steps=7 format=3 uid="uid://bxvbcus4651uf"]
 
 [ext_resource type="Script" path="res://scripts/ui/level_select.gd" id="1_n0ap1"]
 [ext_resource type="Texture2D" uid="uid://bpwx5r5w61jwr" path="res://assets/art/ui/level_select_skisse.png" id="2_r1kgq"]
 [ext_resource type="PackedScene" uid="uid://ccw8nj7luquqr" path="res://scenes/save_manager.tscn" id="3_0lr5j"]
 [ext_resource type="Theme" uid="uid://dhcc0oot5rr60" path="res://materials/menu_theme.tres" id="3_fybug"]
 [ext_resource type="PackedScene" uid="uid://djnq1inpljinj" path="res://scenes/levels/level_data.tscn" id="4_88242"]
+[ext_resource type="Texture2D" uid="uid://csy5v6ufun4wb" path="res://assets/art/ui/ui_knapp_tilbake_tekstur.png" id="4_lmajh"]
 
 [node name="LevelSelect" type="Control"]
 layout_mode = 3
@@ -30,11 +31,12 @@ text = "🎬"
 
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 0
-offset_right = 162.0
-offset_bottom = 128.0
+offset_right = 256.0
+offset_bottom = 256.0
+scale = Vector2(0.5, 0.5)
 theme = ExtResource("3_fybug")
 action_mode = 0
-text = "🔙"
+icon = ExtResource("4_lmajh")
 
 [node name="Levels" type="Control" parent="."]
 anchors_preset = 0
