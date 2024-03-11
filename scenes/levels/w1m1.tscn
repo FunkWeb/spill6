@@ -2098,6 +2098,7 @@ remote_path = NodePath("../../../Camera2D")
 position = Vector2(26.5062, -46.1778)
 scale = Vector2(0.611646, 0.611646)
 zoom = Vector2(3, 3)
+process_callback = 0
 limit_left = -45
 position_smoothing_enabled = true
 position_smoothing_speed = 7.0
@@ -2108,6 +2109,7 @@ drag_vertical_offset = -0.36
 [node name="GameStateManager" parent="." instance=ExtResource("25_yos2h")]
 
 [connection signal="pressed" from="HUD/JumpButton" to="PLAYER/Raskeladden" method="_on_jump_button_pressed"]
+[connection signal="won_game" from="MAP-TRIGGERS/goal" to="HUD/GameTimer" method="_on_goal_won_game"]
 [connection signal="hit" from="hindere/trestump_1" to="HUD/LeftContainer/health" method="_on_hit"]
 [connection signal="hit" from="hindere/trestump_1" to="PLAYER/Raskeladden" method="_on_hit"]
 [connection signal="hit" from="hindere/stein" to="HUD/LeftContainer/health" method="_on_hit"]
