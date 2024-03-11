@@ -1,20 +1,48 @@
-[gd_scene load_steps=5 format=3 uid="uid://84a0wyqd3bgc"]
+[gd_scene load_steps=8 format=3 uid="uid://84a0wyqd3bgc"]
 
 [ext_resource type="Script" path="res://scripts/ui/pause.gd" id="1_umopw"]
-[ext_resource type="Texture2D" uid="uid://bnnvjny77vqtq" path="res://assets/art/ui/PauseMenySkisse.png" id="2_bm3gr"]
+[ext_resource type="Texture2D" uid="uid://clvhia7kva06d" path="res://assets/art/ui/Ekstra/ui_pause_tau_tekstur01.png" id="2_33mg7"]
 [ext_resource type="PackedScene" uid="uid://cpos7lg6meg4m" path="res://scenes/menus/settings_menu.tscn" id="3_0tmxy"]
 [ext_resource type="Theme" uid="uid://dhcc0oot5rr60" path="res://materials/menu_theme.tres" id="3_igk0i"]
+[ext_resource type="Texture2D" uid="uid://dpeaov7l5ikgy" path="res://assets/art/ui/ui_knapp_skilt_tekstur02.png" id="4_5sfmx"]
+[ext_resource type="Texture2D" uid="uid://dnd23mxa0mfld" path="res://assets/art/ui/ui_knapp_skilt_tekstur03.png" id="5_rjmm1"]
+[ext_resource type="Texture2D" uid="uid://6oou72223ani" path="res://assets/art/ui/ui_knapp_skilt_tekstur01.png" id="6_m8hf8"]
 
 [node name="PauseMenu" type="CanvasLayer"]
 process_mode = 2
 layer = 2
 script = ExtResource("1_umopw")
 
-[node name="Background" type="TextureRect" parent="."]
+[node name="Background" type="ColorRect" parent="."]
 offset_right = 1600.0
 offset_bottom = 720.0
-texture = ExtResource("2_bm3gr")
-expand_mode = 2
+color = Color(0, 0, 0, 0.254902)
+
+[node name="Tau" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="UiPauseTauTekstur01" type="Sprite2D" parent="Tau"]
+position = Vector2(263, 272)
+scale = Vector2(0.572901, 0.901383)
+texture = ExtResource("2_33mg7")
+
+[node name="UiPauseTauTekstur02" type="Sprite2D" parent="Tau"]
+position = Vector2(484, 225)
+scale = Vector2(0.572901, 0.901383)
+texture = ExtResource("2_33mg7")
+
+[node name="UiPauseTauTekstur03" type="Sprite2D" parent="Tau"]
+position = Vector2(963, 66)
+scale = Vector2(0.572901, 0.901383)
+texture = ExtResource("2_33mg7")
+
+[node name="UiPauseTauTekstur04" type="Sprite2D" parent="Tau"]
+position = Vector2(1238, 91)
+scale = Vector2(0.572901, 0.901383)
+texture = ExtResource("2_33mg7")
 
 [node name="ResumeButton" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
@@ -24,15 +52,50 @@ offset_right = 611.0
 offset_bottom = 201.0
 rotation = -0.0207265
 theme = ExtResource("3_igk0i")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Sprite2D" type="Sprite2D" parent="ResumeButton"]
+position = Vector2(242.828, 59.0453)
+rotation = 0.0286662
+scale = Vector2(0.579829, 0.652739)
+skew = 0.00935245
+texture = ExtResource("4_5sfmx")
+
+[node name="Label" type="Label" parent="ResumeButton"]
+layout_mode = 0
+offset_left = 106.894
+offset_top = 6.21672
+offset_right = 459.894
+offset_bottom = 88.2167
+rotation = 0.00578784
+theme_override_font_sizes/font_size = 60
+text = "Fortsett"
 
 [node name="SettingsButton" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 165.0
-offset_top = 271.0
-offset_right = 612.0
-offset_bottom = 379.0
+offset_left = 164.0
+offset_top = 272.0
+offset_right = 611.0
+offset_bottom = 380.0
 rotation = 0.0587404
 theme = ExtResource("3_igk0i")
+
+[node name="Sprite2D" type="Sprite2D" parent="SettingsButton"]
+position = Vector2(228.31, 49.6823)
+rotation = -0.0228254
+scale = Vector2(0.510103, 0.62525)
+texture = ExtResource("5_rjmm1")
+
+[node name="Label" type="Label" parent="SettingsButton"]
+layout_mode = 0
+offset_left = 41.9273
+offset_top = 14.5637
+offset_right = 394.927
+offset_bottom = 96.5637
+rotation = -0.0176388
+theme_override_font_sizes/font_size = 60
+text = "Innstillinger"
 
 [node name="QuitButton" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
@@ -42,6 +105,73 @@ offset_right = 605.0
 offset_bottom = 606.0
 rotation = -0.0584783
 theme = ExtResource("3_igk0i")
+
+[node name="Sprite2D" type="Sprite2D" parent="QuitButton"]
+position = Vector2(224.922, 59.2468)
+rotation = -0.00709259
+scale = Vector2(0.501994, 0.597106)
+skew = 0.00935245
+texture = ExtResource("6_m8hf8")
+
+[node name="Label" type="Label" parent="QuitButton"]
+layout_mode = 0
+offset_left = 51.0929
+offset_top = 17.0152
+offset_right = 404.093
+offset_bottom = 99.0152
+rotation = -0.0197245
+theme_override_font_sizes/font_size = 60
+text = "Hovedmeny"
+
+[node name="Level" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Level"]
+position = Vector2(1107.7, 135.54)
+rotation = 0.0273914
+scale = Vector2(0.501994, 0.597106)
+skew = 0.00935245
+texture = ExtResource("6_m8hf8")
+
+[node name="Label" type="Label" parent="Level"]
+layout_mode = 0
+offset_left = 951.0
+offset_top = 89.0
+offset_right = 1304.0
+offset_bottom = 172.0
+rotation = 0.0147595
+theme = ExtResource("3_igk0i")
+theme_override_font_sizes/font_size = 60
+text = "Nivå 1-1"
+
+[node name="Percent" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Percent"]
+position = Vector2(1082, 341)
+rotation = 0.0273914
+scale = Vector2(0.501994, 0.597106)
+skew = 0.00935245
+texture = ExtResource("4_5sfmx")
+flip_h = true
+flip_v = true
+
+[node name="Label" type="Label" parent="Percent"]
+layout_mode = 0
+offset_left = 959.0
+offset_top = 300.0
+offset_right = 1312.0
+offset_bottom = 383.0
+rotation = 0.0147595
+theme = ExtResource("3_igk0i")
+theme_override_font_sizes/font_size = 60
+text = "0% Ferdig"
 
 [node name="Settings" parent="." instance=ExtResource("3_0tmxy")]
 visible = false
