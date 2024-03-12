@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bxvbcus4651uf"]
 
 [ext_resource type="Script" path="res://scripts/ui/level_select.gd" id="1_n0ap1"]
-[ext_resource type="Texture2D" uid="uid://bpwx5r5w61jwr" path="res://assets/art/ui/level_select_skisse.png" id="2_r1kgq"]
+[ext_resource type="Texture2D" uid="uid://cr2au6104hwt3" path="res://assets/art/ui/bakgrunn_kart.png" id="2_lxt8a"]
 [ext_resource type="PackedScene" uid="uid://ccw8nj7luquqr" path="res://scenes/save_manager.tscn" id="3_0lr5j"]
 [ext_resource type="Theme" uid="uid://dhcc0oot5rr60" path="res://materials/menu_theme.tres" id="3_fybug"]
 [ext_resource type="PackedScene" uid="uid://djnq1inpljinj" path="res://scenes/levels/level_data.tscn" id="4_88242"]
@@ -14,17 +14,19 @@ script = ExtResource("1_n0ap1")
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 1600.0
-offset_bottom = 720.0
-texture = ExtResource("2_r1kgq")
-expand_mode = 2
+offset_left = -119.0
+offset_top = -364.0
+offset_right = 1929.0
+offset_bottom = 1684.0
+scale = Vector2(0.88, 0.7)
+texture = ExtResource("2_lxt8a")
 
 [node name="CutsceneButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1330.0
-offset_top = 458.0
-offset_right = 1462.0
-offset_bottom = 598.0
+offset_left = 1366.0
+offset_top = 484.0
+offset_right = 1498.0
+offset_bottom = 624.0
 theme = ExtResource("3_fybug")
 action_mode = 0
 text = "🎬"
@@ -43,33 +45,33 @@ anchors_preset = 0
 
 [node name="Level1Button" type="Button" parent="Levels"]
 layout_mode = 0
-offset_left = 953.0
-offset_top = 537.0
-offset_right = 1139.0
-offset_bottom = 690.0
+offset_left = 947.0
+offset_top = 565.0
+offset_right = 1133.0
+offset_bottom = 718.0
 theme = ExtResource("3_fybug")
 action_mode = 0
-text = "🟢
-w1m1
+text = "🟢w1m1
+
 "
 
 [node name="Level2Button" type="Button" parent="Levels"]
 layout_mode = 0
-offset_left = 521.0
-offset_top = 532.0
-offset_right = 664.0
-offset_bottom = 710.0
+offset_left = 525.0
+offset_top = 513.0
+offset_right = 668.0
+offset_bottom = 691.0
 theme = ExtResource("3_fybug")
 action_mode = 0
-text = "🟢
-Test"
+text = "🔴
+"
 
 [node name="Level3Button" type="Button" parent="Levels"]
 layout_mode = 0
-offset_left = 105.0
-offset_top = 493.0
-offset_right = 237.0
-offset_bottom = 618.0
+offset_left = 97.0
+offset_top = 510.0
+offset_right = 229.0
+offset_bottom = 635.0
 theme = ExtResource("3_fybug")
 action_mode = 0
 text = "🔴"
