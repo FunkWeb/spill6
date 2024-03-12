@@ -1,47 +1,122 @@
-[gd_scene load_steps=12 format=3 uid="uid://csx4wtb8pnvma"]
+[gd_scene load_steps=29 format=3 uid="uid://csx4wtb8pnvma"]
 
-[ext_resource type="Script" path="res://scripts/entities/player_noanim.gd" id="1_yh366"]
-[ext_resource type="Texture2D" uid="uid://dld5hjp51nbyk" path="res://assets/art/character/raskeladden-static.png" id="2_csvre"]
+[ext_resource type="Script" path="res://scripts/entities/player.gd" id="1_yh366"]
+[ext_resource type="Texture2D" uid="uid://cj35mjpwk7vuk" path="res://assets/art/character/jump/raskeladden_hopp_0001.png" id="2_3k0n3"]
+[ext_resource type="Texture2D" uid="uid://bqn006171fyls" path="res://assets/art/character/skike/raskeladden_skiking_0001.png" id="2_laut3"]
+[ext_resource type="Texture2D" uid="uid://cm48haxmvbspp" path="res://assets/art/character/jump/raskeladden_hopp_0002.png" id="3_sb7hy"]
+[ext_resource type="Texture2D" uid="uid://b8uqp5550jaqn" path="res://assets/art/character/skike/raskeladden_skiking_0002.png" id="3_vonc6"]
+[ext_resource type="Texture2D" uid="uid://dfae8x470hjcq" path="res://assets/art/character/skike/raskeladden_skiking_0003.png" id="4_6syje"]
+[ext_resource type="Texture2D" uid="uid://npikikt7e6f3" path="res://assets/art/character/jump/raskeladden_hopp_0003.png" id="4_a38v7"]
+[ext_resource type="Texture2D" uid="uid://cphmf4vesp13u" path="res://assets/art/character/jump/raskeladden_hopp_0004.png" id="5_2ggfg"]
+[ext_resource type="Texture2D" uid="uid://car7kqh2w3fn6" path="res://assets/art/character/skike/raskeladden_skiking_0004.png" id="5_g2un1"]
+[ext_resource type="Texture2D" uid="uid://de0k2n1ojd2js" path="res://assets/art/character/jump/raskeladden_hopp_0005.png" id="6_5i05u"]
+[ext_resource type="Texture2D" uid="uid://c46442x843tt4" path="res://assets/art/character/skike/raskeladden_skiking_0005.png" id="6_n0yej"]
+[ext_resource type="Texture2D" uid="uid://md26kh25cqup" path="res://assets/art/character/jump/raskeladden_hopp_0006.png" id="7_qvaox"]
+[ext_resource type="Texture2D" uid="uid://ca3ghu0f8k6ns" path="res://assets/art/character/skike/raskeladden_skiking_0006.png" id="7_sy6rn"]
+[ext_resource type="Texture2D" uid="uid://b4khyl0o2takk" path="res://assets/art/character/skike/raskeladden_skiking_0007.png" id="8_1i3u6"]
+[ext_resource type="Texture2D" uid="uid://cr8t2vwcufc5y" path="res://assets/art/character/jump/raskeladden_hopp_0007.png" id="8_tg55t"]
+[ext_resource type="Texture2D" uid="uid://dd81mumsaxawb" path="res://assets/art/character/skike/raskeladden_skiking_0008.png" id="9_65qtc"]
+[ext_resource type="Texture2D" uid="uid://bj8xob1h47uyq" path="res://assets/art/character/jump/raskeladden_hopp_0008.png" id="9_dtyij"]
+[ext_resource type="Texture2D" uid="uid://bwvpj13ojqs8b" path="res://assets/art/character/skike/raskeladden_skiking_0009.png" id="10_1escp"]
+[ext_resource type="Texture2D" uid="uid://8ac4yiisfopf" path="res://assets/art/character/jump/raskeladden_hopp_0009.png" id="10_xn3w8"]
+[ext_resource type="Texture2D" uid="uid://cc0adqyp6oeij" path="res://assets/art/character/jump/raskeladden_hopp_0010.png" id="11_g3bvp"]
+[ext_resource type="Texture2D" uid="uid://bd7bkwqbbnp6k" path="res://assets/art/character/skike/raskeladden_skiking_0010.png" id="11_yaw5t"]
+[ext_resource type="Texture2D" uid="uid://bgrhtfo6du35r" path="res://assets/art/character/skike/raskeladden_skiking_0011.png" id="12_5035h"]
+[ext_resource type="Texture2D" uid="uid://vaikg4dr6fp8" path="res://assets/art/character/skike/raskeladden_skiking_0012.png" id="13_rjw87"]
+[ext_resource type="Texture2D" uid="uid://c0m8hbkc03ahy" path="res://assets/art/character/skike/raskeladden_skiking_0013.png" id="14_pv7lp"]
+[ext_resource type="Texture2D" uid="uid://ditswsbc65sk5" path="res://assets/art/character/skike/raskeladden_skiking_0014.png" id="15_73f8e"]
+[ext_resource type="Texture2D" uid="uid://ongvxukb61vi" path="res://assets/art/character/skike/raskeladden_skiking_0015.png" id="16_7gqkf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b5jpa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3k0n3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_sb7hy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_a38v7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2ggfg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5i05u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qvaox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_tg55t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_dtyij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_xn3w8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_g3bvp")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_laut3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vonc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_6syje")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_g2un1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_n0yej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_sy6rn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1i3u6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_65qtc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1escp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_yaw5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_5035h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_rjw87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_pv7lp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_73f8e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_7gqkf")
+}],
+"loop": true,
+"name": &"skike",
+"speed": 24.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m7ast"]
 size = Vector2(12.9108, 41)
-
-[sub_resource type="Animation" id="Animation_usnvh"]
-
-[sub_resource type="Animation" id="Animation_5kquw"]
-resource_name = "duck"
-length = 4.0
-
-[sub_resource type="Animation" id="Animation_lxjw6"]
-resource_name = "float"
-length = 1.6
-loop_mode = 1
-
-[sub_resource type="Animation" id="Animation_r81f1"]
-resource_name = "jump_land"
-length = 2.8
-
-[sub_resource type="Animation" id="Animation_vat8n"]
-resource_name = "jump_start"
-length = 2.0
-
-[sub_resource type="Animation" id="Animation_uge52"]
-resource_name = "run"
-length = 3.2
-loop_mode = 1
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_yd8v2"]
-_data = {
-"RESET": SubResource("Animation_usnvh"),
-"duck": SubResource("Animation_5kquw"),
-"float": SubResource("Animation_lxjw6"),
-"jump_land": SubResource("Animation_r81f1"),
-"jump_start": SubResource("Animation_vat8n"),
-"run": SubResource("Animation_uge52")
-}
-
-[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_2xrqd"]
-nodes/output/position = Vector2(442, 156)
 
 [node name="TestPlayer" type="CharacterBody2D"]
 floor_snap_length = 20.0
@@ -49,26 +124,14 @@ script = ExtResource("1_yh366")
 
 [node name="Sprites" type="Node2D" parent="."]
 
-[node name="Sprite2D" type="Sprite2D" parent="Sprites"]
-position = Vector2(0, 2)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Sprites"]
+position = Vector2(0, 11)
 scale = Vector2(0.0398534, 0.0398534)
-texture = ExtResource("2_csvre")
+sprite_frames = SubResource("SpriteFrames_b5jpa")
+animation = &"skike"
+autoplay = "skike"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.5, 3)
 scale = Vector2(0.852, 1)
 shape = SubResource("RectangleShape2D_m7ast")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_yd8v2")
-}
-autoplay = "run"
-speed_scale = 3.0
-
-[node name="AnimationTree" type="AnimationTree" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_yd8v2")
-}
-tree_root = SubResource("AnimationNodeBlendTree_2xrqd")
-anim_player = NodePath("../AnimationPlayer")
