@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://dpk1tha2tos6m"]
 
-[ext_resource type="Script" path="res://scripts/entities/player_noanim.gd" id="1_mpdeg"]
+[ext_resource type="Script" path="res://scripts/entities/player.gd" id="1_mpdeg"]
 [ext_resource type="Texture2D" uid="uid://csgq63l6ah2eo" path="res://tests/test_art/Run-Sheet.png" id="2_pvloc"]
 [ext_resource type="Texture2D" uid="uid://dhb8ukmrsu0ju" path="res://tests/test_art/Jump-All-Sheet.png" id="3_00e8q"]
 
