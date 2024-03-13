@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=3 uid="uid://w8xictciytjf"]
+
+[ext_resource type="Texture2D" uid="uid://3s1gjx7hhvsi" path="res://assets/art/environments/bakgrunner/bakgrunn_skog/skog_himmel.jpg" id="1_u7yv5"]
+[ext_resource type="Texture2D" uid="uid://dq7td1x5058vy" path="res://assets/art/environments/bakgrunner/bakgrunn_skog/Fjell.png" id="2_6yeua"]
+[ext_resource type="Texture2D" uid="uid://b1kvquwc017s6" path="res://assets/art/environments/bakgrunner/bakgrunn_skog_6x_mindre/far_parallax.png" id="3_g225f"]
+[ext_resource type="Texture2D" uid="uid://6tc7r5yk08ml" path="res://assets/art/environments/bakgrunner/bakgrunn_skog_6x_mindre/middle_parallax.png" id="4_ng337"]
+[ext_resource type="Texture2D" uid="uid://c2aisfo6tqh04" path="res://assets/art/environments/bakgrunner/bakgrunn_skog_6x_mindre/front_parallax.png" id="5_dhhrm"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Sky" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(771, 372)
+texture = ExtResource("1_u7yv5")
+
+[node name="Mountain" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(820, 319)
+texture = ExtResource("2_6yeua")
+
+[node name="Far parallax" type="ParallaxLayer" parent="ParallaxBackground"]
+z_index = 3
+position = Vector2(0, 58)
+motion_scale = Vector2(0.05, 0.05)
+motion_offset = Vector2(1, 0)
+motion_mirroring = Vector2(629, 1600)
+
+[node name="Far paralax" type="Sprite2D" parent="ParallaxBackground/Far parallax"]
+position = Vector2(311, 0)
+texture = ExtResource("3_g225f")
+offset = Vector2(14.247, 0)
+
+[node name="Middle parallax" type="ParallaxLayer" parent="ParallaxBackground"]
+z_index = 4
+position = Vector2(0, 22)
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(629, 0)
+
+[node name="Middle paralax" type="Sprite2D" parent="ParallaxBackground/Middle parallax"]
+z_index = 3
+position = Vector2(321, 8)
+texture = ExtResource("4_ng337")
+
+[node name="Close parallax" type="ParallaxLayer" parent="ParallaxBackground"]
+z_index = 5
+position = Vector2(0, 52)
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(629, 0)
+
+[node name="Close paralax" type="Sprite2D" parent="ParallaxBackground/Close parallax"]
+z_index = 4
+position = Vector2(284, 0)
+texture = ExtResource("5_dhhrm")
