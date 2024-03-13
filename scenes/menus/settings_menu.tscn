@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cpos7lg6meg4m"]
+[gd_scene load_steps=7 format=3 uid="uid://cpos7lg6meg4m"]
 
 [ext_resource type="Script" path="res://scripts/ui/settings.gd" id="1_vue0y"]
+[ext_resource type="Texture2D" uid="uid://c2nen4ax8jp6q" path="res://assets/art/ui/ui_slider_lyd_tekstur.png" id="2_wtnw3"]
 [ext_resource type="Theme" uid="uid://dhcc0oot5rr60" path="res://materials/menu_theme.tres" id="2_xllw7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qu6vs"]
@@ -19,9 +20,21 @@ script = ExtResource("1_vue0y")
 
 [node name="Background" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 1600.0
-offset_bottom = 720.0
+offset_left = 3.0
+offset_top = 1.0
+offset_right = 1603.0
+offset_bottom = 721.0
 color = Color(0.266667, 0.266667, 0.266667, 1)
+
+[node name="UiSliderMusicBackground" type="Sprite2D" parent="Background"]
+position = Vector2(792, 321)
+scale = Vector2(1.96509, 0.873047)
+texture = ExtResource("2_wtnw3")
+
+[node name="UiSliderLydTekstur" type="Sprite2D" parent="Background"]
+position = Vector2(792, 487)
+scale = Vector2(1.965, 0.873)
+texture = ExtResource("2_wtnw3")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(500, 0)
