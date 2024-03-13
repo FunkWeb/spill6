@@ -11,6 +11,8 @@ func _on_area_2d_body_entered(body):
 		# body.anim_player.play("death")
 		# Vi må finne camera i levelen og presentere label i midten, usikker på hvordan
 		SoundManager.fall_fail()
+		GameManager.disconnect_pause_function()
+		$"../../HUD/RightContainer/PauseButton".hide() #Hide the pause button from player on win
 		$"../../HUD/CenterContainer/you_died".show()
 		await get_tree().create_timer(2).timeout
 		get_tree().change_scene_to_file("res://scenes/menus/main_menu.tscn")
