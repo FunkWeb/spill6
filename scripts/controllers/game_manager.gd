@@ -32,3 +32,9 @@ func _notification(what):
 
 func _on_pause_menu_resume():
 	game_paused = !game_paused
+	
+func disconnect_pause_function():
+	disconnect("toggle_game_paused",$PauseMenu._on_game_manager_toggle_game_paused)
+	
+func connect_pause_function():
+	connect("toggle_game_paused",$PauseMenu._on_game_manager_toggle_game_paused)
