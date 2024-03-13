@@ -14,7 +14,7 @@ config/name="Raskeladden og Dovreslubben"
 run/main_scene="res://scenes/menus/main_menu.tscn"
 config/quit_on_go_back=false
 config/features=PackedStringArray("4.2", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://assets/art/Logo_R&D_1024x1024.PNG"
 
 [audio]
 
