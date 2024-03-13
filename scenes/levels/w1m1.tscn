@@ -1,7 +1,6 @@
 [gd_scene load_steps=247 format=3 uid="uid://eofl5wch2vi6"]
 
 [ext_resource type="Script" path="res://scripts/level/gameover.gd" id="1_1i43x"]
-[ext_resource type="PackedScene" uid="uid://bp0wo13r77st6" path="res://scenes/canvas_layer/canvaslayer_skog.tscn" id="1_n7frp"]
 [ext_resource type="PackedScene" uid="uid://1ehcmr0xs6rd" path="res://scenes/levels/map_triggers/death_pit.tscn" id="2_6jqgv"]
 [ext_resource type="Texture2D" uid="uid://cxr3rqiuaur68" path="res://assets/art/environments/materials/w1m0/dirt_background01.png" id="2_gt1o6"]
 [ext_resource type="PackedScene" uid="uid://clgosqujy66ek" path="res://scenes/HUD/hud.tscn" id="2_s55mg"]
@@ -9,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://b003u3f21kj54" path="res://scenes/levels/map_triggers/goal.tscn" id="3_kn6wk"]
 [ext_resource type="PackedScene" uid="uid://gu6wwha84ye1" path="res://scenes/HUD/game_timer.tscn" id="3_po7op"]
 [ext_resource type="PackedScene" uid="uid://csx4wtb8pnvma" path="res://scenes/game/characters/raskeladden.tscn" id="4_5c7x7"]
+[ext_resource type="PackedScene" uid="uid://w8xictciytjf" path="res://scenes/canvas_layer/canvaslayer_skog_6x_mindre.tscn" id="4_nrwhx"]
 [ext_resource type="PackedScene" uid="uid://jp5qnjxxce37" path="res://scenes/game/obstacles/boar.tscn" id="4_pgsxh"]
 [ext_resource type="Script" path="res://addons/rmsmartshape/shapes/shape.gd" id="5_ok4dq"]
 [ext_resource type="Script" path="res://addons/rmsmartshape/vertex_properties.gd" id="6_v7yii"]
@@ -1645,7 +1645,7 @@ flat = true
 
 [node name="GameTimer" parent="HUD" instance=ExtResource("3_po7op")]
 
-[node name="BACKGROUND_CANVAS" parent="." instance=ExtResource("1_n7frp")]
+[node name="CanvasLayer" parent="." instance=ExtResource("4_nrwhx")]
 
 [node name="LIGHT" type="Node2D" parent="."]
 
