@@ -2031,7 +2031,7 @@ position = Vector2(5569, -255)
 rotation = 0.023514
 
 [node name="trestump_11" parent="hindere" instance=ExtResource("27_3n8ku")]
-position = Vector2(9956, -519)
+position = Vector2(9956, -516)
 rotation = 0.44311
 
 [node name="trestump_12" parent="hindere" instance=ExtResource("22_ynf4l")]
