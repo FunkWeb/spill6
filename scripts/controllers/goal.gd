@@ -15,6 +15,7 @@ func _on_area_2d_body_exited(body):
 		body.scroll_speed = 0
 		# body.anim_player.play('idle')
 		won_game.emit()
+		GameManager.disconnect_pause_function()
 		SoundManager.vinn_bane()
 		$"../../HUD/CenterContainer/you_win".show()
 		await get_tree().create_timer(2).timeout

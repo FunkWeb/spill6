@@ -5,7 +5,8 @@ extends Node
 @onready var credits = $Credits
 func _ready():
 	print("menu loaded")
-	get_tree().paused = false
+	GameManager.connect_pause_function()
+	GameManager.game_paused = false
 	SoundManager.play_bird_chirp()
 
 	# henter versjon nummer fra version.txt og oppdaterer VersionLabel
