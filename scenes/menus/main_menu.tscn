@@ -1,9 +1,10 @@
-[gd_scene load_steps=17 format=3 uid="uid://ummqddlik17r"]
+[gd_scene load_steps=18 format=3 uid="uid://ummqddlik17r"]
 
 [ext_resource type="Script" path="res://scripts/ui/menu.gd" id="1_lm4ab"]
 [ext_resource type="Texture2D" uid="uid://bwmqf17eymmwg" path="res://assets/art/environments/bakgrunner/bakgrunn_meny/bakgrunn_startskjerm_placeholder.png" id="2_rrtjx"]
 [ext_resource type="Texture2D" uid="uid://bqdtint4wuon7" path="res://assets/art/environments/Skilt/ui_knapp_skilt_tekstur10.png" id="3_8vrv5"]
 [ext_resource type="Theme" uid="uid://dhcc0oot5rr60" path="res://materials/menu_theme.tres" id="3_ey2nd"]
+[ext_resource type="PackedScene" uid="uid://cdfm7gydy8nie" path="res://scenes/HUD/raskeladden_sportsmate_weblink.tscn" id="3_gd6eg"]
 [ext_resource type="Texture2D" uid="uid://ew7fv7jjxmpe" path="res://assets/art/environments/Skilt/ui-hovedmeny-stolpe-tekstur.png" id="4_12puc"]
 [ext_resource type="FontFile" uid="uid://ddv1wxtia5j5c" path="res://assets/fonts/AR_One_Sans/static/AROneSans-Regular.ttf" id="4_85gay"]
 [ext_resource type="Texture2D" uid="uid://di4qpmynho4qu" path="res://assets/art/environments/Skilt/Spiker/ui_detalj_spiker_tekstur01.png" id="5_okak4"]
@@ -25,6 +26,11 @@ script = ExtResource("1_lm4ab")
 offset_right = 1600.0
 offset_bottom = 720.0
 texture = ExtResource("2_rrtjx")
+
+[node name="RaskeladdenSportsmateWeblink" parent="." instance=ExtResource("3_gd6eg")]
+offset_right = 759.0
+offset_bottom = 968.0
+scale = Vector2(0.776032, 0.776032)
 
 [node name="StartButton" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
