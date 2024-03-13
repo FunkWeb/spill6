@@ -1853,6 +1853,7 @@ scale = Vector2(0.648184, 0.648184)
 position = Vector2(2038, 137)
 
 [node name="MAP-GEOMATRY01" type="Node2D" parent="StaticBody2D"]
+texture_repeat = 2
 scale = Vector2(0.0368688, 0.0372041)
 script = ExtResource("5_ok4dq")
 _points = SubResource("Resource_0mncx")
@@ -1868,6 +1869,7 @@ polygon = PackedVector2Array(-2086.34, -147.204, -1884.59, -149.514, -1884.22, -
 position = Vector2(1230, -219)
 
 [node name="MAP-GEOMATRY02" type="Node2D" parent="StaticBody2D2"]
+texture_repeat = 2
 scale = Vector2(0.0521378, 0.0521378)
 script = ExtResource("5_ok4dq")
 _points = SubResource("Resource_qfl2w")
@@ -1883,6 +1885,7 @@ polygon = PackedVector2Array(-251.765, 4.50818, -251.368, 3.94363, -250.796, 3.3
 position = Vector2(5582, 22)
 
 [node name="MAP-GEOMATRY03" type="Node2D" parent="StaticBody2D3"]
+texture_repeat = 2
 scale = Vector2(0.0392321, 0.0392321)
 script = ExtResource("5_ok4dq")
 _points = SubResource("Resource_mxw6v")
@@ -1898,6 +1901,7 @@ polygon = PackedVector2Array(-10.7723, -262.499, 51.7596, -268.697, 131.606, -28
 position = Vector2(7677, 35)
 
 [node name="MAP-GEOMATRY04" type="Node2D" parent="StaticBody2D4"]
+texture_repeat = 2
 scale = Vector2(0.0368152, 0.0368152)
 script = ExtResource("5_ok4dq")
 _points = SubResource("Resource_kxox2")
@@ -1913,6 +1917,7 @@ polygon = PackedVector2Array(-1265.4, -374.189, -1256.39, -376.95, -1245.36, -37
 position = Vector2(8359, -732)
 
 [node name="MAP-GEOMATRY05" type="Node2D" parent="StaticBody2D5"]
+texture_repeat = 2
 position = Vector2(-173, 81.9999)
 rotation = -0.000599431
 scale = Vector2(0.0363448, 0.0403022)
