@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bxvbcus4651uf"]
+[gd_scene load_steps=10 format=3 uid="uid://bxvbcus4651uf"]
 
 [ext_resource type="Script" path="res://scripts/ui/level_select.gd" id="1_n0ap1"]
 [ext_resource type="Texture2D" uid="uid://cr2au6104hwt3" path="res://assets/art/ui/bakgrunn_kart.png" id="2_lxt8a"]
@@ -6,6 +6,9 @@
 [ext_resource type="Theme" uid="uid://dhcc0oot5rr60" path="res://materials/menu_theme.tres" id="3_fybug"]
 [ext_resource type="PackedScene" uid="uid://djnq1inpljinj" path="res://scenes/levels/level_data.tscn" id="4_88242"]
 [ext_resource type="Texture2D" uid="uid://csy5v6ufun4wb" path="res://assets/art/ui/ui_knapp_tilbake_tekstur.png" id="4_lmajh"]
+[ext_resource type="Texture2D" uid="uid://4aw43cfhqei7" path="res://assets/art/ui/ui_knapp_start_tekstur.png" id="4_wnsey"]
+[ext_resource type="Texture2D" uid="uid://dwq6wkusbffy" path="res://assets/art/ui/ui_knapp_level_blaa.png" id="6_ikj3s"]
+[ext_resource type="Texture2D" uid="uid://dadh38be6jdlw" path="res://assets/art/ui/ui_knapp_level_rod.png" id="7_katum"]
 
 [node name="LevelSelect" type="Control"]
 layout_mode = 3
@@ -23,13 +26,16 @@ texture = ExtResource("2_lxt8a")
 
 [node name="CutsceneButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1366.0
-offset_top = 484.0
-offset_right = 1498.0
-offset_bottom = 624.0
+offset_left = 1390.0
+offset_top = 515.0
+offset_right = 1646.0
+offset_bottom = 771.0
+scale = Vector2(0.425, 0.425)
 theme = ExtResource("3_fybug")
 action_mode = 0
-text = "🎬"
+icon = ExtResource("4_wnsey")
+flat = true
+icon_alignment = 1
 
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 0
@@ -45,26 +51,43 @@ anchors_preset = 0
 
 [node name="Level1Button" type="Button" parent="Levels"]
 layout_mode = 0
-offset_left = 947.0
-offset_top = 565.0
-offset_right = 1133.0
-offset_bottom = 718.0
+offset_left = 997.0
+offset_top = 550.0
+offset_right = 1253.0
+offset_bottom = 806.0
+scale = Vector2(0.424604, 0.424604)
 theme = ExtResource("3_fybug")
 action_mode = 0
-text = "🟢w1m1
+text = "
 
 "
+icon = ExtResource("6_ikj3s")
+
+[node name="LevelNameLabel" type="RichTextLabel" parent="Levels/Level1Button"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 188.0
+offset_right = 198.0
+offset_bottom = 243.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 40
+text = "Skog - 1"
+fit_content = true
+visible_characters = 8
 
 [node name="Level2Button" type="Button" parent="Levels"]
 layout_mode = 0
-offset_left = 525.0
-offset_top = 513.0
-offset_right = 668.0
-offset_bottom = 691.0
+offset_left = 544.0
+offset_top = 546.0
+offset_right = 800.0
+offset_bottom = 802.0
+scale = Vector2(0.425, 0.425)
 theme = ExtResource("3_fybug")
 action_mode = 0
-text = "🔴
+text = "
 "
+icon = ExtResource("7_katum")
 
 [node name="Level3Button" type="Button" parent="Levels"]
 layout_mode = 0
@@ -72,9 +95,10 @@ offset_left = 97.0
 offset_top = 510.0
 offset_right = 229.0
 offset_bottom = 635.0
+scale = Vector2(0.425, 0.425)
 theme = ExtResource("3_fybug")
 action_mode = 0
-text = "🔴"
+icon = ExtResource("7_katum")
 
 [node name="GameStateManager" parent="." instance=ExtResource("3_0lr5j")]
 
