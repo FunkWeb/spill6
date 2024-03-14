@@ -7,7 +7,7 @@ func _ready():
 	print("menu loaded")
 	GameManager.connect_pause_function()
 	GameManager.game_paused = false
-	SoundManager.play_bird_chirp()
+	SoundManager.play_bird_chirp_loop(true)
 
 	# henter versjon nummer fra version.txt og oppdaterer VersionLabel
 	var file = FileAccess.open("res://version.txt", FileAccess.READ)

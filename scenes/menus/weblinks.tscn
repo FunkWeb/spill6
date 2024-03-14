@@ -1,10 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://dgiw7a76oro1a"]
+[gd_scene load_steps=9 format=3 uid="uid://bn5k8a1ow815y"]
 
 [ext_resource type="Script" path="res://scripts/ui/weblinks.gd" id="1_8w0xq"]
 [ext_resource type="Texture2D" uid="uid://ew7fv7jjxmpe" path="res://assets/art/environments/Skilt/ui-hovedmeny-stolpe-tekstur.png" id="2_xg8kg"]
-[ext_resource type="Texture2D" uid="uid://cr3rjq6a4tsr4" path="res://assets/art/ui/web_knapp_skilt_tekstur01.png" id="3_2dtg0"]
+[ext_resource type="Texture2D" path="res://assets/art/ui/web_knapp_skilt_tekstur01.png" id="3_2dtg0"]
 [ext_resource type="Theme" uid="uid://dhcc0oot5rr60" path="res://materials/menu_theme.tres" id="4_858q1"]
-[ext_resource type="Texture2D" uid="uid://cqofyubdahkuf" path="res://assets/art/ui/web_knapp_skilt_tekstur02.png" id="5_2mcnp"]
+[ext_resource type="Texture2D" path="res://assets/art/ui/web_knapp_skilt_tekstur02.png" id="5_2mcnp"]
 [ext_resource type="Texture2D" uid="uid://c24dwuypt42dl" path="res://assets/art/environments/Skilt/Spiker/ui_detalj_spiker_tekstur03.png" id="5_xoc6n"]
 [ext_resource type="Texture2D" uid="uid://2v2rro41xvdr" path="res://assets/art/environments/Skilt/Spiker/ui_detalj_spiker_tekstur02.png" id="6_y44ml"]
 [ext_resource type="Texture2D" uid="uid://4lkwidyb551i" path="res://assets/art/environments/Skilt/Spiker/ui_detalj_spiker_tekstur04.png" id="8_h023p"]
