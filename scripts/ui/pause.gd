@@ -7,6 +7,7 @@ func _ready():
 
 func _on_resume_button_pressed():
 	resume.emit()
+	SoundManager.play_bird_chirp_loop(false)
 	$".".hide()
 
 func _on_settings_button_pressed():
@@ -19,6 +20,7 @@ func _on_quit_button_pressed():
 func _on_game_manager_toggle_game_paused(is_paused):
 	visible = is_paused
 	if visible:
+		SoundManager.play_bird_chirp_loop(true)
 		update_percent()
 
 func update_percent():
