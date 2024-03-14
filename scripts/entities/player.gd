@@ -60,5 +60,6 @@ func _on_health_upgrade_detected(amount):
 func _on_jump_button_pressed():
 	if is_on_floor():
 		has_double_jumped = false
+		SoundManager.hopp_lyd()
 		anim_sprite.play("jump")
 		velocity.y = jump_velocity

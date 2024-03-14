@@ -40,6 +40,9 @@ func fall_fail():
 func start_button():
 	$SoundEffects/SkiltDemp.play()
 
+func hopp_lyd():
+	$SoundEffects/HoppLyd.play()
+
 func skade_piano():
 	$SoundEffects/SkadePiano.play()
 	
