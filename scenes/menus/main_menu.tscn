@@ -1,14 +1,18 @@
-[gd_scene load_steps=19 format=3 uid="uid://ummqddlik17r"]
+[gd_scene load_steps=18 format=3 uid="uid://ummqddlik17r"]
 
 [ext_resource type="Script" path="res://scripts/ui/menu.gd" id="1_lm4ab"]
 [ext_resource type="Texture2D" uid="uid://bwmqf17eymmwg" path="res://assets/art/environments/bakgrunner/bakgrunn_meny/bakgrunn_startskjerm_placeholder.png" id="2_rrtjx"]
 [ext_resource type="Theme" uid="uid://dhcc0oot5rr60" path="res://materials/menu_theme.tres" id="3_ey2nd"]
-[ext_resource type="PackedScene" uid="uid://drqj2o3vl45tr" path="res://scenes/menus/raskeladden_sportsmate_weblink.tscn" id="3_gd6eg"]
-[ext_resource type="FontFile" uid="uid://ddv1wxtia5j5c" path="res://assets/fonts/AR_One_Sans/static/AROneSans-Regular.ttf" id="4_85gay"]
-[ext_resource type="Texture2D" uid="uid://dbatik1ijo73r" path="res://assets/art/ui/Ekstra/ui-hovedmeny-stolpe-tekstur.png" id="5_m7akf"]
-[ext_resource type="PackedScene" uid="uid://bn5k8a1ow815y" path="res://scenes/menus/weblinks.tscn" id="6_1aft4"]
-[ext_resource type="Texture2D" uid="uid://elfehputdtwg" path="res://assets/art/ui/ui_knapp_skilt_tekstur10.png" id="7_iq20y"]
-[ext_resource type="Texture2D" uid="uid://c40c05yi44616" path="res://assets/art/ui/Ekstra/ui_detalj_spiker_tekstur01.png" id="9_bgneo"]
+
+[ext_resource type="PackedScene" uid="uid://cdfm7gydy8nie" path="res://scenes/menus/raskeladden_sportsmate_weblink.tscn" id="3_gd6eg"]
+[ext_resource type="Texture2D" uid="uid://ew7fv7jjxmpe" path="res://assets/art/environments/Skilt/ui-hovedmeny-stolpe-tekstur.png" id="4_12puc"]
+[ext_resource type="Texture2D" uid="uid://di4qpmynho4qu" path="res://assets/art/environments/Skilt/Spiker/ui_detalj_spiker_tekstur01.png" id="5_okak4"]
+[ext_resource type="PackedScene" uid="uid://dgiw7a76oro1a" path="res://scenes/menus/weblinks.tscn" id="6_1aft4"]
+[ext_resource type="Texture2D" uid="uid://2v2rro41xvdr" path="res://assets/art/environments/Skilt/Spiker/ui_detalj_spiker_tekstur02.png" id="6_ic5tj"]
+[ext_resource type="Texture2D" uid="uid://dxtujsfa36ldb" path="res://assets/art/environments/Skilt/ui_knapp_skilt_tekstur02.png" id="7_emdjc"]
+[ext_resource type="Texture2D" uid="uid://dxckx2032et1r" path="res://assets/art/environments/Skilt/ui_knapp_skilt_tekstur06.png" id="8_6hjtl"]
+[ext_resource type="Texture2D" uid="uid://mhwlnf6xpllk" path="res://assets/art/environments/Skilt/ui_knapp_skilt_tekstur07.png" id="9_i2bfp"]
+
 [ext_resource type="PackedScene" uid="uid://ccw8nj7luquqr" path="res://scenes/save_manager.tscn" id="10_eb4md"]
 [ext_resource type="Texture2D" uid="uid://dvkvy4il5lq12" path="res://assets/art/ui/Ekstra/ui_detalj_spiker_tekstur02.png" id="10_uc2nr"]
 [ext_resource type="PackedScene" uid="uid://djnq1inpljinj" path="res://scenes/levels/level_data.tscn" id="11_1coro"]
@@ -105,17 +109,16 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -174.0
-offset_top = -61.0
-offset_right = 123.0
-offset_bottom = 75.0001
+offset_left = -311.844
+offset_top = -67.622
+offset_right = 16.156
+offset_bottom = 107.378
 grow_horizontal = 2
 grow_vertical = 2
 rotation = -0.0277328
 theme = ExtResource("3_ey2nd")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_85gay")
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 140
 text = "Start"
 
 [node name="Nail" type="TextureRect" parent="StartSign"]
@@ -164,7 +167,6 @@ grow_vertical = 2
 rotation = -0.0277328
 theme = ExtResource("3_ey2nd")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_85gay")
 theme_override_font_sizes/font_size = 100
 text = "Innstillinger"
 
@@ -214,7 +216,6 @@ grow_vertical = 2
 rotation = -0.0277328
 theme = ExtResource("3_ey2nd")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_85gay")
 theme_override_font_sizes/font_size = 100
 text = "Kreditering"
 
@@ -257,17 +258,16 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -174.0
-offset_top = -61.0
-offset_right = 123.0
-offset_bottom = 75.0001
+offset_left = -48.951
+offset_top = -45.566
+offset_right = 248.049
+offset_bottom = 90.4341
 grow_horizontal = 2
 grow_vertical = 2
 rotation = -0.0277328
 theme = ExtResource("3_ey2nd")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_85gay")
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 80
 text = "Avslutt"
 
 [node name="Nail" type="TextureRect" parent="QuitSign"]

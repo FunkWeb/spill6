@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bxvbcus4651uf"]
+[gd_scene load_steps=11 format=3 uid="uid://bxvbcus4651uf"]
 
 [ext_resource type="Script" path="res://scripts/ui/level_select.gd" id="1_n0ap1"]
 [ext_resource type="Texture2D" uid="uid://cr2au6104hwt3" path="res://assets/art/ui/bakgrunn_kart.png" id="2_lxt8a"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://4aw43cfhqei7" path="res://assets/art/ui/ui_knapp_start_tekstur.png" id="4_wnsey"]
 [ext_resource type="Texture2D" uid="uid://dwq6wkusbffy" path="res://assets/art/ui/ui_knapp_level_blaa.png" id="6_ikj3s"]
 [ext_resource type="Texture2D" uid="uid://dadh38be6jdlw" path="res://assets/art/ui/ui_knapp_level_rod.png" id="7_katum"]
+[ext_resource type="FontFile" uid="uid://b2k2qqu8sk8oe" path="res://assets/fonts/AR_One_Sans/static/AROneSans-Bold.ttf" id="7_p67ok"]
 
 [node name="LevelSelect" type="Control"]
 layout_mode = 3
@@ -69,8 +70,10 @@ offset_left = 42.0
 offset_top = 188.0
 offset_right = 198.0
 offset_bottom = 243.0
+theme = ExtResource("3_fybug")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_p67ok")
 theme_override_font_sizes/normal_font_size = 40
 text = "Skog - 1"
 fit_content = true

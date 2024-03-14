@@ -1,6 +1,7 @@
-[gd_resource type="Theme" load_steps=7 format=3 uid="uid://dhcc0oot5rr60"]
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://dhcc0oot5rr60"]
 
 [ext_resource type="FontFile" uid="uid://i6a6arv6m8b3" path="res://assets/fonts/AR_One_Sans/AROneSans-VariableFont_ARRR,wght.ttf" id="1_l4wkb"]
+[ext_resource type="FontFile" uid="uid://c7xjbywhj5jm4" path="res://assets/fonts/LoveYaLikeASister-Regular.ttf" id="2_vbbhd"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m1ua4"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -54,5 +55,5 @@ Label/constants/shadow_offset_x = 0
 Label/constants/shadow_offset_y = 0
 Label/constants/shadow_outline_size = 0
 Label/font_sizes/font_size = 50
-Label/fonts/font = ExtResource("1_l4wkb")
+Label/fonts/font = ExtResource("2_vbbhd")
 Label/styles/normal = null
