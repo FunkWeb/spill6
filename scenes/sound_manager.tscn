@@ -8,7 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://c2muqsj37tjgh" path="res://assets/sounds/sfx/VinnBane.ogg" id="5_lmylb"]
 [ext_resource type="AudioStream" uid="uid://cl1ys306tqgvj" path="res://assets/sounds/sfx/SkadeLydTromme.ogg" id="6_tw4nt"]
 [ext_resource type="AudioStream" uid="uid://d2ynm311pa6nk" path="res://assets/sounds/sfx/TaperLyd.ogg" id="7_u3osk"]
-[ext_resource type="AudioStream" uid="uid://smr2bjjt75bv" path="res://assets/sounds/sfx/Hopp.ogg" id="9_fxwnb"]
+[ext_resource type="AudioStream" path="res://assets/sounds/sfx/Hopp.ogg" id="9_fxwnb"]
 
 [node name="SoundManager" type="Node"]
 process_mode = 3
@@ -50,3 +50,4 @@ stream = ExtResource("7_u3osk")
 
 [node name="HoppLyd" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource("9_fxwnb")
+bus = &"sfx"
