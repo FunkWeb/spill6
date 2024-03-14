@@ -1,13 +1,9 @@
-[gd_scene load_steps=28 format=3 uid="uid://csx4wtb8pnvma"]
+[gd_scene load_steps=24 format=3 uid="uid://csx4wtb8pnvma"]
 
 [ext_resource type="Script" path="res://scripts/entities/player.gd" id="1_yh366"]
-[ext_resource type="Texture2D" uid="uid://cj35mjpwk7vuk" path="res://assets/art/character/jump/raskeladden_hopp_0001.png" id="2_3k0n3"]
 [ext_resource type="Texture2D" uid="uid://bqn006171fyls" path="res://assets/art/character/skike/raskeladden_skiking_0001.png" id="2_laut3"]
-[ext_resource type="Texture2D" uid="uid://cm48haxmvbspp" path="res://assets/art/character/jump/raskeladden_hopp_0002.png" id="3_sb7hy"]
 [ext_resource type="Texture2D" uid="uid://b8uqp5550jaqn" path="res://assets/art/character/skike/raskeladden_skiking_0002.png" id="3_vonc6"]
 [ext_resource type="Texture2D" uid="uid://dfae8x470hjcq" path="res://assets/art/character/skike/raskeladden_skiking_0003.png" id="4_6syje"]
-[ext_resource type="Texture2D" uid="uid://npikikt7e6f3" path="res://assets/art/character/jump/raskeladden_hopp_0003.png" id="4_a38v7"]
-[ext_resource type="Texture2D" uid="uid://cphmf4vesp13u" path="res://assets/art/character/jump/raskeladden_hopp_0004.png" id="5_2ggfg"]
 [ext_resource type="Texture2D" uid="uid://car7kqh2w3fn6" path="res://assets/art/character/skike/raskeladden_skiking_0004.png" id="5_g2un1"]
 [ext_resource type="Texture2D" uid="uid://de0k2n1ojd2js" path="res://assets/art/character/jump/raskeladden_hopp_0005.png" id="6_5i05u"]
 [ext_resource type="Texture2D" uid="uid://c46442x843tt4" path="res://assets/art/character/skike/raskeladden_skiking_0005.png" id="6_n0yej"]
@@ -30,24 +26,12 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_3k0n3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_sb7hy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_a38v7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_2ggfg")
-}, {
-"duration": 1.0,
 "texture": ExtResource("6_5i05u")
 }, {
 "duration": 1.0,
 "texture": ExtResource("7_qvaox")
 }, {
-"duration": 1.0,
+"duration": 3.0,
 "texture": ExtResource("8_tg55t")
 }, {
 "duration": 1.0,
@@ -58,7 +42,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"jump",
-"speed": 24.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -124,7 +108,7 @@ script = ExtResource("1_yh366")
 position = Vector2(0, 5)
 scale = Vector2(0.06, 0.06)
 sprite_frames = SubResource("SpriteFrames_b5jpa")
-animation = &"skike"
+animation = &"jump"
 autoplay = "skike"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
