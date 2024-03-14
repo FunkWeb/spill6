@@ -64,10 +64,10 @@ texture = ExtResource("4_5sfmx")
 
 [node name="Label" type="Label" parent="ResumeButton"]
 layout_mode = 0
-offset_left = 106.894
-offset_top = 6.21672
-offset_right = 459.894
-offset_bottom = 88.2167
+offset_left = 109.707
+offset_top = 15.277
+offset_right = 462.707
+offset_bottom = 97.2769
 rotation = 0.00578784
 theme_override_font_sizes/font_size = 60
 text = "Fortsett"
@@ -89,10 +89,10 @@ texture = ExtResource("5_rjmm1")
 
 [node name="Label" type="Label" parent="SettingsButton"]
 layout_mode = 0
-offset_left = 41.9273
-offset_top = 14.5637
-offset_right = 394.927
-offset_bottom = 96.5637
+offset_left = 39.4608
+offset_top = 23.7243
+offset_right = 392.461
+offset_bottom = 105.724
 rotation = -0.0176388
 theme_override_font_sizes/font_size = 60
 text = "Innstillinger"
@@ -115,10 +115,10 @@ texture = ExtResource("6_m8hf8")
 
 [node name="Label" type="Label" parent="QuitButton"]
 layout_mode = 0
-offset_left = 51.0929
-offset_top = 17.0152
-offset_right = 404.093
-offset_bottom = 99.0152
+offset_left = 66.1257
+offset_top = 16.8936
+offset_right = 419.126
+offset_bottom = 98.8936
 rotation = -0.0197245
 theme_override_font_sizes/font_size = 60
 text = "Hovedmeny"
@@ -138,10 +138,10 @@ texture = ExtResource("6_m8hf8")
 
 [node name="Label" type="Label" parent="Level"]
 layout_mode = 0
-offset_left = 951.0
-offset_top = 89.0
-offset_right = 1304.0
-offset_bottom = 172.0
+offset_left = 981.0
+offset_top = 97.0
+offset_right = 1334.0
+offset_bottom = 180.0
 rotation = 0.0147595
 theme = ExtResource("3_igk0i")
 theme_override_font_sizes/font_size = 60
@@ -164,10 +164,10 @@ flip_v = true
 
 [node name="Label" type="Label" parent="Percent"]
 layout_mode = 0
-offset_left = 926.0
-offset_top = 299.0
-offset_right = 1279.0
-offset_bottom = 382.0
+offset_left = 937.0
+offset_top = 306.0
+offset_right = 1290.0
+offset_bottom = 389.0
 rotation = 0.0147595
 theme = ExtResource("3_igk0i")
 theme_override_font_sizes/font_size = 60
