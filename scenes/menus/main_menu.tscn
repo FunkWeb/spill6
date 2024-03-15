@@ -1,18 +1,19 @@
-[gd_scene load_steps=17 format=3 uid="uid://ummqddlik17r"]
+[gd_scene load_steps=18 format=3 uid="uid://ummqddlik17r"]
 
 [ext_resource type="Script" path="res://scripts/ui/menu.gd" id="1_lm4ab"]
 [ext_resource type="Texture2D" uid="uid://bwmqf17eymmwg" path="res://assets/art/environments/bakgrunner/bakgrunn_meny/bakgrunn_startskjerm_placeholder.png" id="2_rrtjx"]
-[ext_resource type="Texture2D" uid="uid://bqdtint4wuon7" path="res://assets/art/environments/Skilt/ui_knapp_skilt_tekstur10.png" id="3_8vrv5"]
 [ext_resource type="Theme" uid="uid://dhcc0oot5rr60" path="res://materials/menu_theme.tres" id="3_ey2nd"]
-[ext_resource type="Texture2D" uid="uid://ew7fv7jjxmpe" path="res://assets/art/environments/Skilt/ui-hovedmeny-stolpe-tekstur.png" id="4_12puc"]
-[ext_resource type="FontFile" uid="uid://ddv1wxtia5j5c" path="res://assets/fonts/AR_One_Sans/static/AROneSans-Regular.ttf" id="4_85gay"]
-[ext_resource type="Texture2D" uid="uid://di4qpmynho4qu" path="res://assets/art/environments/Skilt/Spiker/ui_detalj_spiker_tekstur01.png" id="5_okak4"]
-[ext_resource type="Texture2D" uid="uid://2v2rro41xvdr" path="res://assets/art/environments/Skilt/Spiker/ui_detalj_spiker_tekstur02.png" id="6_ic5tj"]
-[ext_resource type="Texture2D" uid="uid://dxtujsfa36ldb" path="res://assets/art/environments/Skilt/ui_knapp_skilt_tekstur02.png" id="7_emdjc"]
-[ext_resource type="Texture2D" uid="uid://dxckx2032et1r" path="res://assets/art/environments/Skilt/ui_knapp_skilt_tekstur06.png" id="8_6hjtl"]
-[ext_resource type="Texture2D" uid="uid://mhwlnf6xpllk" path="res://assets/art/environments/Skilt/ui_knapp_skilt_tekstur07.png" id="9_i2bfp"]
+[ext_resource type="PackedScene" uid="uid://cdfm7gydy8nie" path="res://scenes/menus/raskeladden_sportsmate_weblink.tscn" id="3_gd6eg"]
+[ext_resource type="Texture2D" uid="uid://dbatik1ijo73r" path="res://assets/art/ui/Ekstra/ui-hovedmeny-stolpe-tekstur.png" id="5_q4dmc"]
+[ext_resource type="PackedScene" uid="uid://bn5k8a1ow815y" path="res://scenes/menus/weblinks.tscn" id="6_1aft4"]
+[ext_resource type="Texture2D" uid="uid://elfehputdtwg" path="res://assets/art/ui/ui_knapp_skilt_tekstur10.png" id="7_tib3g"]
+[ext_resource type="Texture2D" uid="uid://c40c05yi44616" path="res://assets/art/ui/Ekstra/ui_detalj_spiker_tekstur01.png" id="8_001gl"]
+[ext_resource type="Texture2D" uid="uid://dvkvy4il5lq12" path="res://assets/art/ui/Ekstra/ui_detalj_spiker_tekstur02.png" id="9_8n8tv"]
 [ext_resource type="PackedScene" uid="uid://ccw8nj7luquqr" path="res://scenes/save_manager.tscn" id="10_eb4md"]
+[ext_resource type="Texture2D" uid="uid://do2nvkqip3fl8" path="res://assets/art/ui/ui_knapp_skilt_tekstur02.png" id="10_u8p4l"]
 [ext_resource type="PackedScene" uid="uid://djnq1inpljinj" path="res://scenes/levels/level_data.tscn" id="11_1coro"]
+[ext_resource type="Texture2D" uid="uid://dt07rpwl5nwe8" path="res://assets/art/ui/ui_knapp_skilt_tekstur06.png" id="11_3a1qt"]
+[ext_resource type="Texture2D" uid="uid://bi4pdkcsnm0om" path="res://assets/art/ui/ui_knapp_skilt_tekstur07.png" id="12_4maw5"]
 [ext_resource type="PackedScene" uid="uid://bxvbcus4651uf" path="res://scenes/menus/level_select_menu.tscn" id="12_nuqcy"]
 [ext_resource type="PackedScene" uid="uid://cpos7lg6meg4m" path="res://scenes/menus/settings_menu.tscn" id="13_0n7do"]
 [ext_resource type="PackedScene" uid="uid://bgkfbxvfcxyg8" path="res://scenes/menus/credits_menu.tscn" id="14_yauok"]
@@ -25,6 +26,9 @@ script = ExtResource("1_lm4ab")
 offset_right = 1600.0
 offset_bottom = 720.0
 texture = ExtResource("2_rrtjx")
+
+[node name="RaskeladdenSportsmateWeblink" parent="." instance=ExtResource("3_gd6eg")]
+scale = Vector2(0.776032, 0.776032)
 
 [node name="StartButton" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
@@ -75,8 +79,13 @@ offset_right = 1438.0
 offset_bottom = 940.0
 scale = Vector2(0.662578, 0.862366)
 mouse_filter = 2
-texture = ExtResource("4_12puc")
+texture = ExtResource("5_q4dmc")
 stretch_mode = 3
+
+[node name="Weblinks" parent="." instance=ExtResource("6_1aft4")]
+position = Vector2(1103, 254)
+rotation = -0.0275085
+scale = Vector2(0.483685, 0.483685)
 
 [node name="StartSign" type="TextureRect" parent="."]
 offset_left = 482.0
@@ -86,7 +95,7 @@ offset_bottom = 784.0
 rotation = -0.0698132
 scale = Vector2(0.75, 0.75)
 mouse_filter = 2
-texture = ExtResource("3_8vrv5")
+texture = ExtResource("7_tib3g")
 
 [node name="Label" type="Label" parent="StartSign"]
 layout_mode = 1
@@ -95,17 +104,16 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -174.0
-offset_top = -61.0
-offset_right = 123.0
-offset_bottom = 75.0001
+offset_left = -311.844
+offset_top = -67.622
+offset_right = 16.156
+offset_bottom = 107.378
 grow_horizontal = 2
 grow_vertical = 2
 rotation = -0.0277328
 theme = ExtResource("3_ey2nd")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_85gay")
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 140
 text = "Start"
 
 [node name="Nail" type="TextureRect" parent="StartSign"]
@@ -116,7 +124,7 @@ offset_right = 369.14
 offset_bottom = 517.056
 scale = Vector2(0.5, 0.5)
 mouse_filter = 2
-texture = ExtResource("5_okak4")
+texture = ExtResource("8_001gl")
 
 [node name="Nail2" type="TextureRect" parent="StartSign"]
 layout_mode = 0
@@ -126,7 +134,7 @@ offset_right = 368.563
 offset_bottom = 639.982
 scale = Vector2(0.5, 0.5)
 mouse_filter = 2
-texture = ExtResource("6_ic5tj")
+texture = ExtResource("9_8n8tv")
 
 [node name="SettingsSign" type="TextureRect" parent="."]
 offset_left = 356.0
@@ -136,7 +144,7 @@ offset_bottom = 974.0
 rotation = -0.0698132
 scale = Vector2(0.75, 0.75)
 mouse_filter = 2
-texture = ExtResource("7_emdjc")
+texture = ExtResource("10_u8p4l")
 
 [node name="Label" type="Label" parent="SettingsSign"]
 layout_mode = 1
@@ -154,7 +162,6 @@ grow_vertical = 2
 rotation = -0.0277328
 theme = ExtResource("3_ey2nd")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_85gay")
 theme_override_font_sizes/font_size = 100
 text = "Innstillinger"
 
@@ -166,7 +173,7 @@ offset_right = 538.498
 offset_bottom = 503.503
 scale = Vector2(0.5, 0.5)
 mouse_filter = 2
-texture = ExtResource("5_okak4")
+texture = ExtResource("8_001gl")
 
 [node name="Nail2" type="TextureRect" parent="SettingsSign"]
 layout_mode = 0
@@ -176,7 +183,7 @@ offset_right = 532.201
 offset_bottom = 612.663
 scale = Vector2(0.5, 0.5)
 mouse_filter = 2
-texture = ExtResource("6_ic5tj")
+texture = ExtResource("9_8n8tv")
 
 [node name="CreditsSign" type="TextureRect" parent="."]
 offset_left = 336.0
@@ -186,7 +193,7 @@ offset_bottom = 1133.0
 rotation = -0.0698132
 scale = Vector2(0.75, 0.75)
 mouse_filter = 2
-texture = ExtResource("8_6hjtl")
+texture = ExtResource("11_3a1qt")
 
 [node name="Label" type="Label" parent="CreditsSign"]
 layout_mode = 1
@@ -204,7 +211,6 @@ grow_vertical = 2
 rotation = -0.0277328
 theme = ExtResource("3_ey2nd")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_85gay")
 theme_override_font_sizes/font_size = 100
 text = "Kreditering"
 
@@ -216,7 +222,7 @@ offset_right = 565.192
 offset_bottom = 504.033
 scale = Vector2(0.5, 0.5)
 mouse_filter = 2
-texture = ExtResource("5_okak4")
+texture = ExtResource("8_001gl")
 
 [node name="Nail2" type="TextureRect" parent="CreditsSign"]
 layout_mode = 0
@@ -226,7 +232,8 @@ offset_right = 564.216
 offset_bottom = 613.565
 scale = Vector2(0.5, 0.5)
 mouse_filter = 2
-texture = ExtResource("6_ic5tj")
+texture = ExtResource("9_8n8tv")
+flip_h = true
 
 [node name="QuitSign" type="TextureRect" parent="."]
 offset_left = 216.0
@@ -236,7 +243,7 @@ offset_bottom = 1345.0
 rotation = -0.182469
 scale = Vector2(0.75, 0.75)
 mouse_filter = 2
-texture = ExtResource("9_i2bfp")
+texture = ExtResource("12_4maw5")
 flip_h = true
 
 [node name="Label" type="Label" parent="QuitSign"]
@@ -246,17 +253,16 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -174.0
-offset_top = -61.0
-offset_right = 123.0
-offset_bottom = 75.0001
+offset_left = -48.951
+offset_top = -45.566
+offset_right = 248.049
+offset_bottom = 90.4341
 grow_horizontal = 2
 grow_vertical = 2
 rotation = -0.0277328
 theme = ExtResource("3_ey2nd")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_85gay")
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 80
 text = "Avslutt"
 
 [node name="Nail" type="TextureRect" parent="QuitSign"]
@@ -267,7 +273,7 @@ offset_right = 700.83
 offset_bottom = 521.825
 scale = Vector2(0.5, 0.5)
 mouse_filter = 2
-texture = ExtResource("6_ic5tj")
+texture = ExtResource("9_8n8tv")
 
 [node name="VersionLabel" type="Label" parent="."]
 anchors_preset = 3

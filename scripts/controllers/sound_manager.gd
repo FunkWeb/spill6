@@ -57,3 +57,9 @@ func play_background_menu():
 
 func play_bird_chirp():
 	play_background_music($BackgroundMusic/BirdChirp)
+	
+func play_bird_chirp_loop(value: bool):
+	if value == true:
+		$BackgroundMusic/BirdChirp.play()
+	else:
+		$BackgroundMusic/BirdChirp.stop()

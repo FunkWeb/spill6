@@ -1,7 +1,24 @@
-[gd_scene load_steps=6 format=3 uid="uid://cpos7lg6meg4m"]
+[gd_scene load_steps=11 format=3 uid="uid://cpos7lg6meg4m"]
 
 [ext_resource type="Script" path="res://scripts/ui/settings.gd" id="1_vue0y"]
+[ext_resource type="Texture2D" uid="uid://c2nen4ax8jp6q" path="res://assets/art/ui/ui_slider_lyd_tekstur.png" id="2_wtnw3"]
 [ext_resource type="Theme" uid="uid://dhcc0oot5rr60" path="res://materials/menu_theme.tres" id="2_xllw7"]
+[ext_resource type="Texture2D" uid="uid://bxdodtlst3fl4" path="res://assets/art/ui/ui_knapp_slider_tekstur.png" id="4_tpv3t"]
+[ext_resource type="FontFile" uid="uid://c7xjbywhj5jm4" path="res://assets/fonts/LoveYaLikeASister-Regular.ttf" id="5_f0k36"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_amu2p"]
+texture = ExtResource("2_wtnw3")
+texture_margin_left = 128.0
+texture_margin_right = 128.0
+expand_margin_top = 256.0
+expand_margin_bottom = 256.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kdg16"]
+texture = ExtResource("2_wtnw3")
+texture_margin_left = 128.0
+texture_margin_right = 128.0
+expand_margin_top = 256.0
+expand_margin_bottom = 256.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qu6vs"]
 bg_color = Color(0.160784, 0.141176, 0.160784, 1)
@@ -19,8 +36,10 @@ script = ExtResource("1_vue0y")
 
 [node name="Background" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 1600.0
-offset_bottom = 720.0
+offset_left = 3.0
+offset_top = 1.0
+offset_right = 1603.0
+offset_bottom = 721.0
 color = Color(0.266667, 0.266667, 0.266667, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -33,12 +52,6 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="Title" type="Label" parent="VBoxContainer"]
-layout_mode = 2
-theme = ExtResource("2_xllw7")
-text = "Innstillinger"
-horizontal_alignment = 1
-
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
 custom_minimum_size = Vector2(0, 75)
 layout_mode = 2
@@ -46,6 +59,9 @@ layout_mode = 2
 [node name="MusicLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_xllw7")
+theme_override_colors/font_color = Color(0.929412, 0.898039, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.929412, 0.898039, 0.831373, 1)
+theme_override_colors/font_outline_color = Color(0.929412, 0.898039, 0.831373, 1)
 text = "Musikk"
 horizontal_alignment = 1
 
@@ -53,6 +69,9 @@ horizontal_alignment = 1
 custom_minimum_size = Vector2(0, 90)
 layout_mode = 2
 theme = ExtResource("2_xllw7")
+theme_override_icons/grabber = ExtResource("4_tpv3t")
+theme_override_icons/grabber_highlight = ExtResource("4_tpv3t")
+theme_override_styles/slider = SubResource("StyleBoxTexture_amu2p")
 max_value = 1.0
 step = 0.001
 value = 1.0
@@ -60,6 +79,9 @@ value = 1.0
 [node name="SfxLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_xllw7")
+theme_override_colors/font_color = Color(0.929412, 0.898039, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.929412, 0.898039, 0.831373, 1)
+theme_override_colors/font_outline_color = Color(0.929412, 0.898039, 0.831373, 1)
 text = "Lydeffekter"
 horizontal_alignment = 1
 
@@ -67,6 +89,9 @@ horizontal_alignment = 1
 custom_minimum_size = Vector2(0, 90)
 layout_mode = 2
 theme = ExtResource("2_xllw7")
+theme_override_icons/grabber = ExtResource("4_tpv3t")
+theme_override_icons/grabber_highlight = ExtResource("4_tpv3t")
+theme_override_styles/slider = SubResource("StyleBoxTexture_kdg16")
 max_value = 1.0
 step = 0.001
 value = 1.0
@@ -82,6 +107,7 @@ theme = ExtResource("2_xllw7")
 theme_override_colors/font_color = Color(0.929412, 0.898039, 0.831373, 1)
 theme_override_colors/font_pressed_color = Color(0.929412, 0.898039, 0.831373, 1)
 theme_override_colors/font_hover_color = Color(0.929412, 0.898039, 0.831373, 1)
+theme_override_fonts/font = ExtResource("5_f0k36")
 theme_override_styles/normal = SubResource("StyleBoxFlat_qu6vs")
 theme_override_styles/hover = SubResource("StyleBoxFlat_08l2b")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_707a6")

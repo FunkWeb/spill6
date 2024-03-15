@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b362dxgf8xwdb"]
+[gd_scene load_steps=9 format=3 uid="uid://b362dxgf8xwdb"]
 
 [ext_resource type="Script" path="res://scripts/controllers/sound_manager.gd" id="1_ehfbi"]
 [ext_resource type="AudioStream" uid="uid://csqr5ndtqic8d" path="res://assets/sounds/sfx/skadePiano.ogg" id="2_8pwwn"]

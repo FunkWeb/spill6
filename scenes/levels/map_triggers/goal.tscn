@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://b003u3f21kj54"]
 
 [ext_resource type="Script" path="res://scripts/controllers/goal.gd" id="1_aed86"]
-[ext_resource type="Texture2D" uid="uid://bqdtint4wuon7" path="res://assets/art/environments/Skilt/ui_knapp_skilt_tekstur10.png" id="2_p7qxb"]
+[ext_resource type="Texture2D" uid="uid://elfehputdtwg" path="res://assets/art/ui/ui_knapp_skilt_tekstur10.png" id="2_5goai"]
 [ext_resource type="FontFile" uid="uid://b2k2qqu8sk8oe" path="res://assets/fonts/AR_One_Sans/static/AROneSans-Bold.ttf" id="3_t6q0r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uwrv5"]
@@ -21,7 +21,7 @@ position = Vector2(-108.75, -44.5)
 shape = SubResource("RectangleShape2D_uwrv5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_p7qxb")
+texture = ExtResource("2_5goai")
 
 [node name="LevelEndLabel" type="Label" parent="Sprite2D"]
 offset_left = -299.0

@@ -4,11 +4,13 @@ extends Node2D
 # body.queue_free() "sletter" spilleren 
 
 func _ready():
-	SoundManager.play_bird_chirp()
+	SoundManager.play_bird_chirp_loop(false)
+	
 
 func _on_player_death(body):
 	SoundManager.taper_lyd()
 	body.queue_free()
+	GameManager.disconnect_pause_function()
 	get_node("HUD/RightContainer/PauseButton").queue_free()
 	$HUD/CenterContainer/you_died.show()
 	await get_tree().create_timer(2).timeout

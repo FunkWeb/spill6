@@ -22,6 +22,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
+	if timer.time_left==0:
+		return
 	# Set the label text to the current time left on timer
 	label.text = get_time()	
 
@@ -49,3 +51,7 @@ func time_on_win():
 	time_left = get_time()
 	print(time_left)
 	pass
+
+
+func _on_goal_won_game():
+	timer.stop()
