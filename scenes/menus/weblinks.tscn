@@ -1,13 +1,14 @@
 [gd_scene load_steps=9 format=3 uid="uid://bn5k8a1ow815y"]
 
 [ext_resource type="Script" path="res://scripts/ui/weblinks.gd" id="1_8w0xq"]
-[ext_resource type="Texture2D" uid="uid://ew7fv7jjxmpe" path="res://assets/art/environments/Skilt/ui-hovedmeny-stolpe-tekstur.png" id="2_xg8kg"]
-[ext_resource type="Texture2D" path="res://assets/art/ui/web_knapp_skilt_tekstur01.png" id="3_2dtg0"]
+
+[ext_resource type="Texture2D" uid="uid://dbatik1ijo73r" path="res://assets/art/ui/Ekstra/ui-hovedmeny-stolpe-tekstur.png" id="2_ohudo"]
+[ext_resource type="Texture2D" uid="uid://cr3rjq6a4tsr4" path="res://assets/art/ui/web_knapp_skilt_tekstur01.png" id="3_2dtg0"]
 [ext_resource type="Theme" uid="uid://dhcc0oot5rr60" path="res://materials/menu_theme.tres" id="4_858q1"]
-[ext_resource type="Texture2D" path="res://assets/art/ui/web_knapp_skilt_tekstur02.png" id="5_2mcnp"]
-[ext_resource type="Texture2D" uid="uid://c24dwuypt42dl" path="res://assets/art/environments/Skilt/Spiker/ui_detalj_spiker_tekstur03.png" id="5_xoc6n"]
-[ext_resource type="Texture2D" uid="uid://2v2rro41xvdr" path="res://assets/art/environments/Skilt/Spiker/ui_detalj_spiker_tekstur02.png" id="6_y44ml"]
-[ext_resource type="Texture2D" uid="uid://4lkwidyb551i" path="res://assets/art/environments/Skilt/Spiker/ui_detalj_spiker_tekstur04.png" id="8_h023p"]
+[ext_resource type="Texture2D" uid="uid://cqofyubdahkuf" path="res://assets/art/ui/web_knapp_skilt_tekstur02.png" id="5_2mcnp"]
+[ext_resource type="Texture2D" uid="uid://cdl7jn1j44eie" path="res://assets/art/ui/Ekstra/ui_detalj_spiker_tekstur03.png" id="5_5s56f"]
+[ext_resource type="Texture2D" uid="uid://dvkvy4il5lq12" path="res://assets/art/ui/Ekstra/ui_detalj_spiker_tekstur02.png" id="6_8ih3h"]
+[ext_resource type="Texture2D" uid="uid://bfwenn4t60clh" path="res://assets/art/ui/Ekstra/ui_detalj_spiker_tekstur04.png" id="8_bgj35"]
 
 [node name="Weblinks" type="Node2D"]
 script = ExtResource("1_8w0xq")
@@ -19,7 +20,7 @@ offset_right = 1084.0
 offset_bottom = 1007.0
 rotation = -0.0890358
 scale = Vector2(0.710378, 1.05431)
-texture = ExtResource("2_xg8kg")
+texture = ExtResource("2_ohudo")
 
 [node name="sportsmate_link" type="TextureButton" parent="."]
 offset_left = 19.0
@@ -47,7 +48,7 @@ offset_top = 114.542
 offset_right = 455.622
 offset_bottom = 178.542
 scale = Vector2(0.4541, 0.4541)
-texture = ExtResource("5_xoc6n")
+texture = ExtResource("5_5s56f")
 
 [node name="spiker02" type="TextureRect" parent="sportsmate_link"]
 layout_mode = 0
@@ -56,7 +57,7 @@ offset_top = 1.91688
 offset_right = 417.042
 offset_bottom = 65.9169
 scale = Vector2(0.747204, 0.747204)
-texture = ExtResource("6_y44ml")
+texture = ExtResource("6_8ih3h")
 
 [node name="funkweb_link" type="TextureButton" parent="."]
 offset_left = 25.0
@@ -73,17 +74,17 @@ offset_top = 143.314
 offset_right = 495.887
 offset_bottom = 207.314
 scale = Vector2(0.851589, 0.851589)
-texture = ExtResource("6_y44ml")
+texture = ExtResource("6_8ih3h")
 flip_h = true
 
 [node name="spiker02" type="TextureRect" parent="funkweb_link"]
 layout_mode = 0
-offset_left = 419.464
-offset_top = 13.6778
-offset_right = 483.464
-offset_bottom = 77.6778
+offset_left = 426.157
+offset_top = 6.24816
+offset_right = 490.157
+offset_bottom = 70.2482
 scale = Vector2(0.575341, 0.575341)
-texture = ExtResource("8_h023p")
+texture = ExtResource("8_bgj35")
 flip_h = true
 
 [node name="Label" type="Label" parent="funkweb_link"]
