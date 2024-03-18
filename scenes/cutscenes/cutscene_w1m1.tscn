@@ -1,0 +1,146 @@
+[gd_scene load_steps=17 format=3 uid="uid://bsnms81ofqaps"]
+
+[ext_resource type="Script" path="res://scenes/cutscenes/cutscene_w1m1.gd" id="1_itv6g"]
+[ext_resource type="Texture2D" uid="uid://cjruk8av6v602" path="res://assets/art/cutscenes/rask-03.jpg" id="1_ou7lh"]
+[ext_resource type="Texture2D" uid="uid://k3g06av808v0" path="res://assets/art/cutscenes/rask-04.jpg" id="2_pgt8i"]
+[ext_resource type="Texture2D" uid="uid://dvv2of7oeny01" path="res://assets/art/cutscenes/rask-05.jpg" id="3_pg8lm"]
+[ext_resource type="Theme" uid="uid://dhcc0oot5rr60" path="res://materials/menu_theme.tres" id="3_v30p6"]
+[ext_resource type="Texture2D" uid="uid://b4yoapqlaliao" path="res://assets/art/cutscenes/rask-06.jpg" id="4_kc3xi"]
+[ext_resource type="Texture2D" uid="uid://t8rt4jyysy8o" path="res://assets/art/cutscenes/rask-07.jpg" id="5_8hdh4"]
+[ext_resource type="Texture2D" uid="uid://vdsioj01io8v" path="res://assets/art/cutscenes/rask-08.jpg" id="6_1cffj"]
+[ext_resource type="Texture2D" uid="uid://vnapvsnhsl16" path="res://assets/art/cutscenes/rask-09.jpg" id="7_6j2a1"]
+[ext_resource type="Texture2D" uid="uid://5n3p2715krwv" path="res://assets/art/cutscenes/rask-10.jpg" id="8_kegdc"]
+[ext_resource type="Texture2D" uid="uid://dk0e5clckdb6v" path="res://assets/art/cutscenes/rask-11.jpg" id="9_ht55v"]
+[ext_resource type="Texture2D" uid="uid://25t0t4hq5miu" path="res://assets/art/cutscenes/rask-12.jpg" id="10_mh6pa"]
+[ext_resource type="Texture2D" uid="uid://d2icvwrqopg8a" path="res://assets/art/cutscenes/rask-14.jpg" id="11_46mme"]
+[ext_resource type="Texture2D" uid="uid://b4c56otb5113u" path="res://assets/art/cutscenes/rask-15.jpg" id="12_ul5y7"]
+
+[sub_resource type="Animation" id="Animation_gueuh"]
+resource_name = "intro"
+length = 110.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4, 16.5, 26, 41, 47.5, 57, 65.5, 74, 77.5, 84.5, 96),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_ou7lh"), ExtResource("2_pgt8i"), ExtResource("3_pg8lm"), ExtResource("4_kc3xi"), ExtResource("5_8hdh4"), ExtResource("6_1cffj"), ExtResource("7_6j2a1"), ExtResource("8_kegdc"), ExtResource("9_ht55v"), ExtResource("10_mh6pa"), ExtResource("11_46mme"), ExtResource("12_ul5y7")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/Label:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4, 8.5, 11, 16.5, 23, 26, 35, 38.5, 41, 47.5, 54, 57, 60.5, 65.5, 72.5, 74, 77.5, 79.5, 84.5, 91.5, 96, 100.5, 104.5, 107.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": ["Raskeladdens hytte et sted i Norge ...
+", "Raskeladden står foran den utstilte
+samlingen sin av Skikes.", "«Dette har kostet mye tid og penger,
+men nå kan jeg skryte av at jeg har den
+fineste Skike-samlingen sør for Nordpolen!»", "«Dette har kostet mye tid og penger,
+men nå kan jeg skryte av at jeg har den
+fineste Skike-samlingen sør for Nordpolen!»", "«Og her er kronjuvelene i samlingen:
+De fabelaktige Gullskikene! De eneste av sitt slag!»", "«Disse Skikene skal aldri brukes!»", "Dovreslubben har hørt et spetakkel og blitt nysgjerrig.
+Han står nå og sniklytter utenfor, mens
+Raskeladden tar på seg et par vanlige Skikes.", "«Men vanlige Skikes er bra nok
+for en tur i skogen.»", "«Beste treningen som finnes!»", "Dovreslubben ser på Raskeladden som forlater hytta.
+«Beste treningen som finnes ... hva ...?»", "Dovreslubben bryter seg inn i hytta, og han legger hele
+Skike-samlingen til Raskeladden i ryggsekken sin.", "«Dovreslubben fortjener bare det beste!»", "Dovreslubben Skiker vekk fra hytta på Gullskikene.", "«Med disse fabelaktige Gullskikene
+kommer jeg til å bli i best form av alle!»", "Litt seinere ... Raskeladden er på vei hjem igjen, og på
+skogsstien passerer Dovreslubben og Raskeladden hverandre.", "«Hva i all ...?»", "«Var det der ... GULLSKIKENE MINE?!»", "«Stopp tyven!»", "«Jeg skal få tilbake Skikene mine
+om jeg så må jage deg Norge rundt!»", "Dovreslubben Skiker gjennom skogen.
+Han merker ikke at det er hull i ryggsekken sin
+og at Skike-deler faller ut av den.", "«Jeg er i bedre form allerede! Det føles
+som sekken blir lettere og lettere!»", "Raskeladden finner et Skike-hjul
+som falt ut av Dovreslubbens sekk.", "«Samlingen min! Sånn skal
+man ikke behandle Skike-deler!»", "«Bare vent! Jeg skal nok ta deg igjen!»", "«Øyh! Fløtt deg, stymper!
+Jeg går tur her!»"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/RichTextLabel:text")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": ["Det jobbest fortsatt med å skalere opp bildene og tilpasse hvor lenge hvert bilde skal vises i forhold til hvor mye tekst som vises.
+Men rapporter gjerne tanker og innspill om tekst, visningstid, farger, feil o.l. på “issues” på [i]Github[/i] eller andre relevante steder.
+(Hvis du klikker/trykker burde du kunne se dette fra starten igjen, med mindre også det feilet 😨)", ""]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6cje2"]
+_data = {
+"intro": SubResource("Animation_gueuh")
+}
+
+[node name="CutsceneW1m1" type="Node2D"]
+script = ExtResource("1_itv6g")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_6cje2")
+}
+autoplay = "intro"
+
+[node name="TextureRect" type="TextureRect" parent="AnimationPlayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+texture = ExtResource("8_kegdc")
+expand_mode = 3
+stretch_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Label" type="Label" parent="AnimationPlayer"]
+z_index = 42
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -68.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 3
+theme = ExtResource("3_v30p6")
+theme_override_colors/font_color = Color(0, 0.25098, 0.501961, 1)
+theme_override_colors/font_outline_color = Color(0.501961, 0.815686, 0.878431, 1)
+theme_override_constants/outline_size = 6
+text = "«Hva i all ...?»"
+horizontal_alignment = 1
+vertical_alignment = 2
+autowrap_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="AnimationPlayer"]
+z_index = 100
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 115.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+theme = ExtResource("3_v30p6")
+theme_override_colors/default_color = Color(0, 0.25098, 0.501961, 1)
+theme_override_colors/font_outline_color = Color(0.501961, 0.815686, 0.878431, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/italics_font_size = 30
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+metadata/_edit_lock_ = true
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
