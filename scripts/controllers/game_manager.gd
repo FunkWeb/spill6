@@ -7,6 +7,15 @@ var game_paused : bool = false:
 		return game_paused
 	set(value):
 		game_paused = value
+		
+		# Vis/Skjul pauseknappen når man pauser
+		var pause_button = get_node("/root/THE-MAP/HUD/RightContainer/PauseButton")
+		if pause_button != null:
+			if game_paused == true:
+				pause_button.visible = false
+			else:
+				pause_button.visible = true
+		
 		print("Game paused: ",game_paused)
 		get_tree().paused = game_paused
 		toggle_game_paused.emit(game_paused)
