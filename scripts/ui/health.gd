@@ -1,23 +1,19 @@
-extends Label
+extends HBoxContainer
 
 # TODO
 # Change health icons into images
 # Figure out how many "hearts" we're using
 # Bytt ut lyden
 
-var health_icon : String = '❤'
-var empty_health_icon : String = '🖤'
-var heart_amount : int = 3
+var heart_full : CompressedTexture2D = preload("res://assets/art/ui/ui_ikon_helse_fylt_tekstur.png")
+var heart_empty : CompressedTexture2D = preload("res://assets/art/ui/ui_ikon_helse_tomt_tekstur.png")
 
-func _ready():
-	connect("lost_health", _on_hit)
-	for heart in range(heart_amount):
-		text += health_icon 
-
-func _on_hit(_from, _to):
-	# Removes a heart at index 0, replaces it with an empty heart
-	text = text.erase(0)
-	text += empty_health_icon
+func update_health(value):
+	for i in get_child_count():
+		if value > i:
+			get_child(i).texture = heart_full
+		else:
+			get_child(i).texture = heart_empty
 
 func _on_player_has_died(body):
 	# When the player has died, we get the parents all the way to HUD and display
@@ -27,8 +23,5 @@ func _on_player_has_died(body):
 	await get_tree().create_timer(2).timeout
 	get_tree().change_scene_to_file("res://scenes/menus/main_menu.tscn")
 
-func _on_health_upgrade_detected(amount):
-	# No string multiplication in godot
-	for i in range(amount):
-		text += health_icon
-	print('increasing health')
+func _on_raskeladden_lost_health(new_health):
+	update_health(new_health)
