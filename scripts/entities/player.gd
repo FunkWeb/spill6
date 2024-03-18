@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 signal has_died(body)
-signal lost_health(body)
+signal lost_health(new_health)
 # TODO
 # Legg til relevant bevegelse
 # Ask if doublejump is something we should add
@@ -39,8 +39,8 @@ func check_if_landing():
 	
 func _on_hit(entity, body):
 	print('player hit')
-	emit_signal("lost_health")
 	hearts -= 1
+	lost_health.emit(hearts)
 	# play hit animation
 	# push character back a bit?
 	# invincibility, flashing sprite?
