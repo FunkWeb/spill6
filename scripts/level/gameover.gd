@@ -4,7 +4,8 @@ extends Node2D
 # body.queue_free() "sletter" spilleren 
 
 func _ready():
-	SoundManager.play_bird_chirp()
+	SoundManager.play_bird_chirp_loop(false)
+	
 
 func _on_player_death(body):
 	SoundManager.taper_lyd()
