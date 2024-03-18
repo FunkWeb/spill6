@@ -1933,26 +1933,26 @@ polygon = PackedVector2Array(-1099.54, 410.333, -1099.61, 410.329, -1099.83, 410
 [node name="hindere" type="Node2D" parent="."]
 
 [node name="trestump_1" parent="hindere" instance=ExtResource("22_ynf4l")]
-position = Vector2(329, -101)
+position = Vector2(5003, -272)
+rotation = -0.483456
 
 [node name="stein" parent="hindere" instance=ExtResource("24_v3hyq")]
-position = Vector2(722, -121)
+position = Vector2(757, -117)
+rotation = 0.191986
 
 [node name="stein_1" parent="hindere" instance=ExtResource("23_r6x8q")]
-position = Vector2(1650, 126)
-rotation = -0.179705
+position = Vector2(1513, 137)
 
 [node name="stein_2" parent="hindere" instance=ExtResource("24_v3hyq")]
-position = Vector2(1450, 127)
-rotation = 0.0473944
+position = Vector2(1169, 103)
+rotation = 0.368264
 
 [node name="stein_3" parent="hindere" instance=ExtResource("25_r2e6v")]
-position = Vector2(2148, 111)
+position = Vector2(2078, 109)
 rotation = -0.228902
 
 [node name="stein_4" parent="hindere" instance=ExtResource("24_v3hyq")]
-position = Vector2(4371, -333)
-rotation = 0.0947887
+position = Vector2(4435, -334)
 
 [node name="stein_5" parent="hindere" instance=ExtResource("23_r6x8q")]
 position = Vector2(7004, -266)
@@ -1963,7 +1963,7 @@ position = Vector2(7451, -133)
 rotation = -0.0102335
 
 [node name="stein_7" parent="hindere" instance=ExtResource("25_r2e6v")]
-position = Vector2(7625, -147)
+position = Vector2(7633, -148)
 rotation = -0.281813
 
 [node name="stein_8" parent="hindere" instance=ExtResource("24_v3hyq")]
@@ -1975,87 +1975,87 @@ position = Vector2(9417, -360)
 rotation = -0.295417
 
 [node name="stein_10" parent="hindere" instance=ExtResource("24_v3hyq")]
-position = Vector2(8244, -273)
+position = Vector2(8213, -272)
 rotation = 0.0213173
 
 [node name="stein_11" parent="hindere" instance=ExtResource("25_r2e6v")]
-position = Vector2(9054, -194)
-rotation = -0.512653
+position = Vector2(8981, -181)
+rotation = -0.322886
 
 [node name="stein_12" parent="hindere" instance=ExtResource("25_r2e6v")]
-position = Vector2(446, -108)
-rotation = -0.282743
+position = Vector2(2625, 21)
+rotation = -0.605629
 
 [node name="stein_13" parent="hindere" instance=ExtResource("23_r6x8q")]
-position = Vector2(1840, 106)
-rotation = 0.0122173
+position = Vector2(1778, 112)
+rotation = -0.148353
 
 [node name="stein_14" parent="hindere" instance=ExtResource("24_v3hyq")]
-position = Vector2(2409, 66)
+position = Vector2(2386, 70.9999)
 rotation = -0.289725
 
 [node name="stein_15" parent="hindere" instance=ExtResource("24_v3hyq")]
-position = Vector2(5192, -322)
-rotation = 0.0947887
+position = Vector2(5278, -311)
+rotation = 0.20944
 
 [node name="stein_16" parent="hindere" instance=ExtResource("23_r6x8q")]
-position = Vector2(8029, -264)
-rotation = -0.0261799
+position = Vector2(7928, -254)
+rotation = -0.16057
 
 [node name="stein_17" parent="hindere" instance=ExtResource("23_r6x8q")]
-position = Vector2(8741, -198)
-rotation = -2.39983
+position = Vector2(8741, -199)
+rotation = -2.5604
 
 [node name="trestump_5" parent="hindere" instance=ExtResource("22_ynf4l")]
-position = Vector2(2806, -61)
-rotation = -0.384232
+position = Vector2(9204, -268)
+rotation = -0.544543
 
 [node name="trestump_6" parent="hindere" instance=ExtResource("26_8kc67")]
-position = Vector2(2972, -133)
-rotation = -0.209926
+position = Vector2(2880, -99)
+rotation = -0.37001
 
 [node name="trestump_7" parent="hindere" instance=ExtResource("27_3n8ku")]
-position = Vector2(596, -108)
+position = Vector2(5875, -310)
 rotation = 0.253217
 
 [node name="trestump_8" parent="hindere" instance=ExtResource("26_8kc67")]
-position = Vector2(3546, -217)
-rotation = -0.0781052
+position = Vector2(4262, -326)
+rotation = -0.322886
 
 [node name="trestump_9" parent="hindere" instance=ExtResource("27_3n8ku")]
 position = Vector2(4086, -232)
 rotation = 0.4614
 
 [node name="trestump_10" parent="hindere" instance=ExtResource("26_8kc67")]
-position = Vector2(5569, -255)
+position = Vector2(5560, -255)
 rotation = 0.023514
 
 [node name="trestump_11" parent="hindere" instance=ExtResource("27_3n8ku")]
-position = Vector2(9956, -516)
+position = Vector2(9954, -517)
 rotation = 0.44311
 
 [node name="trestump_12" parent="hindere" instance=ExtResource("22_ynf4l")]
-position = Vector2(974, 24)
-rotation = 0.151844
+position = Vector2(3590, -229)
+rotation = -0.483456
 
 [node name="trestump_13" parent="hindere" instance=ExtResource("26_8kc67")]
-position = Vector2(9654, -407)
+position = Vector2(9665, -412)
 rotation = -0.149068
 
 [node name="trestump_14" parent="hindere" instance=ExtResource("27_3n8ku")]
-position = Vector2(1235, 114)
-rotation = 0.637045
+position = Vector2(3149, -162)
 
 [node name="trestump_15" parent="hindere" instance=ExtResource("26_8kc67")]
-position = Vector2(2280, 106)
-rotation = -0.209926
+position = Vector2(4703, -200)
+rotation = 0.331613
 
 [node name="trestump_16" parent="hindere" instance=ExtResource("27_3n8ku")]
-position = Vector2(3340, -177)
-rotation = -2.91121
+position = Vector2(3352, -181)
+rotation = -2.75064
 
 [node name="trestump_17" parent="hindere" instance=ExtResource("22_ynf4l")]
-position = Vector2(3842, -324)
+position = Vector2(3817, -323)
+rotation = -0.16057
 
 [node name="trestump_18" parent="hindere" instance=ExtResource("22_ynf4l")]
 position = Vector2(6182, -378)
@@ -2065,7 +2065,7 @@ position = Vector2(6537, -363)
 rotation = 0.00523599
 
 [node name="trestump_20" parent="hindere" instance=ExtResource("27_3n8ku")]
-position = Vector2(6791, -327)
+position = Vector2(6791, -329)
 rotation = 0.767945
 
 [node name="trestump_21" parent="hindere" instance=ExtResource("22_ynf4l")]
@@ -2073,7 +2073,7 @@ position = Vector2(7227, -157)
 rotation = 0.230383
 
 [node name="trestump_22" parent="hindere" instance=ExtResource("22_ynf4l")]
-position = Vector2(10076, -530)
+position = Vector2(10074, -531)
 rotation = -0.153589
 
 [node name="PLAYER" type="Node2D" parent="."]
