@@ -38,7 +38,7 @@ Et spill for Android laget av [FunkWeb -  Suksess For Alle](https://funkweb.org)
 
 **Saef Gondal** - Observatør
 
-**Long Jump Production** - design, utvikling
+**Long Jump Production** - design, utvikling, implementering
 
 **Thomas Solheim** - Utvikling, test
 
