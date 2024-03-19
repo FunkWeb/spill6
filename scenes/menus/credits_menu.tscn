@@ -1,9 +1,62 @@
-[gd_scene load_steps=4 format=3 uid="uid://bgkfbxvfcxyg8"]
+[gd_scene load_steps=16 format=3 uid="uid://bgkfbxvfcxyg8"]
 
 [ext_resource type="Script" path="res://scripts/ui/credits_scene.gd" id="1_3uh8h"]
 [ext_resource type="FontFile" uid="uid://i6a6arv6m8b3" path="res://assets/fonts/AR_One_Sans/AROneSans-VariableFont_ARRR,wght.ttf" id="2_bmvhq"]
+[ext_resource type="Script" path="res://addons/markdownlabel/markdownlabel.gd" id="2_gsm6e"]
+[ext_resource type="Script" path="res://addons/markdownlabel/header_formats/h1_format.gd" id="3_3du0x"]
+[ext_resource type="Script" path="res://addons/markdownlabel/header_formats/h2_format.gd" id="4_rj4jg"]
+[ext_resource type="Script" path="res://addons/markdownlabel/header_formats/h3_format.gd" id="5_i4ole"]
+[ext_resource type="Script" path="res://addons/markdownlabel/header_formats/h4_format.gd" id="6_nvt84"]
+[ext_resource type="Script" path="res://addons/markdownlabel/header_formats/h5_format.gd" id="7_m277p"]
+[ext_resource type="Script" path="res://addons/markdownlabel/header_formats/h6_format.gd" id="8_4lr7f"]
 
-[sub_resource type="Theme" id="Theme_5ysfw"]
+[sub_resource type="Resource" id="Resource_7t11s"]
+resource_local_to_scene = true
+script = ExtResource("3_3du0x")
+font_size = 2.285
+is_bold = false
+is_italic = false
+is_underlined = false
+
+[sub_resource type="Resource" id="Resource_e06xi"]
+resource_local_to_scene = true
+script = ExtResource("4_rj4jg")
+font_size = 1.714
+is_bold = false
+is_italic = false
+is_underlined = false
+
+[sub_resource type="Resource" id="Resource_1i57b"]
+resource_local_to_scene = true
+script = ExtResource("5_i4ole")
+font_size = 1.428
+is_bold = false
+is_italic = false
+is_underlined = false
+
+[sub_resource type="Resource" id="Resource_m4ebt"]
+resource_local_to_scene = true
+script = ExtResource("6_nvt84")
+font_size = 1.142
+is_bold = false
+is_italic = false
+is_underlined = false
+
+[sub_resource type="Resource" id="Resource_kk1fj"]
+resource_local_to_scene = true
+script = ExtResource("7_m277p")
+font_size = 1.0
+is_bold = false
+is_italic = false
+is_underlined = false
+
+[sub_resource type="Resource" id="Resource_caitl"]
+resource_local_to_scene = true
+script = ExtResource("8_4lr7f")
+font_size = 0.857
+is_bold = false
+is_italic = false
+is_underlined = false
 
 [node name="Credits" type="Control"]
 layout_mode = 3
@@ -23,63 +76,25 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
-[node name="Sound effect" type="TextEdit" parent="."]
-visible = false
+[node name="Text" type="RichTextLabel" parent="."]
 layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
+anchors_preset = 15
 anchor_right = 1.0
-offset_left = -640.0
-offset_bottom = 1080.0
-grow_horizontal = 0
-text = "SOUND-EFFECTS TAKEN FROM
-
- TOM AND JERRY
-MINECRAFT
-https://www.youtube.com/watch?v=TUDLmKe3e8M
-https://www.youtube.com/watch?v=URJox7fs1To
-https://www.youtube.com/watch?v=DDQ6syy1vug"
-editable = false
-
-[node name="ToolBox" type="TextEdit" parent="."]
-visible = false
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -320.0
-offset_right = 320.0
-offset_bottom = 1080.0
+anchor_bottom = 1.0
+offset_right = -0.00146484
+offset_bottom = -99.0
 grow_horizontal = 2
-text = "Programmed in
-GODOT
-
-Sound recorded in ADOBE-AUDITION
-
-Artwork made in CLIPSTUDIO-PAINT"
-editable = false
-
-[node name="PeopleBox2" type="TextEdit" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.048
-offset_left = -2.0
-offset_right = 1521.2
-offset_bottom = 720.0
-theme = SubResource("Theme_5ysfw")
-theme_override_fonts/font = ExtResource("2_bmvhq")
-text = "Author,  Animator,  Artist  and  programmer:
-
-LONGJUMPPRODUCTION
-
-Music:
-
-SYNTRUS (on newgrounds)"
-editable = false
-context_menu_enabled = false
-shortcut_keys_enabled = false
-virtual_keyboard_enabled = false
-middle_mouse_paste_enabled = false
+grow_vertical = 2
+bbcode_enabled = true
+text = "[center]Error: CREDITS.md could not be loaded"
+script = ExtResource("2_gsm6e")
+markdown_text = "[center]Error: CREDITS.md could not be loaded"
+h1 = SubResource("Resource_7t11s")
+h2 = SubResource("Resource_e06xi")
+h3 = SubResource("Resource_1i57b")
+h4 = SubResource("Resource_m4ebt")
+h5 = SubResource("Resource_kk1fj")
+h6 = SubResource("Resource_caitl")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1
@@ -89,7 +104,7 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -318.001
-offset_top = -148.0
+offset_top = -86.0
 offset_right = 332.999
 grow_horizontal = 2
 grow_vertical = 0
