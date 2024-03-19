@@ -118,7 +118,10 @@ size_flags_horizontal = 3
 theme = ExtResource("3_v30p6")
 theme_override_colors/font_color = Color(0.603922, 0.529412, 0.0588235, 1)
 theme_override_colors/font_outline_color = Color(0.109804, 0.2, 0.231373, 1)
-theme_override_constants/outline_size = 6
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 7
+theme_override_constants/shadow_outline_size = 7
 text = "Dovreslubben ser på Raskeladden som forlater hytta.
 «Beste treningen som finnes ... hva ...?»"
 horizontal_alignment = 1
