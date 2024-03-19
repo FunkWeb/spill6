@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4yoapqlaliao"
-path="res://.godot/imported/rask-06.jpg-7e471b7651b17f92bc4f32a3e5758382.ctex"
+uid="uid://vcxc70a5dtrh"
+path="res://.godot/imported/storyboard-08.jpg-4a038aeffeb28ce411a7da1924c31cdc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/cutscenes/rask-06.jpg"
-dest_files=["res://.godot/imported/rask-06.jpg-7e471b7651b17f92bc4f32a3e5758382.ctex"]
+source_file="res://assets/art/cutscenes/storyboard-08.jpg"
+dest_files=["res://.godot/imported/storyboard-08.jpg-4a038aeffeb28ce411a7da1924c31cdc.ctex"]
 
 [params]
 
