@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdt8ayisxgpqg"
-path="res://.godot/imported/Fjell.png-12de2693e6221dc2f61aacafbe909efb.ctex"
+uid="uid://qhnfqcy1ckf"
+path="res://.godot/imported/skog_bakgrunn.jpg-83a5dfd68d3f115e7f84462a06538d98.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/environments/bakgrunner/bakgrunn_skog/Fjell.png"
-dest_files=["res://.godot/imported/Fjell.png-12de2693e6221dc2f61aacafbe909efb.ctex"]
+source_file="res://assets/art/environments/bakgrunner/bakgrunn_skog/skog_bakgrunn.jpg"
+dest_files=["res://.godot/imported/skog_bakgrunn.jpg-83a5dfd68d3f115e7f84462a06538d98.ctex"]
 
 [params]
 
