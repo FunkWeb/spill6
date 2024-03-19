@@ -15,7 +15,7 @@ func _on_back_button_pressed():
 	$".".hide()
 
 func _on_cutscene_button_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://scenes/cutscenes/cutscene_w1m1.tscn")
 
 func _on_level_1_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/levels/w1m1.tscn")
