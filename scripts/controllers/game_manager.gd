@@ -22,22 +22,24 @@ var game_paused : bool = false:
 
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):
-		if get_parent().get_child(-1).name != "Menu":
-			if $PauseMenu/Settings.visible:
-				$PauseMenu/Settings.hide()
-			else:
-				game_paused = !game_paused
+		if get_node("../CutsceneW1m1") != null or get_node("../Menu") != null:
+			return
+		if $PauseMenu/Settings.visible:
+			$PauseMenu/Settings.hide()
+		else:
+			game_paused = !game_paused
 
 func _notification(what):
 	# pause og fortsett spill med android back button
 	if what in [
 		NOTIFICATION_APPLICATION_PAUSED, # home button
 		NOTIFICATION_WM_GO_BACK_REQUEST]: # back button
-		if get_parent().get_child(-1).name != "Menu":
-			if $PauseMenu/Settings.visible:
-				$PauseMenu/Settings.hide()
-			else:
-				game_paused = !game_paused
+		if get_node("../CutsceneW1m1") != null or get_node("../Menu") != null:
+			return
+		if $PauseMenu/Settings.visible:
+			$PauseMenu/Settings.hide()
+		else:
+			game_paused = !game_paused
 
 func _on_pause_menu_resume():
 	game_paused = !game_paused
