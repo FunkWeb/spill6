@@ -12,7 +12,7 @@ Et spill for Android laget av [FunkWeb -  Suksess For Alle](https://funkweb.org)
 
 **Dennis Råke** - Lyd
 
-**Hans Emil Beritsveen Eid**- konseptutvikling, design, brukergrensesnitt
+**Hans Emil Beritsveen Eid**- Konseptutvikling, design, brukergrensesnitt
 
 **Helene Grønlien** - Reporter
 
@@ -38,7 +38,7 @@ Et spill for Android laget av [FunkWeb -  Suksess For Alle](https://funkweb.org)
 
 **Saef Gondal** - Observatør
 
-**Long Jump Production** - design, utvikling, implementering
+**Long Jump Production** - Design, utvikling
 
 **Thomas Solheim** - Utvikling, test
 
