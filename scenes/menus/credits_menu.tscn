@@ -1,7 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://bgkfbxvfcxyg8"]
+[gd_scene load_steps=20 format=3 uid="uid://bgkfbxvfcxyg8"]
 
 [ext_resource type="Script" path="res://scripts/ui/credits_scene.gd" id="1_3uh8h"]
-[ext_resource type="FontFile" uid="uid://i6a6arv6m8b3" path="res://assets/fonts/AR_One_Sans/AROneSans-VariableFont_ARRR,wght.ttf" id="2_bmvhq"]
 [ext_resource type="Script" path="res://addons/markdownlabel/markdownlabel.gd" id="2_gsm6e"]
 [ext_resource type="Script" path="res://addons/markdownlabel/header_formats/h1_format.gd" id="3_3du0x"]
 [ext_resource type="Script" path="res://addons/markdownlabel/header_formats/h2_format.gd" id="4_rj4jg"]
@@ -9,6 +8,8 @@
 [ext_resource type="Script" path="res://addons/markdownlabel/header_formats/h4_format.gd" id="6_nvt84"]
 [ext_resource type="Script" path="res://addons/markdownlabel/header_formats/h5_format.gd" id="7_m277p"]
 [ext_resource type="Script" path="res://addons/markdownlabel/header_formats/h6_format.gd" id="8_4lr7f"]
+[ext_resource type="Theme" uid="uid://dhcc0oot5rr60" path="res://materials/menu_theme.tres" id="9_aqi8a"]
+[ext_resource type="FontFile" uid="uid://c7xjbywhj5jm4" path="res://assets/fonts/LoveYaLikeASister-Regular.ttf" id="10_cilkd"]
 
 [sub_resource type="Resource" id="Resource_7t11s"]
 resource_local_to_scene = true
@@ -58,13 +59,22 @@ is_bold = false
 is_italic = false
 is_underlined = false
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dbje5"]
+bg_color = Color(0.160784, 0.141176, 0.160784, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6mf6a"]
+bg_color = Color(0.160784, 0.141176, 0.160784, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f2auo"]
+bg_color = Color(0.160784, 0.141176, 0.160784, 1)
+
 [node name="Credits" type="Control"]
 layout_mode = 3
-anchor_left = 0.000844552
-anchor_right = 1.00084
+anchors_preset = 15
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 0.743206
-offset_right = 0.752075
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_3uh8h")
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -74,7 +84,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 1)
+color = Color(0.266667, 0.266667, 0.266667, 1)
 
 [node name="Text" type="RichTextLabel" parent="."]
 layout_mode = 1
@@ -96,19 +106,26 @@ h4 = SubResource("Resource_m4ebt")
 h5 = SubResource("Resource_kk1fj")
 h6 = SubResource("Resource_caitl")
 
-[node name="Button" type="Button" parent="."]
+[node name="CloseButton" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -318.001
-offset_top = -86.0
-offset_right = 332.999
+offset_left = -400.0
+offset_top = -75.0
+offset_right = 400.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_fonts/font = ExtResource("2_bmvhq")
-text = "LUKK"
+theme = ExtResource("9_aqi8a")
+theme_override_colors/font_color = Color(0.929412, 0.898039, 0.831373, 1)
+theme_override_colors/font_pressed_color = Color(0.929412, 0.898039, 0.831373, 1)
+theme_override_colors/font_hover_color = Color(0.929412, 0.898039, 0.831373, 1)
+theme_override_fonts/font = ExtResource("10_cilkd")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dbje5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6mf6a")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_f2auo")
+text = "Lukk"
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]

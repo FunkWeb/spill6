@@ -5,5 +5,5 @@ func _ready():
 	var text = file.get_as_text(true)
 	$Text.markdown_text = "[center]\n"+text
 
-func _on_button_pressed():
+func _on_close_button_pressed():
 	visible = false
