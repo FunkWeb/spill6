@@ -60,11 +60,11 @@ is_underlined = false
 
 [node name="Credits" type="Control"]
 layout_mode = 3
-anchor_left = 0.000844552
-anchor_right = 1.00084
+anchors_preset = 15
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 0.743206
-offset_right = 0.752075
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_3uh8h")
 
 [node name="ColorRect" type="ColorRect" parent="."]

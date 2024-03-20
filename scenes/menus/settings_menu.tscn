@@ -31,15 +31,20 @@ bg_color = Color(0.160784, 0.141176, 0.160784, 1)
 
 [node name="Settings" type="Control"]
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_vue0y")
 
 [node name="Background" type="ColorRect" parent="."]
-layout_mode = 0
-offset_left = 3.0
-offset_top = 1.0
-offset_right = 1603.0
-offset_bottom = 721.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 color = Color(0.266667, 0.266667, 0.266667, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]

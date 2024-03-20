@@ -303,6 +303,7 @@ visible = false
 
 [node name="Credits" parent="." instance=ExtResource("14_yauok")]
 visible = false
+anchor_right = 1.0
 
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]
